@@ -1,0 +1,102 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  24 APR 2014 13:56
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**dissertation.tex
+(./dissertation.tex
+LaTeX2e <2011/06/27>
+Babel <3.9f> and hyphenation patterns for 78 languages loaded.
+(./ucsd.cls
+Document Class: ucsd 2010/06/01 V3.7 University of California, San Diego, Disse
+rtation Class
+(./uct12.clo)
+\descriptionmargin=\dimen102
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\@chapterlength=\skip41
+\UCSD@toc@frontmatterLength=\skip42
+\UCSD@toc@backmatterLength=\skip43
+\@subsectionlength=\skip44
+\@subsubsectionlength=\skip45
+\@paragraphlength=\skip46
+\@subparagraphlength=\skip47
+\@figurelength=\skip48
+\@tablelength=\skip49
+\c@figure=\count86
+\c@table=\count87
+) (./dissertation.aux (./frontmatter.aux) (./ch1.aux))
+\openout1 = `dissertation.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+\openout2 = `frontmatter.aux'.
+
+
+(./frontmatter.tex
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
+
+ []
+
+[1
+
+
+{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+[2]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 28.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 28.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 28.
+ [3] [4] [5] (./dissertation.toc)
+\tf@toc=\write3
+\openout3 = `dissertation.toc'.
+
+ [6] [7] [8] [9])
+\openout2 = `ch1.aux'.
+
+ (./ch1.tex
+Chapter 1.
+[1
+
+
+
+]
+Appendix A.
+) [2
+
+] (./dissertation.aux (./frontmatter.aux) (./ch1.aux)) ) 
+Here is how much of TeX's memory you used:
+ 332 strings out of 493315
+ 3664 string characters out of 6137904
+ 56047 words of memory out of 5000000
+ 3843 multiletter control sequences out of 15000+600000
+ 8847 words of font info for 31 fonts, out of 8000000 for 9000
+ 957 hyphenation exceptions out of 8191
+ 26i,7n,24p,159b,216s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/201
+3/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2013
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2013/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on dissertation.pdf (11 pages, 51575 bytes).
+PDF statistics:
+ 52 PDF objects out of 1000 (max. 8388607)
+ 35 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
