@@ -1,24 +1,28 @@
-%Chapter 2: Introduction
+%Chapter 2: Seismogeodesy and Strong Motion Sensing
 
-\chapter{Stupid}
-This is only a test.
-\section{Early Warning and Rapid Response in Natural Hazards}
-Lorem ipsum \cite{Agnew2007} dolor sit amet, consectetuer adipiscing elit. Nulla odio
-sem, bibendum ut, aliquam ac, facilisis id, tellus. Nam posuere pede
-sit amet ipsum. Etiam dolor. In sodales eros quis pede.  Quisque sed
-nulla et ligula vulputate lacinia. In venenatis, ligula id semper
-feugiat, ligula odio adipiscing libero, eget mollis nunc erat id orci.
-Nullam ante dolor, rutrum eget, vestibulum euismod, pulvinar at, nibh.
-In sapien. Quisque ut arcu. Suspendisse potenti. Cras consequat cursus
-nulla.
+\chapter{Seismogeodesy and Strong Motion Sensing}
+
+\section{Strong Motion Seismology}
+The range of motions produced by the seismic source is broad both in frequency and dynamic range. It is well known that no one sensor can capture all signals of interest to seismology and earthquake engineering \cite{Havskov2006}. Seismologists typically rely on seismometers, whose response is related to velocity of the ground, for measurement of small amplitude signals (weak motion), but for large amplitude signals these sensitive instruments saturate or clip. In this case, strong motion sensors, whose response is related to the acceleration of the ground and have lower gains, are preferred. Modern observatory grade accelerometers rely on the force feedback principle and can measure motions as small as 1 nm at 1 Hz and 100 nm at 0.1 Hz and accelerations of up to 4g. Furthermore their frequency response is flat from ) (often called the DC-level) to 50-200 Hz \cite{Havskov2006}.
+
+Thus, in principle there should be no difficulty in integrating a strong motion record to velocity and displacement. This is not the case; in practice the simple integration of an accelerogram produces unphysical velocity and displacement waveforms that grow unbounded as time progresses. Computation of broadband displacements from strong motion recordings is a thoroughly studied procedure that is fraught with many known problems and has no known single solution. By ``broadband dispalcement'' it is meant a strong motion displacement waveform that captures both transient phenomena (waves) and permanent or static deformation, i.e. a recording reliable from DC to the Nyquist frequency.
+
+The problems associated with the double integration of accelerometer recordings have been comprehensively studied and many sources of error have been suggested: numerical error in the integration procedure, mechanical hysteresis, cross-axis sensitivity and unresolved rotational motions \cite{Graizer1979}, \cite{Iwan1985}, \cite{Boore1999}, \cite{Boore2001}, \cite{Boore2002}, \cite{Smyth2007}. It is generally assumed that small offsets are introduced in the acceleration time series; upon integration these baseline offsets produce the linear and quadratic trends observed in the velocity and displacement time series, respectively. Many possible sources have been invoked as the source of these offsets with unresolved rotational motion increasingly considered the main error \cite{Graizer2006}, \cite{Pillet2007}. Motion is described by six degrees of freedom, three translations and three rotations. Accelerometers are incapable of discerning between rotational and translational motions, thus, rotational motions are recorded as spurious translations. Effectively, this results in a change of the baseline of the accelerometer, even if by a small amount, leading to unphysical drifts in the singly integrated velocity waveforms and doubly integrated displacement waveforms.
+
+\begin{figure}h 
+  \centering
+  \includegraphics[width=0.5\textwidth]{gull}}
+  \caption{A figure of Vonnegut.\index{Vonnegut}} 
+\end{figure}
+
+%Take over ehre
+Many correction schemes, collectively known as baseline corrections, have been proposed over time to deal with this problem. Rotational motions become more prevalent close to the source and at long periods Graizer, 2006 thus the simplest baseline correction scheme is a high-pass filter Boore and Bommer, 2005. This leads to accurate recovery of the mid to high frequency part of the displacement record but suppresses completely long period information such as the static offset.
+	To ameliorate this, a number of more elaborate correction schemes exist Boore  Bommer, 2005 that rely on function fitting to the singly integrated velocity time series. The most reliable scheme that routinely produces plausible displacement waveforms (which include a measure of the static offset) is described in Boore 1999, 2001 and is a modification of the scheme proposed by Iwan et al 1985 and henceforth referred to as the Boore-Iwan or BI correction scheme. In this method a piece-wise linear function is fit to the uncorrected velocity time series, the slope of each straight line segment represents an acceleration step which is then subtracted from the original acceleration data. This baseline corrected acceleration record is subsequently integrated to velocity and displacement. If the intervals for fitting the linear functions to the velocity data are selected appropriately this algorithm will produce waveforms that look plausible. They will contain both permanent and transient motions. The difficulty then lies in determining what these appropriate time intervals are from the data themselves. As discussed by Boore 1999  2001 this is an ambiguous process. To diminish this uncertainty, subsequent research has focused on determining plausible times for the fits and then grid searching for waveforms that most resembles a ramp or step function Wu and Wu, 2007; Chao et al., 2010; Wang et al., 2011.
+
 \subsection{More Stuff}
 Blah
 
-\begin{figure}[h] 
-  \centering
-  *
-  \caption{A figure of Vonnegut.\index{Vonnegut}} 
-\end{figure}
+
 
 \section{Geodesy and Seismology}
 

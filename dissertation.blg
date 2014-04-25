@@ -4,46 +4,50 @@ The top-level auxiliary file: dissertation.aux
 A level-1 auxiliary file: frontmatter.aux
 A level-1 auxiliary file: ch1.aux
 A level-1 auxiliary file: ch2.aux
+A level-1 auxiliary file: ch3.aux
+A level-1 auxiliary file: ch4.aux
+A level-1 auxiliary file: ch5.aux
+A level-1 auxiliary file: ch6.aux
 The style file: apalike.bst
-Database file #1: test.bib
-You've used 1 entry,
+Database file #1: refs.bib
+You've used 9 entries,
             1935 wiz_defined-function locations,
-            482 strings with 3841 characters,
-and the built_in function-call counts, 393 in all, are:
-= -- 37
-> -- 13
-< -- 1
-+ -- 4
-- -- 4
-* -- 34
-:= -- 72
-add.period$ -- 3
-call.type$ -- 1
-change.case$ -- 7
-chr.to.int$ -- 1
-cite$ -- 1
-duplicate$ -- 14
-empty$ -- 29
-format.name$ -- 7
-if$ -- 76
+            549 strings with 5304 characters,
+and the built_in function-call counts, 3450 in all, are:
+= -- 337
+> -- 103
+< -- 7
++ -- 34
+- -- 32
+* -- 305
+:= -- 597
+add.period$ -- 27
+call.type$ -- 9
+change.case$ -- 61
+chr.to.int$ -- 9
+cite$ -- 9
+duplicate$ -- 126
+empty$ -- 271
+format.name$ -- 47
+if$ -- 686
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 1
-newline$ -- 8
-num.names$ -- 3
-pop$ -- 4
+missing$ -- 10
+newline$ -- 48
+num.names$ -- 27
+pop$ -- 39
 preamble$ -- 1
-purify$ -- 7
+purify$ -- 61
 quote$ -- 0
-skip$ -- 12
+skip$ -- 97
 stack$ -- 0
-substring$ -- 27
-swap$ -- 1
+substring$ -- 299
+swap$ -- 9
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 6
+type$ -- 52
 warning$ -- 0
-while$ -- 3
+while$ -- 26
 width$ -- 0
-write$ -- 15
+write$ -- 120

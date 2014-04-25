@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  24 APR 2014 15:43
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  24 APR 2014 16:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -29,7 +29,8 @@ rtation Class
 \@tablelength=\skip49
 \c@figure=\count86
 \c@table=\count87
-) (./dissertation.aux (./frontmatter.aux) (./ch1.aux) (./ch2.aux))
+) (./dissertation.aux (./frontmatter.aux) (./ch1.aux) (./ch2.aux)
+(./ch3.aux) (./ch4.aux) (./ch5.aux) (./ch6.aux))
 \openout1 = `dissertation.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
@@ -46,7 +47,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
 LaTeX Font Info:    ... okay on input line 5.
 \openout2 = `frontmatter.aux'.
 
-(./frontmatter.tex
+ (./frontmatter.tex
 Underfull \hbox (badness 10000) in paragraph at lines 28--28
 
  []
@@ -62,11 +63,11 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 28.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 28.
- [3] [4] [5] (./dissertation.toc)
+ [3] [4] [5] (./dissertation.toc [6])
 \tf@toc=\write3
 \openout3 = `dissertation.toc'.
 
- [6] [7] [8] [9] [10])
+ [7] [8] [9] [10] [11])
 \openout2 = `ch1.aux'.
 
  (./ch1.tex
@@ -80,31 +81,73 @@ Chapter 1.
 
  (./ch2.tex
 Chapter 2.
-) [3
+
+Overfull \hbox (20.46672pt too wide) in paragraph at lines 6--7
+\OT1/cmr/m/n/12 nals of in-ter-est to seis-mol-ogy and earth-quake en-gi-neer-i
+ng [[]].
+ []
+
+[3
 
 
 
-] [4] (./dissertation.bbl) [5
+] [4]) [5]
+\openout2 = `ch3.aux'.
+
+ (./ch3.tex
+Chapter 3.
+) [6
+
+
+
+]
+\openout2 = `ch4.aux'.
+
+ (./ch4.tex
+Chapter 4.
+) [7
+
+
+
+]
+\openout2 = `ch5.aux'.
+
+ (./ch5.tex
+Chapter 5.
+) [8
+
+
+
+]
+\openout2 = `ch6.aux'.
+
+ (./ch6.tex
+Chapter 6.
+) [9
+
+
+
+] (./dissertation.bbl) [10
 
 
 ] (./dissertation.aux (./frontmatter.aux)
-(./ch1.aux) (./ch2.aux)) ) 
+(./ch1.aux) (./ch2.aux) (./ch3.aux) (./ch4.aux) (./ch5.aux) (./ch6.aux)) ) 
 Here is how much of TeX's memory you used:
- 344 strings out of 493315
- 3770 string characters out of 6137904
- 59047 words of memory out of 5000000
- 3845 multiletter control sequences out of 15000+600000
+ 384 strings out of 493315
+ 4092 string characters out of 6137904
+ 64191 words of memory out of 5000000
+ 3857 multiletter control sequences out of 15000+600000
  8847 words of font info for 31 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 26i,7n,24p,341b,240s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2013/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmti12.pfb>
-Output written on dissertation.pdf (15 pages, 62625 bytes).
+ 26i,7n,24p,1452b,240s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr
+/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/
+local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/lo
+cal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on dissertation.pdf (21 pages, 73939 bytes).
 PDF statistics:
- 65 PDF objects out of 1000 (max. 8388607)
- 44 compressed objects within 1 object stream
+ 84 PDF objects out of 1000 (max. 8388607)
+ 57 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

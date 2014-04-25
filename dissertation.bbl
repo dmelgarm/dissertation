@@ -1,8 +1,59 @@
 \begin{thebibliography}{}
 
-\bibitem[Agnew and Larson, 2007]{Agnew2007}
-Agnew, D.~C. and Larson, K.~M. (2007).
-\newblock Finding the repeat times of the gps constellation.
-\newblock {\em GPS solutions}, 11(1):71--76.
+\bibitem[Boore, 1999]{Boore1999}
+Boore, D.~M. (1999).
+\newblock Effect of baseline corrections on response spectra for two recordings
+  of the 1999 chi-chi, taiwan, earthquake.
+\newblock {\em U.S. Geol. Surv. Open-File Rept.}, 99(545):1--37.
+
+\bibitem[Boore, 2001]{Boore2001}
+Boore, D.~M. (2001).
+\newblock Effect of baseline corrections on displacements and response spectra
+  for several recordings of the 1999 chi-chi, taiwan, earthquake.
+\newblock {\em Bulletin of the Seismological Society of America},
+  91(5):1199--1211.
+
+\bibitem[Boore et~al., 2002]{Boore2002}
+Boore, D.~M., Stephens, C.~D., and Joyner, W.~B. (2002).
+\newblock Comments on baseline correction of digital strong-motion data:
+  Examples from the 1999 hector mine, california, earthquake.
+\newblock {\em Bulletin of the Seismological Society of America},
+  92(4):1543--1560.
+
+\bibitem[Graizer, 1979]{Graizer1979}
+Graizer, V. (1979).
+\newblock Determination of the true ground displacement by using strong motion
+  records.
+\newblock {\em Izvestiya Academy of Sciences, USSR, Physics of the Solid
+  Earth}, 15(12):875--885.
+
+\bibitem[Graizer, 2006]{Graizer2006}
+Graizer, V. (2006).
+\newblock Tilts in strong ground motion.
+\newblock {\em Bulletin of the Seismological Society of America},
+  96(6):2090--2102.
+
+\bibitem[Havskov and Alguacil, 2006]{Havskov2006}
+Havskov, J. and Alguacil, G. (2006).
+\newblock {\em Instrumentation in Earthquake Seismology}.
+\newblock Springer, New York, NY, first edition.
+
+\bibitem[Iwan et~al., 1985]{Iwan1985}
+Iwan, W.~D., Moser, M.~A., and Peng, C.-Y. (1985).
+\newblock Some observations on strong-motion earthquake measurement using a
+  digital accelerograph.
+\newblock {\em Bulletin of the Seismological Society of America},
+  75(5):1225--1246.
+
+\bibitem[Pillet and Virieux, 2007]{Pillet2007}
+Pillet, R. and Virieux, J. (2007).
+\newblock The effects of seismic rotations on inertial sensors.
+\newblock {\em Geophysical Journal International}, 171(3):1314--1323.
+
+\bibitem[Smyth and Wu, 2007]{Smyth2007}
+Smyth, A. and Wu, M. (2007).
+\newblock Multi-rate kalman filtering for the data fusion of displacement and
+  acceleration response measurements in dynamic system monitoring.
+\newblock {\em Mechanical Systems and Signal Processing}, 21(2):706--723.
 
 \end{thebibliography}
