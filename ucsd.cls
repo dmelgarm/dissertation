@@ -1253,7 +1253,7 @@ on microfilm and electronically: }}\\
     \usecounter{enumiv}%
     \let\p@enumiv\@empty
     \def\theenumiv{\arabic{enumiv}}}%
-    \def\newblock{\hskip .11em plus.33em minus.07em}%
+    \def\newblock{\hskip .11em plus.33em minus.07em}
     \sloppy\clubpenalty4000\widowpenalty4000
     \sfcode`\.=\@m}
 

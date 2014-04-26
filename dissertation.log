@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  24 APR 2014 16:38
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  25 APR 2014 17:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -29,25 +29,128 @@ rtation Class
 \@tablelength=\skip49
 \c@figure=\count86
 \c@table=\count87
-) (./dissertation.aux (./frontmatter.aux) (./ch1.aux) (./ch2.aux)
-(./ch3.aux) (./ch4.aux) (./ch5.aux) (./ch6.aux))
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count88
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip50
+\bibsep=\skip51
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count89
+)
+(./dissertation.aux (./frontmatter.aux) (./ch1.aux) (./ch2.aux) (./ch3.aux)
+(./ch4.aux) (./ch5.aux) (./ch6.aux))
 \openout1 = `dissertation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+
+(/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count90
+\scratchdimen=\dimen105
+\scratchbox=\box26
+\nofMPsegments=\count91
+\nofMParguments=\count92
+\everyMPshowfont=\toks15
+\MPscratchCnt=\count93
+\MPscratchDim=\dimen106
+\MPnumerator=\count94
+\makeMPintoPDFobject=\count95
+\everyMPtoPDFconversion=\toks16
+) (/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
 \openout2 = `frontmatter.aux'.
 
- (./frontmatter.tex
+
+(./frontmatter.tex
 Underfull \hbox (badness 10000) in paragraph at lines 28--28
 
  []
@@ -63,11 +166,16 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 28.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 28.
- [3] [4] [5] (./dissertation.toc [6])
+ [3] [4] [5] (./dissertation.toc)
 \tf@toc=\write3
 \openout3 = `dissertation.toc'.
 
- [7] [8] [9] [10] [11])
+ [6] (./dissertation.lof)
+\tf@lof=\write4
+\openout4 = `dissertation.lof'.
+
+ [7] [8] [9]
+[10] [11])
 \openout2 = `ch1.aux'.
 
  (./ch1.tex
@@ -81,22 +189,74 @@ Chapter 1.
 
  (./ch2.tex
 Chapter 2.
-
-Overfull \hbox (20.46672pt too wide) in paragraph at lines 6--7
-\OT1/cmr/m/n/12 nals of in-ter-est to seis-mol-ogy and earth-quake en-gi-neer-i
-ng [[]].
- []
-
 [3
 
 
 
-] [4]) [5]
+]
+Overfull \hbox (3.27866pt too wide) in paragraph at lines 10--11
+[]\OT1/cmr/m/n/12 The prob-lems as-so-ci-ated with the dou-ble in-te-gra-tion o
+f ac-celerom-e-ter record-
+ []
+
+Package epstopdf Info: Source file: <./figures/iwt009.eps>
+(epstopdf)                    date: 2014-04-25 16:30:36
+(epstopdf)                    size: 471732 bytes
+(epstopdf)             Output file: <./figures/iwt009-eps-converted-to.pdf>
+(epstopdf)                    date: 2014-04-25 16:33:49
+(epstopdf)                    size: 135032 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figures/iwt009-eps-conve
+rted-to.pdf ./figures/iwt009.eps>
+(epstopdf)             \includegraphics on input line 14.
+Package epstopdf Info: Output file is already uptodate.
+<./figures/iwt009-eps-converted-to.pdf, id=50, 578.16pt x 433.62pt>
+File: ./figures/iwt009-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./figures/iwt009-eps-converted-to.pdf>
+Package pdftex.def Info: ./figures/iwt009-eps-converted-to.pdf used on input li
+ne 14.
+(pdftex.def)             Requested size: 414.97685pt x 311.23354pt.
+ [4] [5 <./figures/iwt009-eps-converted-to.pdf>] [6]
+Package epstopdf Info: Source file: <./figures/iwt009bl.eps>
+(epstopdf)                    date: 2014-04-25 16:30:36
+(epstopdf)                    size: 100673 bytes
+(epstopdf)             Output file: <./figures/iwt009bl-eps-converted-to.pdf>
+(epstopdf)                    date: 2014-04-25 16:34:10
+(epstopdf)                    size: 47922 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figures/iwt009bl-eps-con
+verted-to.pdf ./figures/iwt009bl.eps>
+(epstopdf)             \includegraphics on input line 35.
+Package epstopdf Info: Output file is already uptodate.
+
+<./figures/iwt009bl-eps-converted-to.pdf, id=104, 730.73pt x 342.27875pt>
+File: ./figures/iwt009bl-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./figures/iwt009bl-eps-converted-to.pdf>
+Package pdftex.def Info: ./figures/iwt009bl-eps-converted-to.pdf used on input 
+line 35.
+(pdftex.def)             Requested size: 414.97685pt x 194.38016pt.
+
+
+Package natbib Warning: Citation `2007' on page 7 undefined on input line 42.
+
+[7 <./figures/iwt009bl-eps-converted-to.pdf>]
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ° in font cmr12!
+ [8] [9]
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ™ in font cmr12!
+ [10]
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ™ in font cmr12!
+ [11]) [12]
 \openout2 = `ch3.aux'.
 
- (./ch3.tex
+
+(./ch3.tex
 Chapter 3.
-) [6
+) [13
 
 
 
@@ -105,7 +265,7 @@ Chapter 3.
 
  (./ch4.tex
 Chapter 4.
-) [7
+) [14
 
 
 
@@ -114,7 +274,7 @@ Chapter 4.
 
  (./ch5.tex
 Chapter 5.
-) [8
+) [15
 
 
 
@@ -123,31 +283,47 @@ Chapter 5.
 
  (./ch6.tex
 Chapter 6.
-) [9
+) [16
 
 
 
-] (./dissertation.bbl) [10
+] (./dissertation.bbl [17
 
 
-] (./dissertation.aux (./frontmatter.aux)
-(./ch1.aux) (./ch2.aux) (./ch3.aux) (./ch4.aux) (./ch5.aux) (./ch6.aux)) ) 
+]
+Missing character: There is no â in font cmti12!
+Missing character: There is no € in font cmti12!
+Missing character: There is no “ in font cmti12!
+ [18]
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no “ in font cmr12!
+)
+
+Package natbib Warning: There were undefined citations.
+
+[19] (./dissertation.aux (./frontmatter.aux) (./ch1.aux) (./ch2.aux) (./ch3.aux
+) (./ch4.aux) (./ch5.aux) (./ch6.aux)) ) 
 Here is how much of TeX's memory you used:
- 384 strings out of 493315
- 4092 string characters out of 6137904
- 64191 words of memory out of 5000000
- 3857 multiletter control sequences out of 15000+600000
+ 2049 strings out of 493315
+ 28488 string characters out of 6137904
+ 93616 words of memory out of 5000000
+ 5447 multiletter control sequences out of 15000+600000
  8847 words of font info for 31 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 26i,7n,24p,1452b,240s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr
-/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/
-local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/lo
-cal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on dissertation.pdf (21 pages, 73939 bytes).
+ 38i,7n,26p,1913b,240s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2013/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2013/texmf-dist/font
+s/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2013/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2013/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2013/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmti12.pfb>
+Output written on dissertation.pdf (30 pages, 299810 bytes).
 PDF statistics:
- 84 PDF objects out of 1000 (max. 8388607)
- 57 compressed objects within 1 object stream
+ 219 PDF objects out of 1000 (max. 8388607)
+ 104 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

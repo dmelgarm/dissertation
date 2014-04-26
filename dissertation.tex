@@ -1,6 +1,9 @@
 %Diego's doctoral dissertation, no biggie...
 
 \documentclass[12pt,chapterheads]{ucsd}
+\usepackage{graphicx}
+\usepackage[round]{natbib}
+\def\newblock{\hskip .11em plus .33em minus .07em}
 
 \begin{document}
 
@@ -13,20 +16,10 @@
 \include{ch5}
 \include{ch6}
 
-
-
-
-
-
-
-
-
-
 %% END MATTER
-% \printindex %% Uncomment to display the index
-% \nocite{}  %% Put any references that you want to include in the bib 
-%               but haven't cited in the braces.
-\bibliographystyle{apalike}  %% This is just my personal favorite style. 
+\def\newblock{\hskip .11em plus .33em minus .07em}
+\ssp
+\bibliographystyle{apa}  %% This is just my personal favorite style. 
 \bibliography{refs} 
 
 \end{document}

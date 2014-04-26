@@ -2,6 +2,7 @@
 \contentsline {frontmatter}{\numberline {}Dedication}{iv}
 \contentsline {frontmatter}{\numberline {}Epigraph}{v}
 \contentsline {frontmatter}{\numberline {}Table of Contents}{vi}
+\contentsline {frontmatter}{\numberline {}List of Figures}{vii}
 \contentsline {frontmatter}{\numberline {}Acknowledgements}{viii}
 \contentsline {frontmatter}{\numberline {}Vita and Publications}{ix}
 \contentsline {frontmatter}{\numberline {}Abstract of the Dissertation}{xi}
@@ -11,28 +12,13 @@
 \contentsline {section}{\numberline {1.2}Geodesy and Seismology}{2}
 \contentsline {section}{\numberline {1.3}Earthquake and Tsunami Hazards}{2}
 \contentsline {chapter}{\numberline {Chapter\nobreakspace {}2}Seismogeodesy and Strong Motion Sensing}{3}
-\contentsline {section}{\numberline {2.1}Strong Motion Sensing}{3}
-\contentsline {subsection}{\numberline {2.1.1}More Stuff}{5}
-\contentsline {section}{\numberline {2.2}Geodesy and Seismology}{5}
-\contentsline {section}{\numberline {2.3}Earthquake and Tsunami Hazards}{5}
-\contentsline {chapter}{\numberline {Chapter\nobreakspace {}3}Rapid Static Modeling}{6}
-\contentsline {section}{\numberline {3.1}A section}{6}
-\contentsline {subsection}{\numberline {3.1.1}More Stuff}{6}
-\contentsline {section}{\numberline {3.2}Geodesy and Seismology}{6}
-\contentsline {section}{\numberline {3.3}Earthquake and Tsunami Hazards}{6}
-\contentsline {chapter}{\numberline {Chapter\nobreakspace {}4}Kinematic Source Inversions}{7}
-\contentsline {section}{\numberline {4.1}A section}{7}
-\contentsline {subsection}{\numberline {4.1.1}More Stuff}{7}
-\contentsline {section}{\numberline {4.2}Geodesy and Seismology}{7}
-\contentsline {section}{\numberline {4.3}Earthquake and Tsunami Hazards}{7}
-\contentsline {chapter}{\numberline {Chapter\nobreakspace {}5}Offshore Data and Tsunami Modeling}{8}
-\contentsline {section}{\numberline {5.1}A section}{8}
-\contentsline {subsection}{\numberline {5.1.1}More Stuff}{8}
-\contentsline {section}{\numberline {5.2}Geodesy and Seismology}{8}
-\contentsline {section}{\numberline {5.3}Earthquake and Tsunami Hazards}{8}
-\contentsline {chapter}{\numberline {Chapter\nobreakspace {}6}Conclusions and Future Outlook}{9}
-\contentsline {section}{\numberline {6.1}A section}{9}
-\contentsline {subsection}{\numberline {6.1.1}More Stuff}{9}
-\contentsline {section}{\numberline {6.2}Geodesy and Seismology}{9}
-\contentsline {section}{\numberline {6.3}Earthquake and Tsunami Hazards}{9}
-\contentsline {backmatter}{Bibliography}{10}
+\contentsline {section}{\numberline {2.1}Strong Motion Seismology}{3}
+\contentsline {section}{\numberline {2.2}The role of GPS}{9}
+\contentsline {chapter}{\numberline {Chapter\nobreakspace {}3}Rapid Static Modeling}{13}
+\contentsline {section}{\numberline {3.1}A section}{13}
+\contentsline {chapter}{\numberline {Chapter\nobreakspace {}4}Kinematic Source Inversions}{14}
+\contentsline {section}{\numberline {4.1}A section}{14}
+\contentsline {chapter}{\numberline {Chapter\nobreakspace {}5}Offshore Data and Tsunami Modeling}{15}
+\contentsline {section}{\numberline {5.1}A section}{15}
+\contentsline {chapter}{\numberline {Chapter\nobreakspace {}6}Conclusions and Future Outlook}{16}
+\contentsline {section}{\numberline {6.1}A section}{16}

@@ -1,59 +1,148 @@
 \begin{thebibliography}{}
 
-\bibitem[Boore, 1999]{Boore1999}
+\bibitem[\protect\astroncite{Blewitt}{1989}]{Blewitt1989}
+Blewitt, G. (1989).
+\newblock Carrier phase ambiguity resolution for the global positioning system
+  applied to geodetic baselines up to 2000 kilometers.
+\newblock {\em Journal of Geophysical Research}, 94:10187--10203.
+
+\bibitem[\protect\astroncite{Bock et~al.}{2004}]{Bock2004}
+Bock, Y., Prawirodirdjo, L., and Melbourne, T. (2004).
+\newblock Detection of arbitrarily large dynamic ground motions with a dense
+  high-rate gps network.
+\newblock {\em Geophysical Research Letters}, 31.
+
+\bibitem[\protect\astroncite{Boore}{1999}]{Boore1999}
 Boore, D.~M. (1999).
 \newblock Effect of baseline corrections on response spectra for two recordings
   of the 1999 chi-chi, taiwan, earthquake.
 \newblock {\em U.S. Geol. Surv. Open-File Rept.}, 99(545):1--37.
 
-\bibitem[Boore, 2001]{Boore2001}
+\bibitem[\protect\astroncite{Boore}{2001}]{Boore2001}
 Boore, D.~M. (2001).
 \newblock Effect of baseline corrections on displacements and response spectra
   for several recordings of the 1999 chi-chi, taiwan, earthquake.
 \newblock {\em Bulletin of the Seismological Society of America},
   91(5):1199--1211.
 
-\bibitem[Boore et~al., 2002]{Boore2002}
+\bibitem[\protect\astroncite{Boore and Bommer}{2005}]{Boore2005}
+Boore, D.~M. and Bommer, J.~J. (2005).
+\newblock Processing of strong-motion accelerograms: needs, options and
+  consequences.
+\newblock {\em Soil Dynamics and Earthquake Engineering}, 25(2):93--115.
+
+\bibitem[\protect\astroncite{Boore et~al.}{2002}]{Boore2002}
 Boore, D.~M., Stephens, C.~D., and Joyner, W.~B. (2002).
 \newblock Comments on baseline correction of digital strong-motion data:
   Examples from the 1999 hector mine, california, earthquake.
 \newblock {\em Bulletin of the Seismological Society of America},
   92(4):1543--1560.
 
-\bibitem[Graizer, 1979]{Graizer1979}
-Graizer, V. (1979).
+\bibitem[\protect\astroncite{Chao et~al.}{2010}]{Chao2010}
+Chao, W.-A., Wu, Y.-M., and Zhao, L. (2010).
+\newblock An automatic scheme for baseline correction of strong-motion records
+  in coseismic deformation determination.
+\newblock {\em Journal of seismology}, 14(3):495--504.
+
+\bibitem[\protect\astroncite{Dong and Bock}{1989}]{Dong1989}
+Dong, D. and Bock, Y. (1989).
+\newblock Global positioning system network analysis with phase ambiguity
+  resolution applied to crustal deformation studies in california.
+\newblock {\em Journal of Geophysical Research}, 94:3949--3966.
+
+\bibitem[\protect\astroncite{Graizer}{1979}]{Graizer1979}
+Graizer, V.~M. (1979).
 \newblock Determination of the true ground displacement by using strong motion
   records.
 \newblock {\em Izvestiya Academy of Sciences, USSR, Physics of the Solid
   Earth}, 15(12):875--885.
 
-\bibitem[Graizer, 2006]{Graizer2006}
-Graizer, V. (2006).
+\bibitem[\protect\astroncite{Graizer}{2006}]{Graizer2006}
+Graizer, V.~M. (2006).
 \newblock Tilts in strong ground motion.
 \newblock {\em Bulletin of the Seismological Society of America},
   96(6):2090--2102.
 
-\bibitem[Havskov and Alguacil, 2006]{Havskov2006}
+\bibitem[\protect\astroncite{Havskov and Alguacil}{2006}]{Havskov2006}
 Havskov, J. and Alguacil, G. (2006).
 \newblock {\em Instrumentation in Earthquake Seismology}.
 \newblock Springer, New York, NY, first edition.
 
-\bibitem[Iwan et~al., 1985]{Iwan1985}
+\bibitem[\protect\astroncite{Iwan et~al.}{1985}]{Iwan1985}
 Iwan, W.~D., Moser, M.~A., and Peng, C.-Y. (1985).
 \newblock Some observations on strong-motion earthquake measurement using a
   digital accelerograph.
 \newblock {\em Bulletin of the Seismological Society of America},
   75(5):1225--1246.
 
-\bibitem[Pillet and Virieux, 2007]{Pillet2007}
+\bibitem[\protect\astroncite{Larson et~al.}{2003}]{Larson2003}
+Larson, K.~M., Bodin, P., and Gomberg, J. (2003).
+\newblock Using 1-hz gps data to measure deformations caused by the denali
+  fault earthquake.
+\newblock {\em Science}, 300(5624):1421--1424.
+
+\bibitem[\protect\astroncite{Miyazaki et~al.}{2004}]{Miyazaki2004}
+Miyazaki, S., Larson, K.~M., Choi, K., Hikima, K., Koketsu, K., Bodin, P.,
+  Haase, J., Emore, G., and Yamagiwa, A. (2004).
+\newblock Modeling the rupture process of the 2003 september 25 tokachi-oki
+  (hokkaido) earthquake using 1-hz gps data.
+\newblock {\em Geophysical Research Letters}, 31(L21603).
+
+\bibitem[\protect\astroncite{Nikolaidis et~al.}{2001}]{Nikolaidis2001}
+Nikolaidis, R.~M., Bock, Y., Jonge, P.~J., Shearer, P., Agnew, D.~C., and
+  Van~Domselaar, M. (2001).
+\newblock Seismic wave observations with the global positioning system.
+\newblock {\em Journal of Geophysical Research: Solid Earth (1978–2012)},
+  106(B10):21897--21916.
+
+\bibitem[\protect\astroncite{Pillet and Virieux}{2007}]{Pillet2007}
 Pillet, R. and Virieux, J. (2007).
 \newblock The effects of seismic rotations on inertial sensors.
 \newblock {\em Geophysical Journal International}, 171(3):1314--1323.
 
-\bibitem[Smyth and Wu, 2007]{Smyth2007}
+\bibitem[\protect\astroncite{Smyth and Wu}{2007}]{Smyth2007}
 Smyth, A. and Wu, M. (2007).
 \newblock Multi-rate kalman filtering for the data fusion of displacement and
   acceleration response measurements in dynamic system monitoring.
 \newblock {\em Mechanical Systems and Signal Processing}, 21(2):706--723.
+
+\bibitem[\protect\astroncite{Trifunac and Todorovska}{2001}]{Trifunac2001}
+Trifunac, M.~D. and Todorovska, M.~I. (2001).
+\newblock A note on the useable dynamic range of accelerographs recording
+  translation.
+\newblock {\em Soil Dynamics and Earthquake Engineering}, 21(4):275 -- 286.
+
+\bibitem[\protect\astroncite{Tsuda et~al.}{2006}]{Tsuda2006}
+Tsuda, K., Steidl, J., Archuleta, R., and Assimaki, D. (2006).
+\newblock Site-response estimation for the 2003 miyagi-oki earthquake sequence
+  considering nonlinear site response.
+\newblock {\em Bulletin of the Seismological Society of America},
+  96(4A):1474--1482.
+
+\bibitem[\protect\astroncite{Wang et~al.}{2013}]{Wang2013}
+Wang, R., Parolai, S., Ge, M., Jin, M., Walter, T.~R., and Zschau, J. (2013).
+\newblock The 2011 mw 9.0 tohoku earthquake: Comparison of gps and strong
+  motion data.
+\newblock {\em Bulletin of the Seismological Society of America},
+  103(2B):1336--1347.
+
+\bibitem[\protect\astroncite{Wang et~al.}{2011}]{Wang2011}
+Wang, R., Schurr, B., Milkereit, C., Shao, Z., and Jin, M. (2011).
+\newblock An improved automatic scheme for empirical baseline correction of
+  digital strong-motion records.
+\newblock {\em Bulletin of the Seismological Society of America},
+  101(5):2029--2044.
+
+\bibitem[\protect\astroncite{Wu and Wu}{2007}]{Wu2007}
+Wu, Y.-M. and Wu, C.-F. (2007).
+\newblock Approximate recovery of coseismic deformation from taiwan
+  strong-motion records.
+\newblock {\em Journal of seismology}, 11(2):159--170.
+
+\bibitem[\protect\astroncite{Zumberge et~al.}{1997}]{Zumberge1997}
+Zumberge, J.~F., Heflin, M.~B., Jefferson, D.~C., and M, W.~M. (1997).
+\newblock Precise point positioning for the efficient and robust analysis of
+  gps data from large networks.
+\newblock {\em Journal of Geophysical Research}, 102:5005–5017.
 
 \end{thebibliography}
