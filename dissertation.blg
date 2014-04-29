@@ -10,46 +10,44 @@ A level-1 auxiliary file: ch5.aux
 A level-1 auxiliary file: ch6.aux
 The style file: apa.bst
 Database file #1: refs.bib
-Warning--I didn't find a database entry for "2007"
-You've used 23 entries,
+You've used 37 entries,
             1940 wiz_defined-function locations,
-            647 strings with 8043 characters,
-and the built_in function-call counts, 9767 in all, are:
-= -- 926
-> -- 404
-< -- 12
-+ -- 146
-- -- 136
-* -- 942
-:= -- 1686
-add.period$ -- 69
-call.type$ -- 23
-change.case$ -- 183
-chr.to.int$ -- 23
-cite$ -- 23
-duplicate$ -- 320
-empty$ -- 692
-format.name$ -- 173
-if$ -- 1895
-int.to.chr$ -- 1
+            735 strings with 10739 characters,
+and the built_in function-call counts, 15523 in all, are:
+= -- 1479
+> -- 657
+< -- 20
++ -- 237
+- -- 222
+* -- 1472
+:= -- 2683
+add.period$ -- 111
+call.type$ -- 37
+change.case$ -- 293
+chr.to.int$ -- 36
+cite$ -- 37
+duplicate$ -- 527
+empty$ -- 1076
+format.name$ -- 275
+if$ -- 2999
+int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 24
-newline$ -- 118
-num.names$ -- 69
-pop$ -- 128
+missing$ -- 41
+newline$ -- 188
+num.names$ -- 111
+pop$ -- 225
 preamble$ -- 1
-purify$ -- 183
+purify$ -- 296
 quote$ -- 0
-skip$ -- 244
+skip$ -- 405
 stack$ -- 0
-substring$ -- 796
-swap$ -- 46
-text.length$ -- 0
+substring$ -- 1194
+swap$ -- 89
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 136
+type$ -- 214
 warning$ -- 0
-while$ -- 66
+while$ -- 110
 width$ -- 0
-write$ -- 302
-(There was 1 warning)
+write$ -- 483

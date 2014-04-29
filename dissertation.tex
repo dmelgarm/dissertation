@@ -2,11 +2,19 @@
 
 \documentclass[12pt,chapterheads]{ucsd}
 \usepackage{graphicx}
+\usepackage{amsmath}
 \usepackage[round]{natbib}
 \def\newblock{\hskip .11em plus .33em minus .07em}
 
-\begin{document}
+%This makes the citation names appear in italics
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\NAT@test}{\else\NAT@nm}{\else\NAT@nmfmt{\NAT@nm}}{}{}
+\let\NAT@up\itshape
+\makeatother
+%%%%%%%%
 
+\begin{document}
 
 \include{frontmatter}
 \include{ch1}

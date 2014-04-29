@@ -2,10 +2,11 @@
 \contentsline {frontmatter}{\numberline {}Dedication}{iv}
 \contentsline {frontmatter}{\numberline {}Epigraph}{v}
 \contentsline {frontmatter}{\numberline {}Table of Contents}{vi}
-\contentsline {frontmatter}{\numberline {}List of Figures}{vii}
-\contentsline {frontmatter}{\numberline {}Acknowledgements}{viii}
-\contentsline {frontmatter}{\numberline {}Vita and Publications}{ix}
-\contentsline {frontmatter}{\numberline {}Abstract of the Dissertation}{xi}
+\contentsline {frontmatter}{\numberline {}List of Figures}{viii}
+\contentsline {frontmatter}{\numberline {}List of Tables}{ix}
+\contentsline {frontmatter}{\numberline {}Acknowledgements}{x}
+\contentsline {frontmatter}{\numberline {}Vita and Publications}{xi}
+\contentsline {frontmatter}{\numberline {}Abstract of the Dissertation}{xiii}
 \contentsline {chapter}{\numberline {Chapter\nobreakspace {}1}Introduction}{1}
 \contentsline {section}{\numberline {1.1}Early Warning and Rapid Response in Natural Hazards}{1}
 \contentsline {subsection}{\numberline {1.1.1}More Stuff}{1}
@@ -13,12 +14,20 @@
 \contentsline {section}{\numberline {1.3}Earthquake and Tsunami Hazards}{2}
 \contentsline {chapter}{\numberline {Chapter\nobreakspace {}2}Seismogeodesy and Strong Motion Sensing}{3}
 \contentsline {section}{\numberline {2.1}Strong Motion Seismology}{3}
-\contentsline {section}{\numberline {2.2}The role of GPS}{9}
-\contentsline {chapter}{\numberline {Chapter\nobreakspace {}3}Rapid Static Modeling}{13}
-\contentsline {section}{\numberline {3.1}A section}{13}
-\contentsline {chapter}{\numberline {Chapter\nobreakspace {}4}Kinematic Source Inversions}{14}
-\contentsline {section}{\numberline {4.1}A section}{14}
-\contentsline {chapter}{\numberline {Chapter\nobreakspace {}5}Offshore Data and Tsunami Modeling}{15}
-\contentsline {section}{\numberline {5.1}A section}{15}
-\contentsline {chapter}{\numberline {Chapter\nobreakspace {}6}Conclusions and Future Outlook}{16}
-\contentsline {section}{\numberline {6.1}A section}{16}
+\contentsline {section}{\numberline {2.2}The role of GPS}{10}
+\contentsline {subsection}{\numberline {2.2.1}Displacements in a Local Reference Frame}{13}
+\contentsline {section}{\numberline {2.3}Seismogeodesy}{14}
+\contentsline {subsection}{\numberline {2.3.1}The Kalman Filter Formulation}{15}
+\contentsline {subsection}{\numberline {2.3.2}Optimal Smoothing}{19}
+\contentsline {subsection}{\numberline {2.3.3}Accelerometer Biases}{21}
+\contentsline {section}{\numberline {2.4}Proof of Concept}{22}
+\contentsline {subsection}{\numberline {2.4.1}Outdoor shake table testing}{23}
+\contentsline {section}{\numberline {2.5}Application to the M9 Tohoku-oki Earthquake}{25}
+\contentsline {chapter}{\numberline {Chapter\nobreakspace {}3}Rapid Static Modeling}{26}
+\contentsline {section}{\numberline {3.1}A section}{26}
+\contentsline {chapter}{\numberline {Chapter\nobreakspace {}4}Kinematic Source Inversions}{27}
+\contentsline {section}{\numberline {4.1}A section}{27}
+\contentsline {chapter}{\numberline {Chapter\nobreakspace {}5}Offshore Data and Tsunami Modeling}{28}
+\contentsline {section}{\numberline {5.1}A section}{28}
+\contentsline {chapter}{\numberline {Chapter\nobreakspace {}6}Conclusions and Future Outlook}{29}
+\contentsline {section}{\numberline {6.1}A section}{29}

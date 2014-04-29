@@ -6,6 +6,13 @@ Blewitt, G. (1989).
   applied to geodetic baselines up to 2000 kilometers.
 \newblock {\em Journal of Geophysical Research}, 94:10187--10203.
 
+\bibitem[\protect\astroncite{Bock et~al.}{2000}]{bock2000}
+Bock, Y., Nikolaidis, R.~M., Jonge, P.~J., and Bevis, M. (2000).
+\newblock Instantaneous geodetic positioning at medium distances with the
+  global positioning system.
+\newblock {\em Journal of Geophysical Research: Solid Earth (1978--2012)},
+  105(B12):28223--28253.
+
 \bibitem[\protect\astroncite{Bock et~al.}{2004}]{Bock2004}
 Bock, Y., Prawirodirdjo, L., and Melbourne, T. (2004).
 \newblock Detection of arbitrarily large dynamic ground motions with a dense
@@ -44,11 +51,50 @@ Chao, W.-A., Wu, Y.-M., and Zhao, L. (2010).
   in coseismic deformation determination.
 \newblock {\em Journal of seismology}, 14(3):495--504.
 
+\bibitem[\protect\astroncite{Crowell et~al.}{2009}]{Crowell2009}
+Crowell, B.~W., Bock, Y., and Squibb, M. (2009).
+\newblock Demonstration of earthquake early warning using total displacement
+  waveforms from real time gps networks.
+\newblock {\em Seismological Research Letters}, 80:772--782.
+
 \bibitem[\protect\astroncite{Dong and Bock}{1989}]{Dong1989}
 Dong, D. and Bock, Y. (1989).
 \newblock Global positioning system network analysis with phase ambiguity
   resolution applied to crustal deformation studies in california.
 \newblock {\em Journal of Geophysical Research}, 94:3949--3966.
+
+\bibitem[\protect\astroncite{Emore et~al.}{2007}]{emore2007}
+Emore, G.~L., Haase, J.~S., Choi, K., Larson, K.~M., and Yamagiwa, A. (2007).
+\newblock Recovering seismic displacements through combined use of 1-hz gps and
+  strong-motion accelerometers.
+\newblock {\em Bulletin of the Seismological Society of America},
+  97(2):357--378.
+
+\bibitem[\protect\astroncite{Geng}{2010}]{Geng2010}
+Geng, J. (2010).
+\newblock {\em Rapid integer ambiguity resolution in GPS precise point
+  positioning}.
+\newblock PhD thesis, University of Nottingham, Nottingham, UK.
+
+\bibitem[\protect\astroncite{Geng et~al.}{2013a}]{Geng2013}
+Geng, J., Bock, Y., Melgar, D., Crowell, B.~W., and Haase, J.~S. (2013a).
+\newblock A new seismogeodetic approach applied to gps and accelerometer
+  observations of the 2012 brawley seismic swarm: Implications for earthquake
+  early warning.
+\newblock {\em Geochemistry, Geophysics, Geosystems}.
+
+\bibitem[\protect\astroncite{Geng et~al.}{2013b}]{Geng2013b}
+Geng, J., Melgar, D., Bock, Y., Pantoli, E., and Restrepo, J. (2013b).
+\newblock Recovering coseismic point ground tilts from collocated high‐rate
+  gps and accelerometers.
+\newblock {\em Geophysical Research Letters}, 40(19):5095--5100.
+
+\bibitem[\protect\astroncite{Genrich and Bock}{2006}]{genrich2006}
+Genrich, J.~F. and Bock, Y. (2006).
+\newblock Instantaneous geodetic positioning with 10--50 hz gps measurements:
+  Noise characteristics and implications for monitoring networks.
+\newblock {\em Journal of Geophysical Research: Solid Earth (1978--2012)},
+  111(B3).
 
 \bibitem[\protect\astroncite{Graizer}{1979}]{Graizer1979}
 Graizer, V.~M. (1979).
@@ -75,11 +121,22 @@ Iwan, W.~D., Moser, M.~A., and Peng, C.-Y. (1985).
 \newblock {\em Bulletin of the Seismological Society of America},
   75(5):1225--1246.
 
+\bibitem[\protect\astroncite{Kalman}{1960}]{kalman1960}
+Kalman, R.~E. (1960).
+\newblock A new approach to linear filtering and prediction problems.
+\newblock {\em Journal of basic Engineering}, 82(1):35--45.
+
 \bibitem[\protect\astroncite{Larson et~al.}{2003}]{Larson2003}
 Larson, K.~M., Bodin, P., and Gomberg, J. (2003).
 \newblock Using 1-hz gps data to measure deformations caused by the denali
   fault earthquake.
 \newblock {\em Science}, 300(5624):1421--1424.
+
+\bibitem[\protect\astroncite{Lewis et~al.}{2008}]{lewis2008}
+Lewis, F.~L., Xie, L., and Popa, D. (2008).
+\newblock {\em Optimal and robust estimation: with an introduction to
+  stochastic control theory}, volume~26.
+\newblock CRC.
 
 \bibitem[\protect\astroncite{Miyazaki et~al.}{2004}]{Miyazaki2004}
 Miyazaki, S., Larson, K.~M., Choi, K., Hikima, K., Koketsu, K., Bodin, P.,
@@ -88,17 +145,39 @@ Miyazaki, S., Larson, K.~M., Choi, K., Hikima, K., Koketsu, K., Bodin, P.,
   (hokkaido) earthquake using 1-hz gps data.
 \newblock {\em Geophysical Research Letters}, 31(L21603).
 
+\bibitem[\protect\astroncite{Moaveni et~al.}{2010}]{moaveni2010}
+Moaveni, B., He, X., Conte, J.~P., Restrepo, J.~I., and Panagiotou, M. (2010).
+\newblock System identification study of a 7-story full-scale building slice
+  tested on the ucsd-nees shake table.
+\newblock {\em Journal of Structural Engineering}, 137(6):705--717.
+
 \bibitem[\protect\astroncite{Nikolaidis et~al.}{2001}]{Nikolaidis2001}
 Nikolaidis, R.~M., Bock, Y., Jonge, P.~J., Shearer, P., Agnew, D.~C., and
   Van~Domselaar, M. (2001).
 \newblock Seismic wave observations with the global positioning system.
-\newblock {\em Journal of Geophysical Research: Solid Earth (1978–2012)},
+\newblock {\em Journal of Geophysical Research: Solid Earth (1978--2012)},
   106(B10):21897--21916.
+
+\bibitem[\protect\astroncite{Panagiotou}{2008}]{panagiotou2008}
+Panagiotou, M. (2008).
+\newblock {\em Seismic design, testing and analysis of reinforced concrete wall
+  buildings}, volume PhD Thesis.
+\newblock University of California San Diego.
 
 \bibitem[\protect\astroncite{Pillet and Virieux}{2007}]{Pillet2007}
 Pillet, R. and Virieux, J. (2007).
 \newblock The effects of seismic rotations on inertial sensors.
 \newblock {\em Geophysical Journal International}, 171(3):1314--1323.
+
+\bibitem[\protect\astroncite{Rauch et~al.}{1965}]{rauch1965}
+Rauch, H.~E., Striebel, C., and Tung, F. (1965).
+\newblock Maximum likelihood estimates of linear dynamic systems.
+\newblock {\em AIAA journal}, 3(8):1445--1450.
+
+\bibitem[\protect\astroncite{Smalley}{2009}]{smalley2009}
+Smalley, R. (2009).
+\newblock High-rate gps: How high do we need to go?
+\newblock {\em Seismological Research Letters}, 80(6):1054--1061.
 
 \bibitem[\protect\astroncite{Smyth and Wu}{2007}]{Smyth2007}
 Smyth, A. and Wu, M. (2007).
@@ -118,6 +197,12 @@ Tsuda, K., Steidl, J., Archuleta, R., and Assimaki, D. (2006).
   considering nonlinear site response.
 \newblock {\em Bulletin of the Seismological Society of America},
   96(4A):1474--1482.
+
+\bibitem[\protect\astroncite{Tu et~al.}{2014}]{tu2014}
+Tu, R., Wang, R., Zhang, Y., and Walter, T.~R. (2014).
+\newblock Application of a net-based baseline correction scheme to
+  strong-motion records of the 2011 mw 9.0 tohoku earthquake.
+\newblock {\em Geophysical Journal International}, page ggu092.
 
 \bibitem[\protect\astroncite{Wang et~al.}{2013}]{Wang2013}
 Wang, R., Parolai, S., Ge, M., Jin, M., Walter, T.~R., and Zschau, J. (2013).
@@ -143,6 +228,6 @@ Wu, Y.-M. and Wu, C.-F. (2007).
 Zumberge, J.~F., Heflin, M.~B., Jefferson, D.~C., and M, W.~M. (1997).
 \newblock Precise point positioning for the efficient and robust analysis of
   gps data from large networks.
-\newblock {\em Journal of Geophysical Research}, 102:5005–5017.
+\newblock {\em Journal of Geophysical Research}, 102:5005--5017.
 
 \end{thebibliography}

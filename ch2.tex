@@ -2,6 +2,8 @@
 
 \chapter{Seismogeodesy and Strong Motion Sensing}
 
+A brief summary of what is discussed in this chapter
+
 \section{Strong Motion Seismology}
 The range of motions produced by the seismic source is broad both in frequency and dynamic range. It is well known that no one sensor can capture all signals of interest to seismology and earthquake engineering \citep{Havskov2006}. Seismologists typically rely on seismometers, whose response is related to velocity of the ground, for measurement of small amplitude signals (weak motion), but for large amplitude signals these sensitive instruments saturate or clip. In this case, strong motion sensors, whose response is related to the acceleration of the ground and have lower gains, are preferred. Modern observatory grade accelerometers rely on the force feedback principle and can measure motions as small as 1 nm at 1 Hz and 100 nm at 0.1 Hz and accelerations of up to 4g. Furthermore their frequency response is flat from ) (often called the DC-level) to 50-200 Hz \citep{Havskov2006}.
 
@@ -39,15 +41,16 @@ Then, the acceleration baseline, $a_m$, is subtracted from the uncorrected recor
 
 The correction times $t_i$ and $t_1$ can and do vary for each station-event pair and even for different channels at the same station during the same event. Practically this means that analysis of broadband displacements from baseline-corrected accelerometer records is inherently ambiguous and complicated for real-time seismological applications or across large networks both for real-time and post-processing purposes.
 
-Research into automated baseline correction from accelerometer data alone has focused on variations of the BI scheme. \citet{Wu2007} proposed a variant in which the times for each linear segment of the baseline correction are determined by a grid search such that the resulting time series best matches a ramp function. \citet{Chao2010} elaborated on the formulation of \citet{2007} by adding an extra restriction that the times be selected after certain threshold values of acceleration energy have been accrued. Both studies compare their results to static offsets determined from GPS and find that their estimates are somewhat similar. They still maintain some significant differences though, and no analysis on the adequacy of the remaining part of the waveform is performed. It is implicitly assumed that if the static field is well fit then the rest of the waveform will be reliable as well.
+Research into automated baseline correction from accelerometer data alone has focused on variations of the BI scheme. \citet{Wu2007} proposed a variant in which the times for each linear segment of the baseline correction are determined by a grid search such that the resulting time series best matches a ramp function. \citet{Chao2010} elaborated on the formulation of \citet{Wu2007} by adding an extra restriction that the times be selected after certain threshold values of acceleration energy have been accrued. Both studies compare their results to static offsets determined from GPS and find that their estimates are somewhat similar. They still maintain some significant differences though, and no analysis on the adequacy of the remaining part of the waveform is performed. It is implicitly assumed that if the static field is well fit then the rest of the waveform will be reliable as well.
 
 An important advance in automatic baseline correction is presented in \citet{Wang2011} who present another variation of the BI bilinear scheme that performs better than those discussed thus far. They develop some simple rules for determination of the interval of possible correction times based on analysis of the uncorrected acceleration and displacement waveforms. From an analysis of the time at which the peak ground acceleration (PGA) occurs and the time of last zero crossing in the uncorrected displacement they determine bounds for the grid search of baseline correction times. They then perform the grid search among these possible correction times and fit, via a non-linear regression, a step function to all possible waveforms. An optimum correction (the one that best fits this step function) is then selected. Unlike previous studies they compare their results not only to measured static offsets but to observed 1 Hz GPS data; they do this for a single station. They find for that one station an error of \~20\% in the static field estimation but a very good agreement between the corrected displacement and the GPS for the first 200s of the waveform.
 
-In a follow up study \citet{Wang2013} apply their methodology to accelerometer records for the 2011 Mw 9.0 Tohoku-oki earthquake. They obtain reasonable estimates of the static field for many stations in the KiK-net network in Japan but also find numerous outliers. They then develop a simplified scheme to screen the outliers by excluding coseismic offsets that deviate more than 15Â° from the predictions of a static slip inversion. Furthermore, they compare their automatic corrections for selected borehole sensors in the KiK-net network with nearby high-rate GPS stations with mixed results. They find that while parts of the waveforms might be a good match, the static estimates can be in error by a significant amount. To ameliorate this they then propose to use the static field from nearby GPS stations as a constraint in the correction procedure. From the pool of all candidate baseline corrections they select the one that fits a step function of amplitude given by the static field. It is noteworthy that \citet{Wang2013} do not provide baseline corrected solutions for the sister strong motion network K-net. They readily acknowledge that K-net stations, which generally have less favorable site responses \citep{Tsuda2006}, are not well modeled by this automatic approach. 
+In a follow up study \citet{Wang2013} apply their methodology to accelerometer records for the 2011 Mw 9.0 Tohoku-oki earthquake. They obtain reasonable estimates of the static field for many stations in the KiK-net network in Japan but also find numerous outliers. They then develop a simplified scheme to screen the outliers by excluding coseismic offsets that deviate more than 15Â° from the predictions of a static slip inversion. Furthermore, they compare their automatic corrections for selected borehole sensors in the KiK-net network with nearby high-rate GPS stations with mixed results. They find that while parts of the waveforms might be a good match, the static estimates can be in error by a significant amount. To ameliorate this they then propose to use the static field from nearby GPS stations as a constraint in the correction procedure. From the pool of all candidate baseline corrections they select the one that fits a step function of amplitude given by the static field. In a follow up study \citet{tu2014} showed that substantial improvement was possible if corrections were correlated between neighboring stations of a dense network. It is noteworthy that \citet{Wang2013} and \citet{tu2014} and  do not provide baseline corrected solutions for the sister strong motion network K-net. They readily acknowledge that K-net stations, which generally have less favorable site responses \citep{Tsuda2006}, are not well modeled by this automatic approach. This will be important later on in this chapter when it is shown that K-net data can be corrected as well as KiK-net data. In general while these algorithms have demonstrated incremental improvements tot he original BI correction scheme they are far from being routinely applicable, objective or automatable.
 
-%Network correction
+The availability of suitable correction algorithms for strong motion waveforms that can produce broadband displacements is of broad interest especially for source analysis and hazards assessment. There has been ample interest in recent years to access to such real-time broadband displacements. Recall that it is the long periods of the seismic spectrum down to the static offset that provide the most obvious demarcation between large events. Static offsets and long period radiation can be used to rapidly compute moment tensors, source dimensions, static and kinematic source models and tsunami models. Indeed in Chapters 3,4 and 5 we will show how broadband strong motion waveforms facilitate such computations.
 
 \section{The role of GPS}
+\label{sec:gps}
 
 An alternative to baseline corrections of strong motion data is to measure displacements directly using the  Global Positioning System (GPS). There are two basic approaches to precise GPS data analysis: network positioning and precise point positioning. In both approaches stations positions are estimated with respect to a global Cartesian terrestrial reference system. This system is realized by the published coordinates and velocities of hundreds of global geodetic stations in the International Terrestrial Reference Frame (ITRF). Precise GPS satellite orbital products distributed by the International GNSS Service (IGS) are tied to this underlying reference frame, and without loss of generality, are assumed to be fixed in the GPS data analysis. 
 
@@ -55,14 +58,345 @@ In network positioning, data from a network of stations are analyzed simultaneou
 
 Network positioning and precise point positioning approaches can be considered equivalent, in terms of the underlying physics. However, to achieve geodetic quality positions (mm- to cm-level), it is essential to resolve integer-cycle phase ambiguities to their correct integer values \citep{Blewitt1989,Dong1989}. This is straightforward for batch post-processing, which includes the simultaneous analysis of multiple GPS data records, usually sampled at rates of 15-30 s, to derive a single station position over the entire sampled interval. It is the source of the typical 24-hour GPS position time series used to study permanent deformation, including long-term tectonic motion, as well as coseismic, postseismic and other transient deformation. Batch post-processing plays a role in seismological applications by providing highly-accurate, true-of-date ITRF station positions with respect to which displacement waveforms can be estimated during an event. There are several analysis groups that are producing 24-hour position time series on an operational basis.
 
-%here
 Of primary importance in seismological applications is the estimation of cm-level or better displacements at the GPS receiver sampling rate, typically 1 Hz. Since the first pioneering efforts over a decade ago \citep{Nikolaidis2001,Larson2003,Bock2004,Miyazaki2004} post-processed single-epoch network positioning with resolution of integer-cycle phase ambiguities is now routinely applied to seismology.  However, a general real-time solution is still elusive, and analysis of multiple data epochs is usually required to resolve integer-cycle phase ambiguities and estimate single-epoch positions.
-Precise point positioning has been limited in GPS seismology, in particular for real-time applications, because of unresolved integer-cycle phase ambiguities and slow convergence rates and re-convergence rates when loss of lock on the satellite signals occurs. JPLâ€™s Global Differential GPS (GDGPS) System employs a large global ground network of real-time reference receivers and real-time data processing software, which allows a single GPS receiver to be point positioned with 10-20 cm accuracy anywhere in the world. This level of accuracy is considered useful for global tsunami warning generated by great earthquakes (Bar-Sever et al., 2009). A relatively new area of geodetic research is rapid integer cycle ambiguity resolution in precise point positioning, without the need for specific reference stations. Besides fixed satellite orbits and clocks, and estimation of positions, receiver clocks and tropospheric delays of the GPS signals, it also requires prediction of ionospheric delays. Recent results have been encouraging in that reliable ambiguity resolution and cm-level positioning accuracies have been achieved with only a few epochs of 1 Hz GPS data for re-convergence, although about a 20 minute convergence period is still required (e.g., Geng 2010).
 
+In the network positioning approach typically, and for computational efficiency, the larger network is divided into multiple subnetworks with a 2-station overlap between adjacent subnetworks, and positions are estimated relative to the true-of-date ITRF coordinates of an arbitrary station within each subnetwork. Then, a network adjustment is performed to estimate coordinates for all stations with respect to the true-of-date ITRF coordinates of one or more stations outside the zone of deformation \citep{Crowell2009} easily providing centimeter level resolution.
 
+Precise point positioning has been limited in GPS seismology, in particular for real-time applications, because of unresolved integer-cycle phase ambiguities and slow convergence rates and re-convergence rates when loss of lock on the satellite signals occurs. JPL'€™s Global Differential GPS (GDGPS) System employs a large global ground network of real-time reference receivers and real-time data processing software, which allows a single GPS receiver to be point positioned with 10-20 cm accuracy anywhere in the world. This level of accuracy is considered useful for global tsunami warning generated by great earthquakes. A relatively new area of geodetic research is rapid integer cycle ambiguity resolution in precise point positioning (PPP-AR), without the need for specific reference stations. Besides fixed satellite orbits and clocks, and estimation of positions, receiver clocks and tropospheric delays of the GPS signals, it also requires prediction of ionospheric delays. Recent results have been encouraging in that reliable ambiguity resolution and cm-level positioning accuracies have been achieved with only a few epochs of 1 Hz GPS data for re-convergence. \citet{Geng2010}. It has seance been shown with a study of modestly sized earthquakes (M5) during the 2013 Brawley swarm \citep{Geng2013} and shake table tests \citep{Geng2013b} that the PPP-AR method is evolving to a state were it can be considered viable technology for real-time and rapid position calculations with cm-level precision.
 
+It is important for the reader to understand the benefits and shortcomings of these two competing technologies. The network adjusted positions have routinely provided cm-level waveforms \citep{Crowell2009}. However, they require that the base station for the adjustment be located outside the zone of deformation and that it not move during the event. Evidently this requires a large network with good connectivity and some strategy fir detecting motions of the reference station and a fall back plan to another station hat has not moved during the event. Furthermore this approach requires to convert the baselines between stations in subnetworks or triangles into absolute motions. This is essentially a solution to an inverse problem at each epoch. While this is not numerically troublesome as the number of stations increases and as sampling rates increase as well the numerical load will grow.  In contrast the PPP-AR approach does not require such a reference station (although it does rely on a sparse continental network for computation of certain positioning parameters, \citep{Geng2013} and is thus, in principle, more desirable. However ambiguity resolution might fail and convergence periods, at least initially can still be long. Throughout this dissertation data from both network adjusted and PPP-AR positions will be employed. It's not the aim of this work to assess the suitability of one technique over the other although some general recommendations will be given in the conclusions. Hence for the purpose of the research discussed both approaches will be considered equal.
 
-The availability of suitably correction algorithms for strong motion waveforms that can produce broadband displacements is of broad interest, especially for source analysis and hazards assesment.. Indeed there is ample interest in access to such real-time broadband displacements. Static offsets have been used for rapid source dimension computations [Perez-Campos et al. 2013; Crowell et al. 2013] and centroid moment tensor (CMT) determination of large sources [Melgar et al. 2012; Crowell et al., 2013]. It has been demonstrated as well that such algorithms can provide rapid descriptions of the source in a timelier and complete manner than traditional seismic data. Static slip inversions can also be computed rapidly with such data [Crowell et al. 2012, 2013; Wright et al., 2012] and ingested into rapid models of the ensuing tsunami [Ohta et al., 2012]. Except for select locales like the U.S. and Japan, Global Positioning System (GPS) networks with enough density to adequately capture large events are not as prevalent as strong motion deployments, thus extracting reliable long period information that includes the static field, from accelerometer data alone, would be very valuable. Furthermore, inversions with regional high-rate GPS data that model both the static and dynamic components of the waveform have been demonstrated for CMT determination [Oâ€™Toole et al., 2012, 2013] and kinematic slip inversions [Ji et al., 2004; Ammon et al., 2011]. However, the low sampling rates of GPS (~1-5 Hz) and its high noise levels compared to seismic data make full waveform inversions from GPS data alone suspect. Hence such inversions are usually leveraged with teleseismic data. This is unsuitable for rapid analysis of sources at regional scales and it makes access to broadband displacements, as would ostensibly be produced from baseline corrections, very appealing.
+In general GPS seems desirable over traditional seismometry for displacement computations because it is not besieged by baseline offsets because it is not an inertial sensor. This has the practical effect of making GPS a very good long and ultra-long period sensor. It can easily measure signals with very long periods, such as plate tectonic motions and post-seismic relaxation. However noise levels in high rate real-time GPS (rtGPS) displacements \citep{genrich2006} far exceed those of observatory grade accelerometers. Furthermore GPS data is far more verbose than seismic data. While a traditional telemetry packet for a seismic sensor at a given epoch might include three single or double precision floating point numbers corresponding to the three components of motion and a UTC time string, the GPS message includes observables to every visible satellite. This has limited the sampling rates of rtGPS to around 1-5$Hz$ even though 10-50$Hz$ is achievable \citep{genrich2006}. These slow sampling rates can introduce significant aliasing in GPS positions \citep{smalley2009}. In spite of these limitations, it will be shown that without GPS positions it is exceedingly difficult to recover the long period component of ground motions and that GPS plays an important role in modern strong motion seismology.
+
+\subsection{Displacements in a Local Reference Frame}
+
+Finally, it must be noted GPS positions are typically computed in a global reference frame (i.e. ITRF) in what is known as Earth centered Earth fixed coordinates. This is a right handed system where the three cartesians axes have an origin at the geodetic center of the planet, one axis points towards the geodetic pole and two towards the equator. Without loss of generality or consideration for the particular GPS analysis technique used, or whether or not performed in real time or post processing, we assume that displacement waveforms are available for a geophysical event (e.g., earthquake) for one of more continuos GPS (CGPS) stations with centimeter-level or better single-epoch precision at, for example, the typical 1 Hz sampling rate of current real-time geodetic networks. Consider that we know the precise coordinates $(x_0, y_0, z_0)$ of a CGPS station in a global Cartesian reference frame just prior to an earthquake, at time $t_0$. The prior coordinates represent ``true-of-date'' values. The station is then subjected to a combination of dynamic and static displacements. The subsequent coordinates of the station are denoted by $(x_i, y_i, z_i)$, where $i$ denotes the $i$-th epoch after the event. The displacement at the $i$-th epoch can be simply computed as $(x_i-x_0, y_i-y_0, z_i-z_0)$. In order to compare the geodetic displacements to displacements derived from a single integration of a seismometer or double integration of an accelerometer, we need to transform the displacements from a (right-handed) global Cartesian frame $(x,y,z)$ into a (left-handed) local North, East, Up frame $(N,E,U)$ by the following transformation
+\begin{equation}
+\label{eq_rot}
+\left(\begin{array}{c}
+\Delta N_i  \\
+\Delta E_i  \\
+\Delta U_i  
+\end{array}
+\right)
+=
+\left(
+\begin{array}{ccc}
+1 & 0 & 0 \\
+0 & 1 & 0 \\
+0 & 0 & 1  
+\end{array}
+\right)
+\mathbf{R}_2\left(\frac{3\pi}{2}-\phi\right)\mathbf{R}_3(\lambda)
+\left(
+\begin{array}{c}
+x_i-x_0 \\
+y_i-y_0 \\
+z_i-z_0  
+\end{array}
+\right)\;;
+\end{equation}where $\mathbf{R}_2$ and $\mathbf{R}_3$ are rotation matrices around the $y$ and $z$ axes, respectively, and $(\phi,\lambda)$ is the geodetic latitude and longitude of the station. The geodetic displacements in the $(N,E,U)$ frame can then be compared directly to local displacements derived through single integration of seismometer data or double integration of accelerometer data. Thus, Equation \ref{eq_rot} simplifies to:
+\begin{equation}
+\left(\begin{array}{c}
+\Delta N_i  \\
+\Delta E_i  \\
+\Delta U_i  
+\end{array}
+\right)
+=
+\left(
+\begin{array}{ccc}
+-\sin{\phi}\cos{\lambda}  & \sin{\phi}\sin{\lambda}  & \cos{\phi}  \\
+-\sin{\lambda}  & \cos{\lambda}  & 0  \\
+\cos{\phi}\cos{\lambda}  & \cos{\phi}\cos{\lambda}  & \sin{\phi}   
+\end{array}
+\right)
+\left(
+\begin{array}{c}
+x_i-x_0 \\
+y_i-y_0 \\
+z_i-z_0  
+\end{array}
+\right)\;.
+\end{equation}
+
+\section{Seismogeodesy}
+
+As discussed in the previous section both traditional seismometry and GPS have advantages and disadvantages when it comes to sensing strong ground motions. Most importantly GPS and strong motion networks are complementary in the sense that ones weakness can be complemented by anthers strength. In particular GPS has slow sampling rates while accelerometers have fast sampling rates; in turn accelerometers suffer from problems at long periods while GPS excels in this frequency band. Throughout this section we will show that the combination of these two sensor types provides an accurate representation of ground motion at all frequencies of interest to seismology.
+
+We define the term \textit{seismogeodesy} as the optimal combination of geodetic and seismic data. This has been attempted before, \citet{Nikolaidis2001} showed that accelerometer data could be manipulated to fit 30 s sampled data recorded during the 1999 M7.1 Hector Mine earthquake. \citet{emore2007} used 1 Hz GPS data and 100 Hz strong motion data recorded during the M8.3 Tokachi-oki event in 2003 to compute \textit{seismogeodetic} displacements. He did so by solving an inverse problem for the baseline offsets in the accelerometer record. In his approach the model parameters were the baseline offsets that when subtracted from the accelerometer record would best fit, after double integration, the GPS record. This approach yielded good results, however the setup of the inverse problem is cumbersome, int he following section we will show an alternate approach. Using a Kalman filter, we optimally combine raw very-high-rate (e.g., 100-200 Hz) accelerations with high-rate (e.g., 1-10 Hz) displacements derived from collocated GPS receivers to estimate very-high-rate displacements. This approach is suitable for dense networks and real-time processing required by early warning systems and rapid earthquake response. 
+
+\subsection{The Kalman Filter Formulation}
+\label{sec:kalman}
+In the theory of control and estimation the problem of extracting, separating or detecting a random signal in the presence of noise is known as the Wiener problem. Kalman filters are a solution to this problem using the state-space representation of dynamical systems \citep{kalman1960}. A dynamical system can be characterized by its state. The state can be understood as all the information about the past behavior of the system necessary to predict its future behavior. The dynamics of the system are then described by state transitions. If the goal is to track the motion of a particle subject to Newton's laws of motion and some stochastic noise then a simple continuos difference equation can be setup \citep{lewis2008}. The system states will be the position $d$ and velocity $v$ of the particle, such that
+\begin{equation}
+\label{eq_cont}
+\frac{d}{dt}
+\left(\begin{matrix}
+  d(t) \\
+  v(t)
+\end{matrix}\right)
+=\frac{d}{dt}\mathbf{x}(t)
+=\mathbf{A}(t)\mathbf{x}(t)+\mathbf{B}(t)u(t)+\mathbf{\epsilon}(t)\;,
+\end{equation}
+where
+\begin{equation}
+\label{eq_kalsetup}
+\mathbf{x}(t)=
+\left(\begin{matrix}
+d(t) \\
+v(t)
+\end{matrix}\right)
+\;;\;
+\mathbf{A}=
+\left(\begin{matrix}
+0 & 1 \\
+0 & 0
+\end{matrix}\right)
+\;;\;
+\mathbf{B}=
+\left(\begin{matrix}
+0 \\
+1 
+\end{matrix}\right)\;;\;u=a\;;\;\epsilon=
+\left(\begin{matrix}
+0 \\
+\epsilon_a
+\end{matrix}\right)\;,
+\end{equation}
+where $\epsilon_a$ is the noise in the acceleration of the particle at any given time step. For the traditional Kalman filter Gaussian noise is assumed and the noise vector will be distributed like $\epsilon\sim(0,\mathbf{Q})$ where the covariance $\mathbf{Q}$ depends just on the acceleration noise $\sigma_a$
+\begin{equation}
+\mathbf{Q}=\left(\begin{matrix}
+ 0 & 0\\
+ 0 & \sigma_a
+\end{matrix}\right)\;.
+\end{equation}
+We can combine Equations \ref{eq_cont} and \ref{eq_kalsetup} to verify the system
+\begin{equation}
+\frac{d}{dt}
+\left(\begin{matrix}
+  d(t) \\
+  v(t) 
+\end{matrix}\right)=
+\left(\begin{matrix}
+  \dot{d} \\
+  \dot{v} \
+\end{matrix}\right)=
+\left(\begin{matrix}
+  v\\
+  a
+\end{matrix}\right)\;.
+\end{equation}
+This definition for such a simple system seems tautological, however verifying the setup of the continuos difference equation will be important later on when we build extra complexities into the filter. Next we must discretize this continuous representation of the system such that
+\begin{equation}
+\mathbf{x}_{k+1}=\mathbf{A}^s\mathbf{x}_k+\mathbf{B}^sa_k+\epsilon_k\;,
+\end{equation}
+where the superscript $s$ denotes the discretized or sampled version of the state transition matrices and the subscript $k$ denotes a discrete time step. The discretized noise vector is Gaussian and distributed like $\epsilon_k\sim(0,\mathbf{Q}^s)$. If we sample the continuous system at the sampling rate $\tau_a$ of the acceleration steps affecting the system then the state transition matrices are altered. From the canonical solution to Equation \ref{eq_cont} \citet{lewis2008} show that the state transition matrices are obtained by a MacLaurin expansion of the integral forms such that
+\begin{equation}
+\mathbf{A}^s=\mathbf{I}+\mathbf{A}\tau_a+\frac{\mathbf{A}^2\tau^2}{2}=\left(\begin{matrix}
+1 & \tau_a \\
+0 & 1\end{matrix}\right)\;,
+\end{equation}
+\begin{equation}
+\mathbf{B}^s=\mathbf{B}\tau_a+\frac{\mathbf{A}\mathbf{B}\tau_a^2}{2}=\left(\begin{matrix}
+\tau^2_a/2 \\
+\tau_a\end{matrix}\right)\;,
+\end{equation}
+\begin{equation}
+\mathbf{Q}^s=\mathbf{Q}\tau_a+\frac{1}{2}(\mathbf{AQ}+\mathbf{QA}^T)\tau_a^2+\frac{1}{3}\mathbf{AQA}^T\tau^3_a=\left(\begin{matrix}
+\sigma_a\tau_a^3/3 & \sigma_a\tau_a^2/2  \\
+\sigma_a\tau_a^2/2 & \sigma_a\tau_a
+\end{matrix}\right)\;.
+\end{equation}
+This completes the description of the linear system. The Kalman filter is the sequence of mathematical manipulations necessary to estimate the state $\mathbf{x}_k$ of the system at each time step $k$ given the noisy accelerations affecting the system. The formulation of the filter begins by introducing a measurement of the system states, that, unlike the transition matrices, are not altered by the discretization process \citep{lewis2008}. Assuming we are measuring only displacement this can be written like
+\begin{equation}
+z_k=d^{obs}_k=\mathbf{H}^s\mathbf{x}_k+\eta_d\;,
+\end{equation}
+where $d_k^{obs}$ is the GPS measurement of displacement at epoch $k$ with white Gaussian noise such that $\eta_d\sim(0,R^s)$. Sampling at the rate of the GPS, $\tau_d$ the discretized matrices are simply:
+\begin{equation}
+\mathbf{H}^s=\mathbf{H}=\left(\begin{matrix}
+ 1 & 0 & 0
+\end{matrix}\right)\;,
+\end{equation}
+\begin{equation}
+R^s=\sigma_d/\tau_d\;.
+\end{equation}
+First we estimate the system state covariance $\mathbf{P}$. After initializing the system states and covariance to  $\mathbf{x}_0$ and $\mathbf{P}_0$ (usually zero or the identity) \citet{kalman1960} showed, and subsequent workers proved (see \citet{lewis2008}) that an unbiased minimum error estimate could be obtained by computing the \textit{a priori} covariance as
+\begin{equation}
+\label{eq_aprioricov}
+\mathbf{P}_{k+1}^-=\mathbf{A}_k\mathbf{P}_k\mathbf{A}_k^T+\mathbf{Q}_k\;,
+\end{equation}
+and the a priori state estimate as
+\begin{equation}
+\label{eq_aprioristates}
+\hat{\mathbf{x}}_{k+1}^-=\mathbf{A}_k\hat{\mathbf{x}}_k+\mathbf{B}_ku_k\;,
+\end{equation}
+where recall from Equation \ref{eq_kalsetup} that $u_k=a_k$, the acceleration of the system. The hat notation $\hat{\mathbf{x}}$ indicates the obtained quantity is an estimate and the super index   indicates a quantity obtained before the measurement process. This is termed the \textit{a prior} or \textit{time update} stage of the filter, where the system states are estimated without consideration of the measurements. The second step is to incorporate the measurements into the \textit{measurement update} or \textit{a posterior} state estimation updating the covariance to 
+\begin{equation}
+\label{eq_aposcov}
+\mathbf{P}_{k+1}=[(\mathbf{P}_{k+1}^-)^{-1}+\mathbf{H}^T_{k+1}\mathbf{R}^{-1}_{k+1}\mathbf{H}_{k+1}]^{-1}\;,
+\end{equation}
+and then the state estimates to
+\begin{equation}
+\label{eq_aposstates}
+\hat{\mathbf{x}}_{k+1}=\hat{\mathbf{x}}_k^-+\mathbf{P}_{k+1}\mathbf{H}_{k+1}^T\mathbf{R}_{k+1}^{-1}(z_{k+1}-\mathbf{H}_{k+1}\mathbf{x}^-_{k+1}) =\hat{\mathbf{x}}_k^-+\mathbf{K}_{k+1}(z_{k+1}-\mathbf{H}_{k+1}\mathbf{x}^-_{k+1})\;,
+\end{equation}
+where the matrix $\mathbf{K}$ is known as the Kalman gain. In this final form it's easiest to understand the behavior of the filter. The Kalman gain weights the adjustment to the a priori estimate $\hat{\mathbf{x}}_k^-$ once a measurement of the system states $z_k$ is available by modulating the correction to be applied due to the measurement residual, $z_{k+1}-\mathbf{H}_{k+1}\mathbf{x}^-_{k+1}$ , which is the difference between the a priori state estimate and the actual measurement. In turn, the Kalman gain $\mathbf{K}$ depends on both the covariance matrix $\mathbf{Q}$ of the accelerations affecting the system and the covariance $\mathbf{R}$ of the measurements. Thus, the noise characteristics of both information sources is considered in the estimation process. Equations \ref{eq_aprioricov}-\ref{eq_aposstates} define what is traditionally called a Kalman filter.
+
+In the above formulation, also referred to as the \textit{forward} filter, the accelerometer time series at sampling interval $\tau_a$ provides what is oft referred to as the \textit{system input}, $u_k$, while the GPS displacements at sampling interval $\tau_d$ feed the measurement process, $z_k$. GPS sampling frequencies are traditionally lower (1 - 10 Hz) than strong-motion accelerometer sampling frequencies (80 - 250 Hz), thus the formulation needs to be adapted to this multi-rate environment \citep{Smyth2007} by performing the time update stage (Equations \ref{eq_aprioricov}-\ref{eq_aprioristates}) at every time step and applying the measurement update stage (Equations \ref{eq_aposcov}-\ref{eq_aposstates}) only when a GPS sample becomes available. This is equivalent to having a Kalman gain of zero in the absence of measurements. For algorithmic simplicity it is useful if the sampling frequency of the strong-motion accelerometer is a multiple of GPS sampling frequency. In this way the measurement update can be done at regular intervals but this is not a requirement. Also if the sampling frequencies remain constant throughout and the noise characteristics do not change then $\mathbf{A}^s$, $\mathbf{B}^s$, $\mathbf{Q}^s$, and $\mathbf{R}^s$ remain unchanged. However, the sampling frequencies for both instruments can vary throughout the filtering process as long as the corresponding matrices are modified accordingly. An attractive feature of this formulation is that the matrices involved are dimensionally small making the numerical computation in the two stages of the process simple. Additionally, the Kalman filter only requires knowledge of the current sample and thus can be implemented in real time and across large networks. It must be noted that the Kalman filter will also produce estimates of velocity in conjunction with the displacement computations. A summary of the filter equations can be found in Table \ref{tb_kalman}
+
+\begin{table}
+\caption{A summary of Kalman filtering and smoothing equations}
+\label{tb_kalman}
+\begin{tabular}{l r}
+\hline
+\textbf{Forward Filter}              & \\
+\hline
+Initialize states & $\hat{\mathbf{x}}_0=\mathbf{0}$ \\
+Initialize covariance & $\mathbf{P}_0=\mathbf{I}$ \\
+Time update covariance & $\mathbf{P}_{k+1}^-=\mathbf{A}_k\mathbf{P}_k\mathbf{A}_k^T+\mathbf{Q}_k$\\
+Time update system states &  $\hat{\mathbf{x}}_{k+1}^-=\mathbf{A}_k\hat{\mathbf{x}}_k+\mathbf{B}_ka_k$\\
+Introduce measurement & $z_k=d_k$ \\
+Compute Kalman gain & $\mathbf{K}_{k+1}=\mathbf{P}_{k+1}\mathbf{H}_{k+1}^T\mathbf{R}_{k+1}^{-1}$\\
+Measurement update of covariance & $\mathbf{P}_{k+1}=[(\mathbf{P}_{k+1}^-)^{-1}+\mathbf{H}^T_{k+1}\mathbf{R}^{-1}_{k+1}\mathbf{H}_{k+1}]^{-1}$\\
+Measuremment update system states & $\hat{\mathbf{x}}_{k+1}=\hat{\mathbf{x}}_k^-+\mathbf{K}_{k+1}(z_{k+1}-\mathbf{H}_{k+1}\mathbf{x}^-_{k+1})$ \\
+\hline
+\textbf{RTS $N$-sample Smoother} & \\
+\hline
+Initialize states &  $\mathbf{x}_N=\mathbf{x}_k$\\
+Initialize covariance & $\mathbf{P}_N=\mathbf{P}_k^f$\\
+Compute smoother gain & $\mathbf{F}_k=\mathbf{P}_k^f\mathbf{A}_k(\mathbf{P}_{k+1}^{f-})^{-1}$\\
+Update covariance & $\mathbf{P}_k=\mathbf{P}_k^f-\mathbf{F_k}(\mathbf{P}^{f-}_{k+1}-\mathbf{P}_{k+1})\mathbf{F}_k^T$\\
+Update system states & $\hat{\mathbf{x}}_k=\hat{\mathbf{x}}_k^f+\mathbf{F}_k(\hat{\mathbf{x}}_{k+1}-\hat{\mathbf{x}}_{k+1}^{f-})$\\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Optimal Smoothing}
+
+Applying the Kalman filter in the forward direction solves what is known as the prediction problem, if data are available over some interval and all that data past and future are used in the estimation then the estimate at any given point can be improved. This is known as the smoothing problem and is a non-real-time or batch operation. It can be performed, nonetheless, as a near real-time operation  by limiting the smoothing to short intervals of time. If smoothing happens only over a fixed window behind the real-time stream the smoother is called a fixed interval smoother. Any smoother consists of three conceptual steps: the forward Kalman filter described in the previous section, then a backward filter known as the information filter which is applied in reverse time order to the smoothing interval. The third step combines information from the first two steps (forward Kalman filter and information filter) and combines them to generate state estimates. \citet{rauch1965} showed that the forward Kalman and information filters could be applied in a single step. This has come to be known to as the Rauch,Tung and Striebel smoother (RTS). The smoother gain, which is analogous to the Kalman gain, defines the amount of smoothing can be defined
+\begin{equation}
+\label{eq_smoothcov}
+\mathbf{F}_k=\mathbf{P}_k^f\mathbf{A}_k(\mathbf{P}_{k+1}^{f-})^{-1}\;,
+\end{equation}
+where  $\mathbf{P}_k^f$ and $\mathbf{P}_{k+1}^{f-}$ are the a priori and a posteriori covariance matrices, respectively, from the forward filter. The smoothed covariances are given by
+\begin{equation}
+\mathbf{P}_k=\mathbf{P}_k^f-\mathbf{F_k}(\mathbf{P}^{f-}_{k+1}-\mathbf{P}_{k+1})\mathbf{F}_k^T\;,
+\end{equation}
+and the smoothed state estimates by
+\begin{equation}
+\label{eq_smoothstates}
+\hat{\mathbf{x}}_k=\hat{\mathbf{x}}_k^f+\mathbf{F}_k(\hat{\mathbf{x}}_{k+1}-\hat{\mathbf{x}}_{k+1}^{f-})\;.
+\end{equation}
+Note that the smoothing stage works backwards in time using the $k+1$-th time step to estimate the $k$-th step and it does not depend on the measurements or system inputs. The RTS smoother consists of applying the forward filter first, and then smoothing using Equations \ref{eq_smoothcov}-\ref{eq_smoothstates}. The RTS algorithm requires the totality of the Kalman filtered time series over the smoothing interval to be available as well as all the a priori estimates, covariances, and a posteriori covariances making it a very data intensive operation. For a particular waveform he best possible results are obtained by applying the smoother over the entire duration of the data. For near-real-time computation one can apply the RTS algorithm to segments of data by lagging $N$ samples behind the end of the real time stream. In this fashion it is assumed that the $N$ samples behind the real-time stream constitute a complete time series and the RTS smoother is applied to them. Initialization is performed by setting the$N$-th sample to $\mathbf{x}_N=\mathbf{x}_k$ and $\mathbf{P}_N=\mathbf{P}_k^f$. Further on we shall show that the important parameter in near-real-time smoothing with this scheme is the number of GPS samples over which one can smooth rather than the actual time lag. A summary of the smoother equations can be found in Table \ref{tb_kalman}.
+
+\subsection{Accelerometer Biases}
+
+A subtle point to be considered in this application-specific formulation of the Kalman filter is that the null baseline of most accelerometers is seldom zero. Often due to small tilts or rotations introduced during installation, variations in site and installation conditions, or simply because of drift in the instrument as it ages the DC level of the instrument will be non-zero. In a post-processing scenario one can subtract the opre-event baseline from the accelerometer recording. For real-time calculation however, this cannot be done, and can have a large effect in the Kalman filter output because it introduces a constant acceleration. It can be easily deal with by incorporating the accelerometer bias as an additional system state. If the measured or observed acceleration $a^{obs}$ is related to the true acceleration, $a^{true}$ by
+\begin{equation}
+a_k^{true}=a_k^{obs}-\Omega_k+\epsilon_a\;,
+\end{equation}
+where $\Omega_k$ is the DC offset at epoch $k$ and $\epsilon_a$ is as before the accelerometer noise. If we augment the system states to include the DC offset we can once again write the continuous difference equation for this system:
+\begin{equation}
+\frac{d}{dt}
+\left(\begin{matrix}
+  d(t) \\
+  v(t) \\
+  \Omega(t)
+\end{matrix}\right)
+=\frac{d}{dt}\mathbf{x}(t)
+=\mathbf{A}(t)\mathbf{x}(t)+\mathbf{B}(t)u(t)+\mathbf{\epsilon}(t)\;,
+\end{equation}
+where
+\begin{equation}
+\mathbf{A}=
+\left(\begin{matrix}
+0 & 1 & 0 \\
+0 & 0 & -1 \\
+0 & 0 & 0
+\end{matrix}\right)
+\;;\;
+\mathbf{B}=
+\left(\begin{matrix}
+0 \\
+1 \\
+0
+\end{matrix}\right)\;;\;u=a^{obs}\;;\;\epsilon=
+\left(\begin{matrix}
+0 \\
+\epsilon_a\\
+\epsilon_\Omega
+\end{matrix}\right)\;,
+\end{equation}
+where $\epsilon_\Omega$ is the DC offset noise. A small value of $\epsilon_\Omega$ will allow the DC offset to vary slowly through time. This means that the noise vector $\epsilon$ is Gaussian, such that $\epsilon\sim(0,\mathbf{Q})$ where the covariance $\mathbf{Q}$ depends on the accelerometer and DC offset noise variances $\sigma_a$ and $\sigma_\Omega$ like
+\begin{equation}
+Q=\left(\begin{matrix}
+ 0 & 0 & 0 \\
+ 0 & \sigma_a & 0 \\
+ 0 & 0 & \sigma_\Omega
+\end{matrix}\right)
+\end{equation}
+You can again expand the last two equations to verify the system:
+\begin{equation}
+\frac{d}{dt}
+\left(\begin{matrix}
+  d(t) \\
+  v(t) \\
+  \Omega(t)
+\end{matrix}\right)=
+\left(\begin{matrix}
+  \dot{d} \\
+  \dot{v} \\
+  \dot{\Omega}
+\end{matrix}\right)=
+\left(\begin{matrix}
+  v\\
+  -\Omega+a^{obs}+\epsilon_a \\
+  \epsilon_\Omega
+\end{matrix}\right)\;.
+\end{equation}
+We can discretize the continuous system at the sampling rate $\tau_a$ of the accelerometer following the strategy outlined in Section \ref{sec:kalman}
+\begin{equation}
+\label{eq_bias1}
+\mathbf{A}^s=\mathbf{I}+\mathbf{A}\tau_a+\frac{\mathbf{A}^2\tau^2}{2}=\left(\begin{matrix}
+1 & \tau_a & -\tau_a^2/2 \\
+0 & 1 & -\tau_a \\
+0 & 0 & 1 \end{matrix}\right)\;;
+\end{equation}
+\begin{equation}
+\mathbf{B}^s=\mathbf{B}\tau_a+\frac{\mathbf{A}\mathbf{B}\tau_a^2}{2}=\left(\begin{matrix}
+\tau^2_a/2 \\
+\tau_a \\
+0 \end{matrix}\right)\;;
+\end{equation}
+\begin{equation}
+\label{eq_bias3}
+\mathbf{Q}^s=\mathbf{Q}\tau_a+\frac{1}{2}(\mathbf{AQ}+\mathbf{QA}^T)\tau_a^2+\frac{1}{3}\mathbf{AQA}^T\tau^3_a=\left(\begin{matrix}
+\sigma_a\tau_a^3/3 & \sigma_a\tau_a^2/2 & 0 \\
+\sigma_a\tau_a^2/2 & \sigma_a\tau_a+\sigma_\Omega\tau_a^3/3 & -\sigma_\Omega\tau_a^2/2 \\
+0 & -\sigma_\Omega\tau_a^2/2 & \sigma_\Omega\tau_a \end{matrix}\right)\;.
+\end{equation}
+Equations \ref{eq_bias1}-\ref{eq_bias3} can then be used with the standard Kalman filter definition (Table \ref{tb_kalman}), except that the output of the filter will now be estimated displacement, velocity and accelerometer bias at each epoch.
+
+\section{Proof of Concept}
+Following are examples from shaketable tests of collocated GPS and accelerometers as well as recordings at collocated stations during recent earthquakes to demonstrate the behavior of the Kalman filter
+
+\subsection{Outdoor shake table testing}
+
+A series of earthquake simulations were conducted in 2006-2007 on a full-scale seven-story reinforced concrete wall building at the George E. Brown, Jr. Network for Earthquake Engineering Simulation (NEES) Large High-Performance Outdoor Shake Table (LHPOST) at University of California San Diego \citep{panagiotou2008,moaveni2010}. The four simulations allowed us to test the Kalman filter algorithms in a controlled environment. The LHPOST includes a   steel table platform (platen), a reinforced concrete reaction mass, two servo-controlled dynamic actuators with large servo-valves, a platen sliding system with hydrostatic pressure balance bearings, and a real time multi-variable MTS 469DU digital controller with an output of 1024 Hz in displacement. The system is uniaxial and oriented East-West. It can achieve maximum peak-to-peak displacement of $\pm$0.75 m, velocity of $\pm$1.8 m/s, and acceleration of $\pm$3 g, with a frequency bandwidth of 0-20 Hz.
+The building with a total height of 19.2 m and total weight of 250 tons was constructed on the shake table platen and subjected to four low to high intensity ground motions, as recorded by accelerometers during the 1971 Mw 6.6 San Fernando and 1994 Mw 6.7 Northridge earthquakes (\ref{fig_shake2006}). The lowest intensity input motion (EQ1) consisted of the longitudinal component from the VNUY station recorded during the San Fernando earthquake. The two medium intensity input motions were the transverse component recorded at the VNUY station obtained during the San Fernando earthquake (EQ2) and the longitudinal component from the WHOX station recorded during the Northridge earthquake (EQ3). The large intensity input motion corresponded to the near-fault Sylmar Olive View Med 360º record during the Northridge earthquake (EQ4), which induced significant nonlinear response. This last class of earthquake is expected to have a 10\% probability of exceedance every 50 years. For calibration purposes, the earthquake records were preceded by a sinusoidal signal with peak-to-peak amplitude of about 0.15 m.
+
+\begin{figure}[!ht] 
+  \centering
+  \includegraphics[width=0.99\linewidth]{./figures/shaketable2006.png}
+    \caption[2006 shake table experiment configuration]{Experimental configuration for the 2006 shake table test}
+  \label{fig_shake2006}
+\end{figure}
+The building was instrumented with seven geodetic-quality Navcom NCT-200D GPS receivers sampling at 50 Hz and MEMS-Piezoresistive MSI model 3140 accelerometers sampling at 240 Hz. Three GPS receivers were mounted on the roof (7th floor near the north, south and east corners), and two receivers were cantilevered on the 3rd and 5th floors of the flange wall (east side). A 6th receiver was located just off the shake table?s platen as a stable reference point for measuring displacements. A 7th GPS receiver was situated on the platen. The 15 accelerometers were mounted as follows: 2 on the platen, 4 on the building foundation, 3 on the first floor, 3 on the fifth floor and 3 on the seventh floor (roof). Unfortunately, the north receiver on the roof of the building was not operational during EQ4 due to a loose antenna cable. 
+GPS phase and pseudorange data were streamed to a PC workstation and 50 Hz displacement waveforms were estimated on-the-fly using the method of instantaneous positioning (\citet{bock2000}, see Section \ref{sec:gps}) . The ``GPS-only'' displacements are relative to the fixed coordinates of the GPS receiver just off the platen, which were pre-determined with respect to the true-of-date ITRF2005 coordinates of Plate Boundary Observatory (PBO) station P472 at Camp Elliot (32º.8892N, 117º.1047W), approximately 656 m away. The accelerometer data were doubly-integrated by high-pass filtering to determine ``accelerometer-only'' displacements. We re-sampled the 240 Hz raw accelerometer data to 250 Hz to be able to align the times of every 5th point with the 50 Hz Navcom GPS data. Displacement waveforms were then computed using both the forward and the smoothed Kalman (RTS) filter using the GPS platen data as input and, in turn, the raw data from the two platen and four foundation accelerometers. To assess accuracy, we compared the GPS-only, accelerometer-only, and Kalman filter displacements to the input ?ground truth? displacements provided at 1024 Hz by the MTS digital controller. To assess precision, we compared the root-mean-square (RMS) of the distances between pairs of accelerometers and pairs of GPS receivers on the roof of the building (7th floor). The results of these comparisons are given in Table 1. 
+
+\section{Application to the M9 Tohoku-oki Earthquake}
+
 
 %\appendix
 %\chapter{Final notes}
