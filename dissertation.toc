@@ -12,22 +12,23 @@
 \contentsline {subsection}{\numberline {1.1.1}More Stuff}{1}
 \contentsline {section}{\numberline {1.2}Geodesy and Seismology}{2}
 \contentsline {section}{\numberline {1.3}Earthquake and Tsunami Hazards}{2}
-\contentsline {chapter}{\numberline {Chapter\nobreakspace {}2}Seismogeodesy and Strong Motion Sensing}{3}
-\contentsline {section}{\numberline {2.1}Strong Motion Seismology}{3}
-\contentsline {section}{\numberline {2.2}The role of GPS}{10}
-\contentsline {subsection}{\numberline {2.2.1}Displacements in a Local Reference Frame}{13}
-\contentsline {section}{\numberline {2.3}Seismogeodesy}{14}
-\contentsline {subsection}{\numberline {2.3.1}The Kalman Filter Formulation}{15}
+\contentsline {chapter}{\numberline {Chapter\nobreakspace {}2}Seismogeodesy}{3}
+\contentsline {section}{\numberline {2.1}Strong Motion Sensing}{3}
+\contentsline {section}{\numberline {2.2}The role of GPS}{9}
+\contentsline {subsection}{\numberline {2.2.1}Displacements in a Local Reference Frame}{14}
+\contentsline {section}{\numberline {2.3}Seismogeodesy}{15}
+\contentsline {subsection}{\numberline {2.3.1}The Kalman Filter Formulation}{16}
 \contentsline {subsection}{\numberline {2.3.2}Optimal Smoothing}{19}
 \contentsline {subsection}{\numberline {2.3.3}Accelerometer Biases}{21}
-\contentsline {section}{\numberline {2.4}Proof of Concept}{22}
+\contentsline {section}{\numberline {2.4}Proof of Concept}{23}
 \contentsline {subsection}{\numberline {2.4.1}Outdoor shake table testing}{23}
-\contentsline {section}{\numberline {2.5}Application to the M9 Tohoku-oki Earthquake}{25}
-\contentsline {chapter}{\numberline {Chapter\nobreakspace {}3}Rapid Static Modeling}{26}
-\contentsline {section}{\numberline {3.1}A section}{26}
-\contentsline {chapter}{\numberline {Chapter\nobreakspace {}4}Kinematic Source Inversions}{27}
-\contentsline {section}{\numberline {4.1}A section}{27}
-\contentsline {chapter}{\numberline {Chapter\nobreakspace {}5}Offshore Data and Tsunami Modeling}{28}
-\contentsline {section}{\numberline {5.1}A section}{28}
-\contentsline {chapter}{\numberline {Chapter\nobreakspace {}6}Conclusions and Future Outlook}{29}
-\contentsline {section}{\numberline {6.1}A section}{29}
+\contentsline {subsubsection}{Accuracy of the Displacement Waveforms}{28}
+\contentsline {section}{\numberline {2.5}Application to the M9 Tohoku-oki Earthquake}{29}
+\contentsline {chapter}{\numberline {Chapter\nobreakspace {}3}Rapid Static Modeling}{31}
+\contentsline {section}{\numberline {3.1}A section}{31}
+\contentsline {chapter}{\numberline {Chapter\nobreakspace {}4}Kinematic Source Inversions}{32}
+\contentsline {section}{\numberline {4.1}A section}{32}
+\contentsline {chapter}{\numberline {Chapter\nobreakspace {}5}Offshore Data and Tsunami Modeling}{33}
+\contentsline {section}{\numberline {5.1}A section}{33}
+\contentsline {chapter}{\numberline {Chapter\nobreakspace {}6}Conclusions and Future Outlook}{34}
+\contentsline {section}{\numberline {6.1}A section}{34}

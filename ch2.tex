@@ -1,10 +1,10 @@
 %Chapter 2: Seismogeodesy and Strong Motion Sensing
 
-\chapter{Seismogeodesy and Strong Motion Sensing}
+\chapter{Seismogeodesy}
 
 A brief summary of what is discussed in this chapter
 
-\section{Strong Motion Seismology}
+\section{Strong Motion Sensing}
 The range of motions produced by the seismic source is broad both in frequency and dynamic range. It is well known that no one sensor can capture all signals of interest to seismology and earthquake engineering \citep{Havskov2006}. Seismologists typically rely on seismometers, whose response is related to velocity of the ground, for measurement of small amplitude signals (weak motion), but for large amplitude signals these sensitive instruments saturate or clip. In this case, strong motion sensors, whose response is related to the acceleration of the ground and have lower gains, are preferred. Modern observatory grade accelerometers rely on the force feedback principle and can measure motions as small as 1 nm at 1 Hz and 100 nm at 0.1 Hz and accelerations of up to 4g. Furthermore their frequency response is flat from ) (often called the DC-level) to 50-200 Hz \citep{Havskov2006}.
 
 Thus, in principle there should be no difficulty in integrating a strong motion record to velocity and displacement. This is not the case; in practice the simple integration of an accelerogram produces unphysical velocity and displacement waveforms that grow unbounded as time progresses. Computation of broadband displacements from strong motion recordings is a thoroughly studied procedure that is fraught with many known problems and has no known single solution. By ``broadband dispalcement'' it is meant a strong motion displacement waveform that captures both transient phenomena (waves) and permanent or static deformation, i.e. a recording reliable from DC to the Nyquist frequency.
@@ -28,7 +28,7 @@ v_f(t)=v_0+a_f(t)\;;\;t\in(t_1,t_f)\;,
 \end{equation}
 where the regression parameters are $v_0$ and the acceleration step $a_f$. Subsequently, another straight line is fit from $t_i$ to $t_1$ with the constraint that velocity be zero at the start of the record and that the final velocity averages to zero. These constraints are satisfied if \citep{Boore1999}
 \begin{equation}
-am=\frac{v_f(t_1)}{t_1-t_i}\;.
+a_m=\frac{v_f(t_1)}{t_1-t_i}\;.
 \end{equation}
 Then, the acceleration baseline, $a_m$, is subtracted from the uncorrected record from times $t_i$ to $t_1$ and the baseline offset, $a_f$, is subtracted from the zeroth order corrected record for times $t_1$ to $t_f$. The record is then integrated to velocity and displacement. This scheme produces waveforms that look plausible; they contain both transient and permanent motions. However an ambiguity lies in the selection of times $t_i$ and $t_1$. As has been amply discussed by \citet{Boore1999,Boore2001}, this ambiguity is not easily resolved without external information and each investigator relies on subjective judgment to ascertain what looks best. Figure \ref{fig_iwt009bl} illustrates such an example where the same waveform has been baseline corrected for several values of $t_1$ while holding $t_i$ fixed at the P wave arrival time with results that vary wildly. If the waveform is complex, as in this example, which has two distinct pulses of very strong shaking, then more baselines might need to be subtracted. However, if there is already ample ambiguity in the simple determination of the two baselines $a_m$ and $a_f$, the problem is exacerbated with the introduction of more baselines. 
 
@@ -66,7 +66,18 @@ Precise point positioning has been limited in GPS seismology, in particular for 
 
 It is important for the reader to understand the benefits and shortcomings of these two competing technologies. The network adjusted positions have routinely provided cm-level waveforms \citep{Crowell2009}. However, they require that the base station for the adjustment be located outside the zone of deformation and that it not move during the event. Evidently this requires a large network with good connectivity and some strategy fir detecting motions of the reference station and a fall back plan to another station hat has not moved during the event. Furthermore this approach requires to convert the baselines between stations in subnetworks or triangles into absolute motions. This is essentially a solution to an inverse problem at each epoch. While this is not numerically troublesome as the number of stations increases and as sampling rates increase as well the numerical load will grow.  In contrast the PPP-AR approach does not require such a reference station (although it does rely on a sparse continental network for computation of certain positioning parameters, \citep{Geng2013} and is thus, in principle, more desirable. However ambiguity resolution might fail and convergence periods, at least initially can still be long. Throughout this dissertation data from both network adjusted and PPP-AR positions will be employed. It's not the aim of this work to assess the suitability of one technique over the other although some general recommendations will be given in the conclusions. Hence for the purpose of the research discussed both approaches will be considered equal.
 
-In general GPS seems desirable over traditional seismometry for displacement computations because it is not besieged by baseline offsets because it is not an inertial sensor. This has the practical effect of making GPS a very good long and ultra-long period sensor. It can easily measure signals with very long periods, such as plate tectonic motions and post-seismic relaxation. However noise levels in high rate real-time GPS (rtGPS) displacements \citep{genrich2006} far exceed those of observatory grade accelerometers. Furthermore GPS data is far more verbose than seismic data. While a traditional telemetry packet for a seismic sensor at a given epoch might include three single or double precision floating point numbers corresponding to the three components of motion and a UTC time string, the GPS message includes observables to every visible satellite. This has limited the sampling rates of rtGPS to around 1-5$Hz$ even though 10-50$Hz$ is achievable \citep{genrich2006}. These slow sampling rates can introduce significant aliasing in GPS positions \citep{smalley2009}. In spite of these limitations, it will be shown that without GPS positions it is exceedingly difficult to recover the long period component of ground motions and that GPS plays an important role in modern strong motion seismology.
+In general GPS seems desirable over traditional seismometry for displacement computations because it is not besieged by baseline offsets because it is not an inertial sensor. This has the practical effect of making GPS a very good long and ultra-long period sensor. It can easily measure signals with very long periods, such as plate tectonic motions and post-seismic relaxation. Consider Figure \ref{fig_parkfield}, note how the time series shows the (relative) long term plate rate as a linear trend, the coseismic offset from the September 28, 2004 Mw=6.0 Parkfield earthquake and the postseismic relaxation as well as some shaking during the earthquake. GPS captures key components of the seismic cycle. 
+
+\begin{figure}[!ht] 
+  \centering
+  \includegraphics[width=0.99\linewidth]{./figures/parkfield.eps}
+    \caption[1 Hz GPS time series at Parkfield]{Typical 1 Hz GPS raw time series at station LAND (35º.8997 N, 120º.4731 W) in the Parkfield area over a one-year period. Shown is the north component, in this case relative to station CRBT (N 35º.7916, 120º.7507 W) whose coordinates were fixed in the GPS analysis. Note how the time series shows the (relative) long term plate rate as a linear trend, the coseismic offset from the September 28, 2004 Mw=6.0 Parkfield earthquake and the postseismic relaxation. In the inset, 2 minutes of data are shown where as opposed to the daily solutions time series we can also observe the (relative) dynamic shaking during the earthquake.}
+  \label{fig_parkfield}
+\end{figure}
+
+However noise levels in high rate real-time GPS (rtGPS) displacements \citep{genrich2006} far exceed those of observatory grade accelerometers. Furthermore GPS data is far more verbose than seismic data. While a traditional telemetry packet for a seismic sensor at a given epoch might include three single or double precision floating point numbers corresponding to the three components of motion and a UTC time string, the GPS message includes observables to every visible satellite. This has limited the sampling rates of rtGPS to around 1-5$Hz$ even though 10-50$Hz$ is achievable \citep{genrich2006}. These slow sampling rates can introduce significant aliasing in GPS positions \citep{smalley2009}. In spite of these limitations, it will be shown that without GPS positions it is exceedingly difficult to recover the long period component of ground motions and that GPS plays an important role in modern strong motion seismology.
+
+
 
 \subsection{Displacements in a Local Reference Frame}
 
@@ -95,7 +106,8 @@ y_i-y_0 \\
 z_i-z_0  
 \end{array}
 \right)\;;
-\end{equation}where $\mathbf{R}_2$ and $\mathbf{R}_3$ are rotation matrices around the $y$ and $z$ axes, respectively, and $(\phi,\lambda)$ is the geodetic latitude and longitude of the station. The geodetic displacements in the $(N,E,U)$ frame can then be compared directly to local displacements derived through single integration of seismometer data or double integration of accelerometer data. Thus, Equation \ref{eq_rot} simplifies to:
+\end{equation}
+where $\mathbf{R}_2$ and $\mathbf{R}_3$ are rotation matrices around the $y$ and $z$ axes, respectively, and $(\phi,\lambda)$ is the geodetic latitude and longitude of the station. The geodetic displacements in the $(N,E,U)$ frame can then be compared directly to local displacements derived through single integration of seismometer data or double integration of accelerometer data. Thus, Equation \ref{eq_rot} simplifies to:
 \begin{equation}
 \left(\begin{array}{c}
 \Delta N_i  \\
@@ -288,7 +300,8 @@ and the smoothed state estimates by
 \label{eq_smoothstates}
 \hat{\mathbf{x}}_k=\hat{\mathbf{x}}_k^f+\mathbf{F}_k(\hat{\mathbf{x}}_{k+1}-\hat{\mathbf{x}}_{k+1}^{f-})\;.
 \end{equation}
-Note that the smoothing stage works backwards in time using the $k+1$-th time step to estimate the $k$-th step and it does not depend on the measurements or system inputs. The RTS smoother consists of applying the forward filter first, and then smoothing using Equations \ref{eq_smoothcov}-\ref{eq_smoothstates}. The RTS algorithm requires the totality of the Kalman filtered time series over the smoothing interval to be available as well as all the a priori estimates, covariances, and a posteriori covariances making it a very data intensive operation. For a particular waveform he best possible results are obtained by applying the smoother over the entire duration of the data. For near-real-time computation one can apply the RTS algorithm to segments of data by lagging $N$ samples behind the end of the real time stream. In this fashion it is assumed that the $N$ samples behind the real-time stream constitute a complete time series and the RTS smoother is applied to them. Initialization is performed by setting the$N$-th sample to $\mathbf{x}_N=\mathbf{x}_k$ and $\mathbf{P}_N=\mathbf{P}_k^f$. Further on we shall show that the important parameter in near-real-time smoothing with this scheme is the number of GPS samples over which one can smooth rather than the actual time lag. A summary of the smoother equations can be found in Table \ref{tb_kalman}.
+Note that the smoothing stage works backwards in time using the $k+1$-th time step to estimate the $k$-th step and it does not depend on the measurements or system inputs. The RTS smoother consists of applying the forward filter first, and then smoothing using Equations \ref{eq_smoothcov}-\ref{eq_smoothstates}. The RTS algorithm requires the totality of the Kalman filtered time series over the smoothing interval to be available as well as all the a priori estimates, covariances, and a posteriori covariances making it a very data intensive operation. For a particular waveform he best possible results are obtained by applying the smoother over the entire duration of the data. 
+For near-real-time computation one can apply the RTS algorithm to segments of data by lagging $N$ samples behind the end of the real time stream. In this fashion it is assumed that the $N$ samples behind the real-time stream constitute a complete time series and the RTS smoother is applied to them. Initialization is performed by setting the$N$-th sample to $\mathbf{x}_N=\mathbf{x}_k$ and $\mathbf{P}_N=\mathbf{P}_k^f$. Further on we shall show that the important parameter in near-real-time smoothing with this scheme is the number of GPS samples over which one can smooth rather than the actual time lag. A summary of the smoother equations can be found in Table \ref{tb_kalman}.
 
 \subsection{Accelerometer Biases}
 
@@ -384,7 +397,8 @@ Following are examples from shaketable tests of collocated GPS and accelerometer
 \subsection{Outdoor shake table testing}
 
 A series of earthquake simulations were conducted in 2006-2007 on a full-scale seven-story reinforced concrete wall building at the George E. Brown, Jr. Network for Earthquake Engineering Simulation (NEES) Large High-Performance Outdoor Shake Table (LHPOST) at University of California San Diego \citep{panagiotou2008,moaveni2010}. The four simulations allowed us to test the Kalman filter algorithms in a controlled environment. The LHPOST includes a   steel table platform (platen), a reinforced concrete reaction mass, two servo-controlled dynamic actuators with large servo-valves, a platen sliding system with hydrostatic pressure balance bearings, and a real time multi-variable MTS 469DU digital controller with an output of 1024 Hz in displacement. The system is uniaxial and oriented East-West. It can achieve maximum peak-to-peak displacement of $\pm$0.75 m, velocity of $\pm$1.8 m/s, and acceleration of $\pm$3 g, with a frequency bandwidth of 0-20 Hz.
-The building with a total height of 19.2 m and total weight of 250 tons was constructed on the shake table platen and subjected to four low to high intensity ground motions, as recorded by accelerometers during the 1971 Mw 6.6 San Fernando and 1994 Mw 6.7 Northridge earthquakes (\ref{fig_shake2006}). The lowest intensity input motion (EQ1) consisted of the longitudinal component from the VNUY station recorded during the San Fernando earthquake. The two medium intensity input motions were the transverse component recorded at the VNUY station obtained during the San Fernando earthquake (EQ2) and the longitudinal component from the WHOX station recorded during the Northridge earthquake (EQ3). The large intensity input motion corresponded to the near-fault Sylmar Olive View Med 360º record during the Northridge earthquake (EQ4), which induced significant nonlinear response. This last class of earthquake is expected to have a 10\% probability of exceedance every 50 years. For calibration purposes, the earthquake records were preceded by a sinusoidal signal with peak-to-peak amplitude of about 0.15 m.
+
+The building with a total height of 19.2 m and total weight of 250 tons was constructed on the shake table platen and subjected to four low to high intensity ground motions, as recorded by accelerometers during the 1971 Mw 6.6 San Fernando and 1994 Mw 6.7 Northridge earthquakes (\ref{fig_shake2006}). The lowest intensity input motion (EQ1) consisted of the longitudinal component from the VNUY station recorded during the San Fernando earthquake. The two medium intensity input motions were the transverse component recorded at the VNUY station obtained during the San Fernando earthquake (EQ2) and the longitudinal component from the WHOX station recorded during the Northridge earthquake (EQ3). The large intensity input motion corresponded to the near-fault Sylmar Olive View Med 360º record during the Northridge earthquake (EQ4), which induced significant nonlinear response. This last class of earthquake is expected to have a 10\% probability of exceedance every 50 years. For calibration purposes, the earthquake records were preceded by a sinusoidal signal with peak-to-peak amplitude of about 0.15 m.
 
 \begin{figure}[!ht] 
   \centering
@@ -392,8 +406,103 @@ A series of earthquake simulations were conducted in 2006-2007 on a full-scale s
     \caption[2006 shake table experiment configuration]{Experimental configuration for the 2006 shake table test}
   \label{fig_shake2006}
 \end{figure}
-The building was instrumented with seven geodetic-quality Navcom NCT-200D GPS receivers sampling at 50 Hz and MEMS-Piezoresistive MSI model 3140 accelerometers sampling at 240 Hz. Three GPS receivers were mounted on the roof (7th floor near the north, south and east corners), and two receivers were cantilevered on the 3rd and 5th floors of the flange wall (east side). A 6th receiver was located just off the shake table?s platen as a stable reference point for measuring displacements. A 7th GPS receiver was situated on the platen. The 15 accelerometers were mounted as follows: 2 on the platen, 4 on the building foundation, 3 on the first floor, 3 on the fifth floor and 3 on the seventh floor (roof). Unfortunately, the north receiver on the roof of the building was not operational during EQ4 due to a loose antenna cable. 
-GPS phase and pseudorange data were streamed to a PC workstation and 50 Hz displacement waveforms were estimated on-the-fly using the method of instantaneous positioning (\citet{bock2000}, see Section \ref{sec:gps}) . The ``GPS-only'' displacements are relative to the fixed coordinates of the GPS receiver just off the platen, which were pre-determined with respect to the true-of-date ITRF2005 coordinates of Plate Boundary Observatory (PBO) station P472 at Camp Elliot (32º.8892N, 117º.1047W), approximately 656 m away. The accelerometer data were doubly-integrated by high-pass filtering to determine ``accelerometer-only'' displacements. We re-sampled the 240 Hz raw accelerometer data to 250 Hz to be able to align the times of every 5th point with the 50 Hz Navcom GPS data. Displacement waveforms were then computed using both the forward and the smoothed Kalman (RTS) filter using the GPS platen data as input and, in turn, the raw data from the two platen and four foundation accelerometers. To assess accuracy, we compared the GPS-only, accelerometer-only, and Kalman filter displacements to the input ?ground truth? displacements provided at 1024 Hz by the MTS digital controller. To assess precision, we compared the root-mean-square (RMS) of the distances between pairs of accelerometers and pairs of GPS receivers on the roof of the building (7th floor). The results of these comparisons are given in Table 1. 
+
+The building was instrumented with seven geodetic-quality Navcom NCT-200D GPS receivers sampling at 50 Hz and MEMS-Piezoresistive MSI model 3140 accelerometers sampling at 240 Hz. Three GPS receivers were mounted on the roof (7th floor near the north, south and east corners), and two receivers were cantilevered on the 3rd and 5th floors of the flange wall (east side). A 6th receiver was located just off the shake table?s platen as a stable reference point for measuring displacements. A 7th GPS receiver was situated on the platen. The 15 accelerometers were mounted as follows: 2 on the platen, 4 on the building foundation, 3 on the first floor, 3 on the fifth floor and 3 on the seventh floor (roof). Unfortunately, the north receiver on the roof of the building was not operational during EQ4 due to a loose antenna cable. 
+
+GPS phase and pseudorange data were streamed to a PC workstation and 50 Hz displacement waveforms were estimated on-the-fly using the method of instantaneous positioning (\citet{bock2000}, see Section \ref{sec:gps}) . The ``GPS-only'' displacements are relative to the fixed coordinates of the GPS receiver just off the platen, which were pre-determined with respect to the true-of-date ITRF2005 coordinates of Plate Boundary Observatory (PBO) station P472 at Camp Elliot (32º.8892N, 117º.1047W), approximately 656 m away. The accelerometer data were doubly-integrated by high-pass filtering to determine ``accelerometer-only'' displacements. We re-sampled the 240 Hz raw accelerometer data to 250 Hz to be able to align the times of every 5th point with the 50 Hz Navcom GPS data. Displacement waveforms were then computed using both the forward and the smoothed Kalman (RTS) filter using the GPS platen data as input and, in turn, the raw data from the two platen and four foundation accelerometers. To assess accuracy, we compared the GPS-only, accelerometer-only, and Kalman filter displacements to the input ?ground truth? displacements provided at 1024 Hz by the MTS digital controller. To assess precision, we compared the root-mean-square (RMS) of the distances between pairs of accelerometers and pairs of GPS receivers on the roof of the building (7th floor). The results of these comparisons are given in Table \ref{tb_shakeresults}. 
+
+\begin{longtable}{p{7cm} | p{1.4cm} | p{1.4cm} | p{1.4cm} | p{1.4cm}}
+\caption[2006 shake table test results]{RMS differences between computed displacement waveforms and the input registered by the shake table's MTS recorder for four earthquake simulations (EQ1-EQ4). We show the results of high pass filtered accelerometer derived displacements for platen accelerometers (PA1 and PA2) and building foundation accelerometers (FA1-4) as well as Kalman filtered waveforms obtained from the platen GPS and platen and foundation accelerometers. We also show the results from decimated data (5 Hz for GPS and 100 Hz for accelerometers, and 1 Hz for GPS and 100Hz for accelerometers). The peak displacements are 0.16-0.17 m for EQ1-EQ3 and 0.40 m for EQ4} \label{tb_shakeresults}\\
+\hline
+\textbf{Sensors} & \textbf{EQ1} & \textbf{EQ2} & \textbf{EQ3} & \textbf{EQ4}\\
+\hline
+\multicolumn{5}{c}{\textbf{GPS Displacements RMS (m)}} \\
+\hline
+Platen GPS & 0.0026 & 0.0040 & 0.0029 & 0.0037\\
+\hline
+\multicolumn{5}{c}{\textbf{Accelerometer Derived Displacements RMS (m)}}\\
+\hline
+PA1 & 0.0193 & 0.0181 & 0.0151 & 0.0120\\
+PA2 & 0.0177 & 0.0184 & 0.0131 & 0.0175\\
+FA1 & 0.0308 & 0.0278 & 0.0037 & 0.0027\\
+FA2 & 0.0304 & 0.0274 & 0.0036 & 0.0028\\
+FA3 & 0.0307 & 0.0276 & 0.0037 & 0.0027\\
+FA4 & 0.0307 & 0.0276 & 0.0036 & 0.0027\\
+\hline
+\multicolumn{5}{c}{\textbf{Forward Filter RMS (m)}}\\
+\hline
+PA1+GPS & 0.0021 & 0.0041 & 0.0034 & 0.0033\\
+PA2+GPS & 0.0021 & 0.0041 & 0.0034 & 0.0033\\
+FA1+GPS & 0.0016 & 0.0021 & 0.0020 & 0.0020\\
+FA2+GPS & 0.0016 & 0.0020 & 0.0020 & 0.0020\\
+FA3+GPS & 0.0016 & 0.0021 & 0.0020 & 0.0020\\
+FA4+GPS & 0.0016 & 0.0021 & 0.0020 & 0.0020\\
+\hline
+\multicolumn{5}{c}{\textbf{Forward Filter + 5 Hz Decimation RMS (m)}}\\
+\hline 
+PA1+GPS & 0.0041 & 0.0074 & 0.0074 & 0.0046\\
+PA2+GPS & 0.0040 & 0.0074 & 0.0074 & 0.0046\\
+FA1+GPS & 0.0042 & 0.0067 & 0.0063 & 0.0037\\
+FA2+GPS & 0.0042 & 0.0066 & 0.0063 & 0.0037\\
+FA3+GPS & 0.0042 & 0.0066 & 0.0063 & 0.0037\\
+FA4+GPS & 0.0042 & 0.0066 & 0.0063 & 0.0037\\
+\hline
+\multicolumn{5}{c}{\textbf{Forward Filter + 1 Hz Decimation RMS (m)}}\\
+\hline
+PA1+GPS & 0.0353 & 0.0211 & 0.0625 & 0.0341\\
+PA2+GPS & 0.0353 & 0.0211 & 0.0625 & 0.0341\\
+FA1+GPS & 0.0333 & 0.0313 & 0.0612 & 0.0273\\
+FA2+GPS & 0.0333 & 0.0305 & 0.0607 & 0.0265\\
+FA3+GPS & 0.0333 & 0.0308 & 0.0609 & 0.0275\\
+FA4+GPS & 0.0333 & 0.0309 & 0.0601 & 0.0277\\
+\hline
+\multicolumn{5}{c}{\textbf{Forward Filter + RTS Smoothing RMS (m)}}\\
+\hline
+PA1+GPS & 0.0016 & 0.0036 & 0.0024 & 0.0028\\
+PA2+GPS & 0.0016 & 0.0036 & 0.0024 & 0.0028\\
+FA1+GPS & 0.0017 & 0.0021 & 0.0021 & 0.0025\\
+FA2+GPS & 0.0017 & 0.0021 & 0.0021 & 0.0025\\
+FA3+GPS & 0.0017 & 0.0021 & 0.0021 & 0.0025\\
+FA4+GPS & 0.0017 & 0.0021 & 0.0021 & 0.0025\\
+\hline
+\multicolumn{5}{c}{\textbf{Forward Filter + RTS Smoothing + 5 Hz Decimation RMS (m)}}\\
+\hline
+PA1+GPS & 0.0015 & 0.0038 & 0.0027 & 0.0028\\
+PA2+GPS & 0.0015 & 0.0038 & 0.0027 & 0.0028\\
+FA1+GPS & 0.0017 & 0.0022 & 0.0024 & 0.0025\\
+FA2+GPS & 0.0017 & 0.0022 & 0.0024 & 0.0025\\
+FA3+GPS & 0.0017 & 0.0022 & 0.0024 & 0.0025\\
+FA4+GPS & 0.0017 & 0.0022 & 0.0024 & 0.0025\\
+\hline
+\multicolumn{5}{c}{\textbf{Forward Filter + RTS Smoothing + 1 Hz Decimation RMS (m)}}\\
+\hline
+PA1+GPS & 0.0077 & 0.0102 & 0.0152 & 0.0130\\
+PA2+GPS & 0.0077 & 0.0102 & 0.0152 & 0.0130\\
+FA1+GPS & 0.0097 & 0.0117 & 0.0168 & 0.0115\\
+FA2+GPS & 0.0097 & 0.0118 & 0.0166 & 0.0115\\
+FA3+GPS & 0.0098 & 0.0117 & 0.0167 & 0.0114\\
+FA4+GPS & 0.0096 & 0.0117 & 0.0167 & 0.0115\\
+\hline
+\multicolumn{5}{c}{\textbf{Roof Baselines RMS (m)}}\\
+\hline
+GPS (N-S) & 0.0033 & 0.0026 & 0.0035 & n/a\\
+GPS (N-E) & 0.003 & 0.0019 & 0.0034 & n/a\\
+GPS (S-E) & 0.0036 & 0.0033 & 0.0023 & 0.0031\\
+Accelerometer (N-S) & 0.0008 & 0.0007 & 0.001 & 0.0012\\
+\hline
+\end{longtable}
+
+\subsubsection{Accuracy of the Displacement Waveforms}
+
+Accuracy was determined by comparing the various displacement waveforms with the``truth'' displacements provided by the MTS recorder, for each of the four experiments, using the RMS difference as the statistical measure. The results are given in Figure \ref{fig_shakewaves} and Table \ref{tb_shakeresults}. The peak-to-peak displacements are on the order of 0.17 m for EQ1-EQ3, and 0.4 m for the high intensity Northridge event (EQ4). The RMS statistic is computed over the entire record including dynamic and static periods. The displacements for the single GPS on the platen have an RMS difference of 2.6-4.0 mm, while the displacements for the two accelerometers on the platen have an RMS difference of 12.0-19.3 mm. The larger differences for the accelerometer-derived displacements result from mismatches in amplitude and phase compared to the MTS displacements. The forward Kalman filter solutions reduce the RMS differences by about 10\% (except for EQ2 where there is a 10\% increase) compared to the GPS-only solutions (2.2-4.1 mm), and there is an additional 10\% improvement for all four experiments with the smoothed Kalman filter solutions (1.6-2.3 mm). For the foundation accelerometers, the RMS differences are higher for EQ1 and EQ2 (about 30 mm), but unexpectedly an order of magnitude less for EQ3 and EQ4. In any case, we can conclude that the combined GPS and accelerometer displacement waveforms provide overall mm-level accuracy over the entire range of sampled frequencies, and improved accuracy when compared to GPS-only or accelerometer-only solutions. The improvement is generally more pronounced when compared to the accelerometer-only solutions. This is not surprising because of the inherent limitations and biases encountered in the double integration of accelerometer data.  It is interesting to note that the RMS statistics for either the static or dynamic periods did not differ significantly from the RMS values computed for the entire period (static and dynamic) for any of the experiments. We saw only insignificant degradation (10\%) in accuracy during periods of strong shaking.
+
+\begin{figure}[!ht] 
+  \centering
+  \includegraphics[width=0.99\linewidth]{./figures/shake_waves.eps}
+    \caption[2006 shake table experiment Kalman filtered waveforms]{Accuracy of broadband displacement waveforms. Root-mean-square (RMS) of the differences between the smoothed Kalman filter displacement waveforms estimated for the four earthquake simulations and the deterministic input as registered at 1024 Hz by the shake table?s MTS digital recorder (see also Table \ref{tb_shakeresults}). The waveforms are estimated from the platen GPS and one of the accelerometers on the platen. Note that the vertical scale is the same for (a) through (c) but changes for (d). The two waveforms in each graph have been offset for clarity.}
+  \label{fig_shakewaves}
+\end{figure}
+We repeated the previous analysis with two decimation schemes: the first one decimating the accelerometer to 100 Hz and the GPS to 5 Hz and the second one decimating the accelerometer to 100 Hz and the GPS to 1 Hz (Table \ref{tb_shakeresults}). The latter corresponds to the sampling rates of real-time GPS and strong motion sensors in southern California during the 2010 Mw 7.2 El Mayor-Cucapah earthquake. We find that the fit of the Kalman filtered waveforms is only mildly degraded in the first decimation scheme, and significantly degraded with the second decimation scheme. However smoothing provides a significant improvement, especially at the lower GPS sampling rates (1 Hz). This is an important practical consideration since GPS data are considerably more verbose than strong motion data. 
 
 \section{Application to the M9 Tohoku-oki Earthquake}
 
