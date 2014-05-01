@@ -1,12 +1,11 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  29 APR 2014 10:10
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.30)  30 APR 2014 15:48
 entering extended mode
- restricted \write18 enabled.
- file:line:error style messages enabled.
+ \write18 enabled.
  %&-line parsing enabled.
 **dissertation.tex
 (./dissertation.tex
 LaTeX2e <2011/06/27>
-Babel <3.9f> and hyphenation patterns for 78 languages loaded.
+Babel <3.9k> and hyphenation patterns for 78 languages loaded.
 (./ucsd.cls
 Document Class: ucsd 2010/06/01 V3.7 University of California, San Diego, Disse
 rtation Class
@@ -272,76 +271,277 @@ Chapter 1.
 
  (./ch2.tex
 Chapter 2.
+
+Package natbib Warning: Citation `Havskov2006' on page 3 undefined on input lin
+e 12.
+
+
+Package natbib Warning: Citation `Havskov2006' on page 3 undefined on input lin
+e 12.
+
 [3
 
 
 
 ]
-Overfull \hbox (3.27866pt too wide) in paragraph at lines 12--13
+
+Package natbib Warning: Citation `Graizer1979' on page 4 undefined on input lin
+e 16.
+
+
+Package natbib Warning: Citation `Iwan1985' on page 4 undefined on input line 1
+6.
+
+
+Package natbib Warning: Citation `Boore1999' on page 4 undefined on input line 
+16.
+
+
+Package natbib Warning: Citation `Boore2001' on page 4 undefined on input line 
+16.
+
+
+Package natbib Warning: Citation `Boore2002' on page 4 undefined on input line 
+16.
+
+
+Package natbib Warning: Citation `Smyth2007' on page 4 undefined on input line 
+16.
+
+
+Package natbib Warning: Citation `Graizer2006' on page 4 undefined on input lin
+e 16.
+
+
+Package natbib Warning: Citation `Pillet2007' on page 4 undefined on input line
+ 16.
+
+
+Overfull \hbox (3.27866pt too wide) in paragraph at lines 16--17
 []\OT1/cmr/m/n/12 The prob-lems as-so-ci-ated with the dou-ble in-te-gra-tion o
 f ac-celerom-e-ter record-
  []
 
-Package epstopdf Info: Source file: <./figures/iwt009.eps>
-(epstopdf)                    date: 2014-04-25 16:30:36
+Package epstopdf Info: Source file: <./figures/ch2/iwt009.eps>
+(epstopdf)                    date: 2014-04-25 16:29:07
 (epstopdf)                    size: 471732 bytes
-(epstopdf)             Output file: <./figures/iwt009-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-04-25 16:33:49
+(epstopdf)             Output file: <./figures/ch2/iwt009-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2014-04-26 18:03:16
 (epstopdf)                    size: 135032 bytes
-(epstopdf)             Command: <repstopdf --outfile=./figures/iwt009-eps-conve
-rted-to.pdf ./figures/iwt009.eps>
-(epstopdf)             \includegraphics on input line 16.
+(epstopdf)             Command: <epstopdf --outfile=./figures/ch2/iwt009-eps-co
+nverted-to.pdf ./figures/ch2/iwt009.eps>
+(epstopdf)             \includegraphics on input line 20.
 Package epstopdf Info: Output file is already uptodate.
-<./figures/iwt009-eps-converted-to.pdf, id=56, 578.16pt x 433.62pt>
-File: ./figures/iwt009-eps-converted-to.pdf Graphic file (type pdf)
+<./figures/ch2/iwt009-eps-converted-to.pdf, id=56, 578.16pt x 433.62pt>
+File: ./figures/ch2/iwt009-eps-converted-to.pdf Graphic file (type pdf)
 
-<use ./figures/iwt009-eps-converted-to.pdf>
-Package pdftex.def Info: ./figures/iwt009-eps-converted-to.pdf used on input li
-ne 16.
+<use ./figures/ch2/iwt009-eps-converted-to.pdf>
+Package pdftex.def Info: ./figures/ch2/iwt009-eps-converted-to.pdf used on inpu
+t line 20.
 (pdftex.def)             Requested size: 414.97685pt x 311.23354pt.
- [4] [5 <./figures/iwt009-eps-converted-to.pdf>] [6]
-Package epstopdf Info: Source file: <./figures/iwt009bl.eps>
-(epstopdf)                    date: 2014-04-25 16:30:36
+
+
+Package natbib Warning: Citation `Trifunac2001' on page 4 undefined on input li
+ne 25.
+
+
+Package natbib Warning: Citation `Boore2005' on page 4 undefined on input line 
+27.
+
+
+Package natbib Warning: Citation `Boore2005' on page 4 undefined on input line 
+27.
+
+
+Package natbib Warning: Citation `Boore1999' on page 4 undefined on input line 
+27.
+
+
+Package natbib Warning: Citation `Boore2001' on page 4 undefined on input line 
+27.
+
+
+Package natbib Warning: Citation `Iwan1985' on page 4 undefined on input line 2
+7.
+
+
+Package natbib Warning: Citation `Boore1999' on page 4 undefined on input line 
+27.
+
+
+Package natbib Warning: Citation `Boore2001' on page 4 undefined on input line 
+27.
+
+
+Package natbib Warning: Citation `Wu2007' on page 4 undefined on input line 27.
+
+
+
+Package natbib Warning: Citation `Chao2010' on page 4 undefined on input line 2
+7.
+
+
+Package natbib Warning: Citation `Wang2011' on page 4 undefined on input line 2
+7.
+
+[4] [5 <./figures/ch2/iwt009-eps-converted-to.pdf>]
+
+Package natbib Warning: Citation `Boore1999' on page 6 undefined on input line 
+33.
+
+
+Package natbib Warning: Citation `Boore1999' on page 6 undefined on input line 
+37.
+
+
+Package natbib Warning: Citation `Boore2001' on page 6 undefined on input line 
+37.
+
+[6]
+Package epstopdf Info: Source file: <./figures/ch2/iwt009bl.eps>
+(epstopdf)                    date: 2014-04-25 16:31:03
 (epstopdf)                    size: 100673 bytes
-(epstopdf)             Output file: <./figures/iwt009bl-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-04-25 16:34:10
+(epstopdf)             Output file: <./figures/ch2/iwt009bl-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2014-04-26 18:03:16
 (epstopdf)                    size: 47922 bytes
-(epstopdf)             Command: <repstopdf --outfile=./figures/iwt009bl-eps-con
-verted-to.pdf ./figures/iwt009bl.eps>
-(epstopdf)             \includegraphics on input line 37.
+(epstopdf)             Command: <epstopdf --outfile=./figures/ch2/iwt009bl-eps-
+converted-to.pdf ./figures/ch2/iwt009bl.eps>
+(epstopdf)             \includegraphics on input line 41.
 Package epstopdf Info: Output file is already uptodate.
 
-<./figures/iwt009bl-eps-converted-to.pdf, id=111, 730.73pt x 342.27875pt>
-File: ./figures/iwt009bl-eps-converted-to.pdf Graphic file (type pdf)
+<./figures/ch2/iwt009bl-eps-converted-to.pdf, id=111, 730.73pt x 342.27875pt>
+File: ./figures/ch2/iwt009bl-eps-converted-to.pdf Graphic file (type pdf)
 
-<use ./figures/iwt009bl-eps-converted-to.pdf>
-Package pdftex.def Info: ./figures/iwt009bl-eps-converted-to.pdf used on input 
-line 37.
+<use ./figures/ch2/iwt009bl-eps-converted-to.pdf>
+Package pdftex.def Info: ./figures/ch2/iwt009bl-eps-converted-to.pdf used on in
+put line 41.
 (pdftex.def)             Requested size: 414.97685pt x 194.38016pt.
- [7 <./figures/iwt009bl-eps-converted-to.pdf>]
+
+
+Package natbib Warning: Citation `Wu2007' on page 7 undefined on input line 48.
+
+
+
+Package natbib Warning: Citation `Chao2010' on page 7 undefined on input line 4
+8.
+
+
+Package natbib Warning: Citation `Wu2007' on page 7 undefined on input line 48.
+
+
+[7 <./figures/ch2/iwt009bl-eps-converted-to.pdf>]
+
+Package natbib Warning: Citation `Wang2011' on page 8 undefined on input line 5
+0.
+
+
+Package natbib Warning: Citation `Wang2013' on page 8 undefined on input line 5
+2.
+
 Missing character: There is no ¬ in font cmr12!
 Missing character: There is no ∞ in font cmr12!
- [8] [9] [10]
+
+Package natbib Warning: Citation `tu2014' on page 8 undefined on input line 52.
+
+
+
+Package natbib Warning: Citation `Wang2013' on page 8 undefined on input line 5
+2.
+
+
+Package natbib Warning: Citation `tu2014' on page 8 undefined on input line 52.
+
+
+
+Package natbib Warning: Citation `Tsuda2006' on page 8 undefined on input line 
+52.
+
+[8] [9]
+
+Package natbib Warning: Citation `Dong1989' on page 10 undefined on input line 
+61.
+
+
+Package natbib Warning: Citation `Blewitt1989' on page 10 undefined on input li
+ne 61.
+
+
+Package natbib Warning: Citation `Zumberge1997' on page 10 undefined on input l
+ine 61.
+
+
+Package natbib Warning: Citation `Blewitt1989' on page 10 undefined on input li
+ne 63.
+
+
+Package natbib Warning: Citation `Dong1989' on page 10 undefined on input line 
+63.
+
+
+Package natbib Warning: Citation `Nikolaidis2001' on page 10 undefined on input
+ line 65.
+
+
+Package natbib Warning: Citation `Larson2003' on page 10 undefined on input lin
+e 65.
+
+
+Package natbib Warning: Citation `Bock2004' on page 10 undefined on input line 
+65.
+
+
+Package natbib Warning: Citation `Miyazaki2004' on page 10 undefined on input l
+ine 65.
+
+
+Package natbib Warning: Citation `Crowell2009' on page 10 undefined on input li
+ne 67.
+
+[10]
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ô in font cmr12!
- [11] [12]
-Package epstopdf Info: Source file: <./figures/parkfield.eps>
-(epstopdf)                    date: 2014-04-29 08:43:52
+
+
+Package natbib Warning: Citation `Geng2010' on page 11 undefined on input line 
+69.
+
+
+Package natbib Warning: Citation `Geng2013' on page 11 undefined on input line 
+69.
+
+
+Package natbib Warning: Citation `Geng2013b' on page 11 undefined on input line
+ 69.
+
+
+Package natbib Warning: Citation `Crowell2009' on page 11 undefined on input li
+ne 71.
+
+
+Package natbib Warning: Citation `Geng2013' on page 11 undefined on input line 
+71.
+
+[11]
+Package epstopdf Info: Source file: <./figures/ch2/parkfield.eps>
+(epstopdf)                    date: 2014-04-29 16:23:37
 (epstopdf)                    size: 279553 bytes
-(epstopdf)             Output file: <./figures/parkfield-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-04-29 08:48:46
+(epstopdf)             Output file: <./figures/ch2/parkfield-eps-converted-to.p
+df>
+(epstopdf)                    date: 2014-04-29 16:23:37
 (epstopdf)                    size: 23328 bytes
-(epstopdf)             Command: <repstopdf --outfile=./figures/parkfield-eps-co
-nverted-to.pdf ./figures/parkfield.eps>
-(epstopdf)             \includegraphics on input line 73.
+(epstopdf)             Command: <epstopdf --outfile=./figures/ch2/parkfield-eps
+-converted-to.pdf ./figures/ch2/parkfield.eps>
+(epstopdf)             \includegraphics on input line 77.
 Package epstopdf Info: Output file is already uptodate.
 
-<./figures/parkfield-eps-converted-to.pdf, id=179, 397.485pt x 250.9375pt>
-File: ./figures/parkfield-eps-converted-to.pdf Graphic file (type pdf)
+<./figures/ch2/parkfield-eps-converted-to.pdf, id=175, 397.485pt x 250.9375pt>
+File: ./figures/ch2/parkfield-eps-converted-to.pdf Graphic file (type pdf)
 
-<use ./figures/parkfield-eps-converted-to.pdf>
-Package pdftex.def Info: ./figures/parkfield-eps-converted-to.pdf used on input
- line 73.
+<use ./figures/ch2/parkfield-eps-converted-to.pdf>
+Package pdftex.def Info: ./figures/ch2/parkfield-eps-converted-to.pdf used on i
+nput line 77.
 (pdftex.def)             Requested size: 414.97685pt x 261.98734pt.
 Missing character: There is no ∫ in font cmr12!
 Missing character: There is no ∫ in font cmr12!
@@ -351,129 +551,424 @@ Missing character: There is no ∫ in font cmr12!
 Missing character: There is no ∫ in font cmr12!
 Missing character: There is no ∫ in font cmr12!
 Missing character: There is no ∫ in font cmr12!
- [13 <./figures/parkfield-eps-converted-to.pdf>] [14] [15] [16] [17] [18] [19] 
-[20] [21]
-Overfull \hbox (8.83487pt too wide) detected at line 391
+
+
+Package natbib Warning: Citation `genrich2006' on page 12 undefined on input li
+ne 82.
+
+
+Package natbib Warning: Citation `genrich2006' on page 12 undefined on input li
+ne 82.
+
+
+Package natbib Warning: Citation `smalley2009' on page 12 undefined on input li
+ne 82.
+
+[12] [13 <./figures/ch2/parkfield-eps-converted-to.pdf>] [14]
+
+Package natbib Warning: Citation `Nikolaidis2001' on page 15 undefined on input
+ line 143.
+
+
+Package natbib Warning: Citation `emore2007' on page 15 undefined on input line
+ 143.
+
+
+Package natbib Warning: Citation `kalman1960' on page 15 undefined on input lin
+e 147.
+
+
+Package natbib Warning: Citation `lewis2008' on page 15 undefined on input line
+ 147.
+
+[15]
+
+Package natbib Warning: Citation `lewis2008' on page 16 undefined on input line
+ 210.
+
+[16]
+
+Package natbib Warning: Citation `lewis2008' on page 17 undefined on input line
+ 227.
+
+
+Package natbib Warning: Citation `kalman1960' on page 17 undefined on input lin
+e 240.
+
+
+Package natbib Warning: Citation `lewis2008' on page 17 undefined on input line
+ 240.
+
+[17]
+
+Package natbib Warning: Citation `Smyth2007' on page 18 undefined on input line
+ 262.
+
+[18]
+
+Package natbib Warning: Citation `rauch1965' on page 19 undefined on input line
+ 293.
+
+[19] [20] [21]
+Overfull \hbox (8.83487pt too wide) detected at line 395
 \OT1/cmr/bx/n/12 Q[] \OT1/cmr/m/n/12 = \OT1/cmr/bx/n/12 Q\OML/cmm/m/it/12 ^^\[]
  \OT1/cmr/m/n/12 + []([] + [][])\OML/cmm/m/it/12 ^^\[] \OT1/cmr/m/n/12 + [][][]
 \OML/cmm/m/it/12 ^^\[] \OT1/cmr/m/n/12 = []  \OML/cmm/m/it/12 :
  []
 
 [22]
-Missing character: There is no ∫ in font cmr12!
- [23] <./figures/shaketable2006.png, id=223, 800.9925pt x 478.78876pt>
-File: ./figures/shaketable2006.png Graphic file (type png)
 
-<use ./figures/shaketable2006.png>
-Package pdftex.def Info: ./figures/shaketable2006.png used on input line 405.
+Package natbib Warning: Citation `panagiotou2008' on page 23 undefined on input
+ line 403.
+
+
+Package natbib Warning: Citation `moaveni2010' on page 23 undefined on input li
+ne 403.
+
+Missing character: There is no ∫ in font cmr12!
+[23] <./figures/ch2/shaketable2006.png, id=223, 800.9925pt x 478.78876pt>
+File: ./figures/ch2/shaketable2006.png Graphic file (type png)
+
+<use ./figures/ch2/shaketable2006.png>
+Package pdftex.def Info: ./figures/ch2/shaketable2006.png used on input line 40
+9.
 (pdftex.def)             Requested size: 414.97685pt x 248.05106pt.
- [24 <./figures/shaketable2006.png>]
+
+
+Package natbib Warning: Citation `bock2000' on page 24 undefined on input line 
+416.
+
 Missing character: There is no ∫ in font cmr12!
 Missing character: There is no ∫ in font cmr12!
- [25]
-[26] [27] [28]
-Package epstopdf Info: Source file: <./figures/shake_waves.eps>
-(epstopdf)                    date: 2014-04-29 10:10:29
-(epstopdf)                    size: 3276212 bytes
-(epstopdf)             Output file: <./figures/shake_waves-eps-converted-to.pdf
->
-(epstopdf)                    date: 2014-04-29 10:10:00
-(epstopdf)                    size: 394242 bytes
-(epstopdf)             Command: <repstopdf --outfile=./figures/shake_waves-eps-
-converted-to.pdf ./figures/shake_waves.eps>
-(epstopdf)             \includegraphics on input line 501.
-runsystem(repstopdf --outfile=./figures/shake_waves-eps-converted-to.pdf ./figu
-res/shake_waves.eps)...executed safely (allowed).
+[24 <./figures/ch2/shaketable2006.png>] [25] [26] [27]
+<./figures/ch2/shake_waves.pdf, id=240, 325.19894pt x 365.8488pt>
+File: ./figures/ch2/shake_waves.pdf Graphic file (type pdf)
 
-Package epstopdf Info: Result file: <./figures/shake_waves-eps-converted-to.pdf
->
-(epstopdf)                    date: 2014-04-29 10:10:54
-(epstopdf)                    size: 409033 bytes.
+<use ./figures/ch2/shake_waves.pdf>
+Package pdftex.def Info: ./figures/ch2/shake_waves.pdf used on input line 505.
+(pdftex.def)             Requested size: 414.97685pt x 466.86134pt.
+ [28]
 
-<./figures/shake_waves-eps-converted-to.pdf, id=243, 343.2825pt x 350.30875pt>
-File: ./figures/shake_waves-eps-converted-to.pdf Graphic file (type pdf)
+LaTeX Warning: Text page 29 contains only floats.
 
-<use ./figures/shake_waves-eps-converted-to.pdf>
-Package pdftex.def Info: ./figures/shake_waves-eps-converted-to.pdf used on inp
-ut line 501.
-(pdftex.def)             Requested size: 414.97685pt x 423.46866pt.
+[29 <./figures/ch2/shake_waves.pdf>]
 
-Overfull \hbox (10.70349pt too wide) in paragraph at lines 508--508
+Package natbib Warning: Citation `genrich2006' on page 30 undefined on input li
+ne 514.
+
+
+Package natbib Warning: Citation `langbein2004' on page 30 undefined on input l
+ine 518.
+
+
+Package natbib Warning: Citation `genrich2006' on page 30 undefined on input li
+ne 518.
+
+
+Package natbib Warning: Citation `bock2000' on page 30 undefined on input line 
+518.
+
+[30]
+
+Package natbib Warning: Citation `hauksson2011' on page 31 undefined on input l
+ine 520.
+
+
+Package natbib Warning: Citation `wei2011' on page 31 undefined on input line 5
+20.
+
+
+Overfull \hbox (12.11958pt too wide) in paragraph at lines 520--521
+\OT1/cmr/m/n/12 strike-slip faults that are sep-a-rated by pull-apart basins th
+at ac-com-mo-date northwest-
+ []
+
+<./figures/ch2/map_elmayor.pdf, id=317, 519.7859pt x 463.7325pt>
+File: ./figures/ch2/map_elmayor.pdf Graphic file (type pdf)
+
+<use ./figures/ch2/map_elmayor.pdf>
+Package pdftex.def Info: ./figures/ch2/map_elmayor.pdf used on input line 524.
+(pdftex.def)             Requested size: 414.97685pt x 370.22229pt.
+Missing character: There is no – in font cmr12!
+
+<./figures/ch2/elmay_allwaves.pdf, id=318, 466.4095pt x 341.94449pt>
+File: ./figures/ch2/elmay_allwaves.pdf Graphic file (type pdf)
+
+<use ./figures/ch2/elmay_allwaves.pdf>
+Package pdftex.def Info: ./figures/ch2/elmay_allwaves.pdf used on input line 53
+3.
+(pdftex.def)             Requested size: 414.97685pt x 304.23572pt.
+Missing character: There is no ’ in font cmr12!
+
+Overfull \hbox (179.99803pt too wide) in paragraph at lines 543--561
+[][] 
+ []
+
+Missing character: There is no ’ in font cmr12!
+[31] [32 <./figures/ch2/map_elmayor.pdf>]
+<./figures/ch2/wes_p494_all.pdf, id=1206, 505.89pt x 386.05328pt>
+File: ./figures/ch2/wes_p494_all.pdf Graphic file (type pdf)
+
+<use ./figures/ch2/wes_p494_all.pdf>
+Package pdftex.def Info: ./figures/ch2/wes_p494_all.pdf used on input line 567.
+
+(pdftex.def)             Requested size: 414.97685pt x 316.68353pt.
+ [33 <./figures/ch2/elmay_allwaves.pdf>]
+Missing character: There is no – in font cmr12!
+
+Overfull \hbox (6.95226pt too wide) in paragraph at lines 575--576
+[]\OT1/cmr/m/n/12 In Fig-ure 2.9[], we show the broad-band dis-place-ment wave-
+forms for P494/WES
+ []
+
+<./figures/ch2/weskal.pdf, id=1246, 377.89279pt x 239.80191pt>
+File: ./figures/ch2/weskal.pdf Graphic file (type pdf)
+
+<use ./figures/ch2/weskal.pdf>
+Package pdftex.def Info: ./figures/ch2/weskal.pdf used on input line 579.
+(pdftex.def)             Requested size: 414.97685pt x 263.34381pt.
+
+<./figures/ch2/kal_3verticals.pdf, id=1247, 895.80173pt x 538.98563pt>
+File: ./figures/ch2/kal_3verticals.pdf Graphic file (type pdf)
+
+<use ./figures/ch2/kal_3verticals.pdf>
+Package pdftex.def Info: ./figures/ch2/kal_3verticals.pdf used on input line 58
+6.
+(pdftex.def)             Requested size: 414.97685pt x 249.68816pt.
+ [34] [35 <./figures/ch2/wes_p494_all.pdf>] <./figures/ch2/elmay_shake_psd.pdf,
+ id=1278, 423.08063pt x 166.12062pt>
+File: ./figures/ch2/elmay_shake_psd.pdf Graphic file (type pdf)
+
+<use ./figures/ch2/elmay_shake_psd.pdf>
+Package pdftex.def Info: ./figures/ch2/elmay_shake_psd.pdf used on input line 5
+96.
+(pdftex.def)             Requested size: 414.97685pt x 162.9441pt.
+ [36 <./figures/ch2/weskal.pdf>]
+
+LaTeX Warning: Text page 37 contains only floats.
+
+[37 <./figures/ch2/kal_3verticals.pdf> <./figures/ch2/elmay_shake_psd.pdf>]
+<./figures/ch2/psd_peaks.pdf, id=1395, 420.23598pt x 157.2535pt>
+File: ./figures/ch2/psd_peaks.pdf Graphic file (type pdf)
+
+<use ./figures/ch2/psd_peaks.pdf>
+Package pdftex.def Info: ./figures/ch2/psd_peaks.pdf used on input line 605.
+(pdftex.def)             Requested size: 414.97685pt x 155.2903pt.
+
+<./figures/ch2/kal_saw.pdf, id=1396, 365.365pt x 115.93312pt>
+File: ./figures/ch2/kal_saw.pdf Graphic file (type pdf)
+
+<use ./figures/ch2/kal_saw.pdf>
+Package pdftex.def Info: ./figures/ch2/kal_saw.pdf used on input line 612.
+(pdftex.def)             Requested size: 414.97685pt x 131.68217pt.
+
+<./figures/ch2/synth_saw_psd.pdf, id=1397, 331.2375pt x 170.6375pt>
+File: ./figures/ch2/synth_saw_psd.pdf Graphic file (type pdf)
+
+<use ./figures/ch2/synth_saw_psd.pdf>
+Package pdftex.def Info: ./figures/ch2/synth_saw_psd.pdf used on input line 619
+.
+(pdftex.def)             Requested size: 414.97685pt x 213.78583pt.
+
+
+LaTeX Warning: Reference `Section sec:kalman' on page 38 undefined on input lin
+e 626.
+
+
+Package natbib Warning: Citation `bock2000' on page 38 undefined on input line 
+626.
+
+
+Package natbib Warning: Citation `genrich2006' on page 38 undefined on input li
+ne 626.
+
+[38 <./figures/ch2/psd_peaks.pdf>] [39 <./figures/ch2/kal_saw.pdf> <./figures/c
+h2/synth_saw_psd.pdf>]
+<./figures/ch2/variances.pdf, id=1488, 372.39125pt x 254.9525pt>
+File: ./figures/ch2/variances.pdf Graphic file (type pdf)
+
+<use ./figures/ch2/variances.pdf>
+Package pdftex.def Info: ./figures/ch2/variances.pdf used on input line 630.
+(pdftex.def)             Requested size: 414.97685pt x 284.11711pt.
+
+
+Package natbib Warning: Citation `Trifunac2001' on page 40 undefined on input l
+ine 635.
+
+
+Package natbib Warning: Citation `Pillet2007' on page 40 undefined on input lin
+e 635.
+
+
+Package natbib Warning: Citation `Trifunac2001' on page 40 undefined on input l
+ine 635.
+
+
+Package natbib Warning: Citation `lee2009' on page 40 undefined on input line 6
+35.
+
+[40 <./figures/ch2/variances.pdf>]
+<./figures/ch2/qeffect.pdf, id=1524, 432.61626pt x 282.05376pt>
+File: ./figures/ch2/qeffect.pdf Graphic file (type pdf)
+
+<use ./figures/ch2/qeffect.pdf>
+Package pdftex.def Info: ./figures/ch2/qeffect.pdf used on input line 639.
+(pdftex.def)             Requested size: 414.97685pt x 270.56624pt.
+
+
+Package natbib Warning: Citation `lee2009' on page 41 undefined on input line 6
+44.
+
+[41]
+
+Package natbib Warning: Citation `genrich2006' on page 42 undefined on input li
+ne 650.
+
+
+Overfull \hbox (1.03981pt too wide) in paragraph at lines 650--651
+[]\OT1/cmr/m/n/12 The very-high fre-quency re-sponse of GPS-derived dis-place-m
+ents is flat above
+ []
+
+[42 <./figures/ch2/qeffect.pdf>]
+
+Package natbib Warning: Citation `genrich2006' on page 43 undefined on input li
+ne 652.
+
+
+Overfull \hbox (0.7898pt too wide) in paragraph at lines 652--653
+[]\OT1/cmr/m/n/12 We find that the ba-sic state vec-tor rep-re-sen-ta-tion is s
+uf-fi-cient for the Kalman
+ []
+
+[43] <./figures/ch2/fnoise_reduction.pdf, id=1582, 306.14375pt x 189.70876pt>
+File: ./figures/ch2/fnoise_reduction.pdf Graphic file (type pdf)
+
+<use ./figures/ch2/fnoise_reduction.pdf>
+Package pdftex.def Info: ./figures/ch2/fnoise_reduction.pdf used on input line 
+658.
+(pdftex.def)             Requested size: 414.97685pt x 257.16391pt.
+
+
+Package natbib Warning: Citation `Geng2013' on page 44 undefined on input line 
+663.
+
+[44]
+Overfull \hbox (10.70349pt too wide) in paragraph at lines 666--666
 []\OT1/cmr/bx/n/17.28 Application to the M9 Tohoku-oki Earth-quake 
  []
 
-) [29] [30 <./figures/shake_waves-eps-converted-to.pdf>]
+
+LaTeX Warning: Reference `fig_map_baseline' on page 45 undefined on input line 
+673.
+
+
+Package natbib Warning: Citation `bock2000' on page 45 undefined on input line 
+673.
+
+
+Package natbib Warning: Citation `Crowell2009' on page 45 undefined on input li
+ne 673.
+
+
+LaTeX Warning: Reference `map_baseline' on page 45 undefined on input line 673.
+
+
+[45 <./figures/ch2/fnoise_reduction.pdf>]
+
+Package natbib Warning: Citation `simons2011' on page 46 undefined on input lin
+e 675.
+
+
+Package natbib Warning: Citation `Wang2011' on page 46 undefined on input line 
+677.
+
+
+Package natbib Warning: Citation `Wang2013' on page 46 undefined on input line 
+677.
+
+) [46] [47]
 \openout2 = `ch3.aux'.
 
  (./ch3.tex
 Chapter 3.
-) [31
+
+Package natbib Warning: Citation `Brown2011' on page 48 undefined on input line
+ 5.
+
+
+Package natbib Warning: Citation `bock1993' on page 48 undefined on input line 
+9.
+
+
+Package natbib Warning: Citation `blewitt1993' on page 48 undefined on input li
+ne 9.
+
+[48
 
 
 
 ]
+
+Package natbib Warning: Citation `Havskov2010' on page 49 undefined on input li
+ne 16.
+
+
+Package natbib Warning: Citation `dreger2003' on page 49 undefined on input lin
+e 16.
+
+
+Package natbib Warning: Citation `dziewonski1981' on page 49 undefined on input
+ line 18.
+
+
+Package natbib Warning: Citation `dziewonski1983' on page 49 undefined on input
+ line 18.
+
+
+Package natbib Warning: Citation `dreger1990' on page 49 undefined on input lin
+e 18.
+
+
+Package natbib Warning: Citation `dreger1993' on page 49 undefined on input lin
+e 18.
+
+[49]
+
+Package natbib Warning: Citation `kanamori2008' on page 50 undefined on input l
+ine 20.
+
+
+Package natbib Warning: Citation `kanamori1993' on page 50 undefined on input l
+ine 20.
+
+
+Package natbib Warning: Citation `hayes2009' on page 50 undefined on input line
+ 20.
+
+
+Package natbib Warning: Citation `duputel2011' on page 50 undefined on input li
+ne 22.
+
+
+Package natbib Warning: Citation `duputel2011' on page 50 undefined on input li
+ne 22.
+
+
+Package natbib Warning: Citation `duputel2011' on page 50 undefined on input li
+ne 24.
+
+
+Package natbib Warning: Citation `simons2011' on page 50 undefined on input lin
+e 24.
+
+
+Package natbib Warning: Citation `hayes2011' on page 50 undefined on input line
+ 24.
+
+[50]
+Missing character: There is no ’ in font cmr12!
+) [51]
 \openout2 = `ch4.aux'.
 
- (./ch4.tex
-Chapter 4.
-) [32
-
-
-
-]
-\openout2 = `ch5.aux'.
-
- (./ch5.tex
-Chapter 5.
-) [33
-
-
-
-]
-\openout2 = `ch6.aux'.
-
- (./ch6.tex
-Chapter 6.
-) [34
-
-
-
-] (./dissertation.bbl [35
-
-
-]
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ê in font cmr12!
- [36] [37]) [38] (./dissertation.aux
-(./frontmatter.aux) (./ch1.aux) (./ch2.aux) (./ch3.aux) (./ch4.aux) (./ch5.aux)
-(./ch6.aux))
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
-Here is how much of TeX's memory you used:
- 3181 strings out of 493315
- 42200 string characters out of 6137904
- 133981 words of memory out of 5000000
- 6540 multiletter control sequences out of 15000+600000
- 10142 words of font info for 36 fonts, out of 8000000 for 9000
- 957 hyphenation exceptions out of 8191
- 38i,11n,26p,2167b,268s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><
-/usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
-usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
-sr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr
-/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/l
-ocal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loca
-l/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local
-/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/t
-exlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on dissertation.pdf (51 pages, 1504332 bytes).
-PDF statistics:
- 321 PDF objects out of 1000 (max. 8388607)
- 175 compressed objects within 2 object streams
- 0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+ (./ch4.

@@ -1,10 +1,14 @@
 %Chapter 2: Seismogeodesy and Strong Motion Sensing
 
+%LEFT TO DO: The tables are awful... add degree symbol.
+
 \chapter{Seismogeodesy}
 
 A brief summary of what is discussed in this chapter
 
 \section{Strong Motion Sensing}
+\label{sec:strongmotion}
+
 The range of motions produced by the seismic source is broad both in frequency and dynamic range. It is well known that no one sensor can capture all signals of interest to seismology and earthquake engineering \citep{Havskov2006}. Seismologists typically rely on seismometers, whose response is related to velocity of the ground, for measurement of small amplitude signals (weak motion), but for large amplitude signals these sensitive instruments saturate or clip. In this case, strong motion sensors, whose response is related to the acceleration of the ground and have lower gains, are preferred. Modern observatory grade accelerometers rely on the force feedback principle and can measure motions as small as 1 nm at 1 Hz and 100 nm at 0.1 Hz and accelerations of up to 4g. Furthermore their frequency response is flat from ) (often called the DC-level) to 50-200 Hz \citep{Havskov2006}.
 
 Thus, in principle there should be no difficulty in integrating a strong motion record to velocity and displacement. This is not the case; in practice the simple integration of an accelerogram produces unphysical velocity and displacement waveforms that grow unbounded as time progresses. Computation of broadband displacements from strong motion recordings is a thoroughly studied procedure that is fraught with many known problems and has no known single solution. By ``broadband dispalcement'' it is meant a strong motion displacement waveform that captures both transient phenomena (waves) and permanent or static deformation, i.e. a recording reliable from DC to the Nyquist frequency.
@@ -13,7 +17,7 @@ The problems associated with the double integration of accelerometer recordings 
 
 \begin{figure}[!ht] 
   \centering
-  \includegraphics[width=0.99\linewidth]{./figures/iwt009.eps}
+  \includegraphics[width=0.99\linewidth]{./figures/ch2/iwt009.eps}
     \caption[Effect of numerical integration on a strong motion recording.]{Effect of numerical integration on a strong motion accelerogram. This example is for the east component of motion at station IWT009 192 km from the centroid of the 2011 M9 Tohoku-oki earthquake. Note the unphysical drifts in both the velocity and displacement time series.}
   \label{fig_iwt009}
 \end{figure}
@@ -34,7 +38,7 @@ Then, the acceleration baseline, $a_m$, is subtracted from the uncorrected recor
 
 \begin{figure}[!ht] 
   \centering
-  \includegraphics[width=0.99\linewidth]{./figures/iwt009bl.eps}
+  \includegraphics[width=0.99\linewidth]{./figures/ch2/iwt009bl.eps}
     \caption[Some simple baseline corrections.]{Baseline corrections using the BI algorithm for the east component of motion at station IWT009 192 km from the centroid of the 2011 M9 Tohoku-oki earthquake using different values of the correction parameter $t_1$. Also shown is the result of a 20s high pass filter corrected waveform and the GPS displacements recorded at the same site}
   \label{fig_iwt009bl}
 \end{figure}
@@ -70,7 +74,7 @@ In general GPS seems desirable over traditional seismometry for displacement com
 
 \begin{figure}[!ht] 
   \centering
-  \includegraphics[width=0.99\linewidth]{./figures/parkfield.eps}
+  \includegraphics[width=0.99\linewidth]{./figures/ch2/parkfield.eps}
     \caption[1 Hz GPS time series at Parkfield]{Typical 1 Hz GPS raw time series at station LAND (35∫.8997 N, 120∫.4731 W) in the Parkfield area over a one-year period. Shown is the north component, in this case relative to station CRBT (N 35∫.7916, 120∫.7507 W) whose coordinates were fixed in the GPS analysis. Note how the time series shows the (relative) long term plate rate as a linear trend, the coseismic offset from the September 28, 2004 Mw=6.0 Parkfield earthquake and the postseismic relaxation. In the inset, 2 minutes of data are shown where as opposed to the daily solutions time series we can also observe the (relative) dynamic shaking during the earthquake.}
   \label{fig_parkfield}
 \end{figure}
@@ -402,7 +406,7 @@ The building with a total height of 19.2 m and total weight of 250 tons was cons
 
 \begin{figure}[!ht] 
   \centering
-  \includegraphics[width=0.99\linewidth]{./figures/shaketable2006.png}
+  \includegraphics[width=0.99\linewidth]{./figures/ch2/shaketable2006.png}
     \caption[2006 shake table experiment configuration]{Experimental configuration for the 2006 shake table test}
   \label{fig_shake2006}
 \end{figure}
@@ -497,15 +501,177 @@ Accelerometer (N-S) & 0.0008 & 0.0007 & 0.001 & 0.0012\\
 Accuracy was determined by comparing the various displacement waveforms with the``truth'' displacements provided by the MTS recorder, for each of the four experiments, using the RMS difference as the statistical measure. The results are given in Figure \ref{fig_shakewaves} and Table \ref{tb_shakeresults}. The peak-to-peak displacements are on the order of 0.17 m for EQ1-EQ3, and 0.4 m for the high intensity Northridge event (EQ4). The RMS statistic is computed over the entire record including dynamic and static periods. The displacements for the single GPS on the platen have an RMS difference of 2.6-4.0 mm, while the displacements for the two accelerometers on the platen have an RMS difference of 12.0-19.3 mm. The larger differences for the accelerometer-derived displacements result from mismatches in amplitude and phase compared to the MTS displacements. The forward Kalman filter solutions reduce the RMS differences by about 10\% (except for EQ2 where there is a 10\% increase) compared to the GPS-only solutions (2.2-4.1 mm), and there is an additional 10\% improvement for all four experiments with the smoothed Kalman filter solutions (1.6-2.3 mm). For the foundation accelerometers, the RMS differences are higher for EQ1 and EQ2 (about 30 mm), but unexpectedly an order of magnitude less for EQ3 and EQ4. In any case, we can conclude that the combined GPS and accelerometer displacement waveforms provide overall mm-level accuracy over the entire range of sampled frequencies, and improved accuracy when compared to GPS-only or accelerometer-only solutions. The improvement is generally more pronounced when compared to the accelerometer-only solutions. This is not surprising because of the inherent limitations and biases encountered in the double integration of accelerometer data.  It is interesting to note that the RMS statistics for either the static or dynamic periods did not differ significantly from the RMS values computed for the entire period (static and dynamic) for any of the experiments. We saw only insignificant degradation (10\%) in accuracy during periods of strong shaking.
 
 \begin{figure}[!ht] 
-  \centering
-  \includegraphics[width=0.99\linewidth]{./figures/shake_waves.eps}
+\centering
+  \includegraphics[width=0.99\linewidth]{./figures/ch2/shake_waves.pdf}
     \caption[2006 shake table experiment Kalman filtered waveforms]{Accuracy of broadband displacement waveforms. Root-mean-square (RMS) of the differences between the smoothed Kalman filter displacement waveforms estimated for the four earthquake simulations and the deterministic input as registered at 1024 Hz by the shake table?s MTS digital recorder (see also Table \ref{tb_shakeresults}). The waveforms are estimated from the platen GPS and one of the accelerometers on the platen. Note that the vertical scale is the same for (a) through (c) but changes for (d). The two waveforms in each graph have been offset for clarity.}
   \label{fig_shakewaves}
 \end{figure}
-We repeated the previous analysis with two decimation schemes: the first one decimating the accelerometer to 100 Hz and the GPS to 5 Hz and the second one decimating the accelerometer to 100 Hz and the GPS to 1 Hz (Table \ref{tb_shakeresults}). The latter corresponds to the sampling rates of real-time GPS and strong motion sensors in southern California during the 2010 Mw 7.2 El Mayor-Cucapah earthquake. We find that the fit of the Kalman filtered waveforms is only mildly degraded in the first decimation scheme, and significantly degraded with the second decimation scheme. However smoothing provides a significant improvement, especially at the lower GPS sampling rates (1 Hz). This is an important practical consideration since GPS data are considerably more verbose than strong motion data. 
+
+We repeated the previous analysis with two decimation schemes: the first one decimating the accelerometer to 100 Hz and the GPS to 5 Hz and the second one decimating the accelerometer to 100 Hz and the GPS to 1 Hz (Table \ref{tb_shakeresults}). The latter corresponds to the sampling rates of real-time GPS and strong motion sensors in southern California during the 2010 Mw 7.2 El Mayor-Cucapah earthquake. We find that the fit of the Kalman filtered waveforms is only mildly degraded in the first decimation scheme, and significantly degraded with the second decimation scheme. However smoothing provides a significant improvement, especially at the lower GPS sampling rates (1 Hz). This is an important practical consideration since GPS data are considerably more verbose than strong motion data. 
+
+\subsubsection{Precision of the Displacement Waveforms}
+
+In order to evaluate precision we examined the RMS of the difference in displacements estimated for pairs of GPS and pairs of accelerometers on the roof of the building (7th floor) for each of the four experiments (\ref{tb_shakeresults}), including periods of both quiet and dynamic motion. The assumption is that the roof is rigid, and that there is no permanent deformation occurring between the sensors. The displacements obtained from high pass filtering of the accelerometer data show smaller RMS differences on the order of only 1 mm while the GPS-only displacements show RMS differences on the order of 3 mm. This makes sense since accelerometer data are more sensitive to ground motion than GPS data, that is, they are more precise. However, as we have seen accuracy is degraded for the accelerometer displacements due to biases in the double integration process, which in this case appear to be common to both accelerometers on the roof. GPS precision of about 3 mm is what we would expect from earlier studies of high-rate GPS horizontal displacements on short baselines \citep{genrich2006}.
+
+\subsection{The 2010 M7.2 El Mayor-Cucapah Earthquake}
+
+The shake table experiments differed from a real-world event in several important ways. First, only the dynamic motions could be simulated. In a real event there would be no nearby stable GPS reference station and displacements would need to be referred to one or more stations outside the region of deformation. Also, GPS noise would increase with longer station separations, by a factor of about 3 in the horizontal components and up to an order of magnitude in the vertical component \citep{langbein2004,genrich2006}. Finally, the ability to resolve integer-cycle phase ambiguities in real-time scenarios is diminished as station separations increase \citep{bock2000}. The 2010 Mw 7.2 El Mayor-Cucapah earthquake in northern Baja California and observations from southern California high-rate GPS and very-high-rate accelerometers provide us with a real-world event to highlight the advantages of combining GPS displacements and acceleration data.
+The El Mayor-Cucapah earthquake broke a subset of northwest-trending strike-slip faults that are separated by pull-apart basins that accommodate northwest-southeast oriented extension, and are parallel to the main strands of the San Andreas fault system (Imperial, Elsinore, San Jacinto, Laguna Salada, and Cerro Prieto faults). It caused significant ground motions at distances up to several hundred kilometers from the epicenter \citep{hauksson2011,wei2011}. A robust set of 1 Hz GPS phase and pseudorange data were collected for this earthquake at 105 CRTN and PBO stations (Figure \ref{fig_mapelmayor}) and on-the-fly displacement waveforms were estimated.
+
+\begin{figure}[!ht] 
+\centering
+  \includegraphics[width=0.99\linewidth]{./figures/ch2/map_elmayor.pdf}
+    \caption[Station distribution for the El Mayor Cucapah earthquake]{California Real Time GPS Network (CRTN) stations in southern California and collocated California Integrated Seismic Network (CISN) strong-motion accelerometer stations. The arrows indicate horizontal coseismic offsets from the 2010 Mw 7.2 El Mayor-Cucapah earthquake. The 12 collocated stations (where the GPS and strong-motion accelerometers are within 1.5 km) are denoted by white diamonds. The GPS station name is given by its 4-character code, and the seismic station by its 3-character code. P494/WES has a broadband seismometer, an accelerometer, and a GPS receiver and is featured in several subsequent figures.}
+  \label{fig_mapelmayor}
+\end{figure}
+ 
+In order to evaluate the Kalman filter performance, we reprocessed the entire set of 1 Hz GPS-derived displacement waveforms (Figure \ref{fig_elmay_allwaves}) in simulated real-time mode. We divided the network into 9 subnetworks with at least 2-station overlap and estimated relative displacement waveforms in the ITRF2005 frame for each subnetwork relative to an arbitrary station within each. The maximum relative motion encountered between adjacent stations closest to the epicenter was 0.58 m between stations P494 and P497 located 16.7 km apart (Figure \ref{fig_mapelmayor}). Then, we performed a network adjustment to estimate coordinates for all stations with respect to the true-of-date coordinates of station GNPS, and transformed the coordinates for each station into displacements in the local (N,E,U) frame using Equation \ref{eq_rot}. GNPS was chosen not because it is the farthest from the epicenter (it is 245 km to the NE – Figure \ref{fig_mapelmayor}), but because of directivity considerations. 
+
+\begin{figure}[!ht] 
+\centering
+  \includegraphics[width=0.99\linewidth]{./figures/ch2/elmay_allwaves.pdf}
+    \caption[GPS waveforms for the El Mayor Cucapah earthquake]{1 Hz (East component) displacements estimated for 105 CRTN stations are plotted according to epicentral distance for the April 4, 2010 Mw 7.2 El Mayor-Cucapah earthquake. The earthquake initiated at 22:40:40 UTC, or equivalently 22:40:55 GPS time. All waveforms have been normalized for clarity}
+  \label{fig_elmay_allwaves}
+\end{figure}
+We then combined the GPS-derived 1 Hz displacements with raw 100 Hz accelerometer data using the Kalman forward and smoothed filters to estimate the velocity and displacement waveforms. This was performed on a station-by-station basis for those 12 GPS stations that were within 1.5 km of an accelerometer. The instruments closest to the earthquake’s epicenter were the accelerometer at WES and GPS at P494 (Table \ref{tb_elmay_sta}). The two sensors are about 72 km from the epicenter just north of the U.S.-Mexico border and 80 m from each other (Figure \ref{fig_mapelmayor}). 
+
+\begin{table}
+\caption[Collocated GPS and strong-motion stations in Southern California]{Collocated GPS (California Real Time GPS Network) and strong-motion accelerometer (California Integrated Seismic Network) stations with a station separation of 1.5 km or less.}
+\label{tb_elmay_sta}
+\begin{tabular}{l | r | r | r | r | r | r}
+\hline
+CRTN Station & Latitude (N) & Longitude (W) & SCSN Station & Latitude (N) & Longitude (W) & Separation (km)\\
+\hline
+P473 & 32.7338 & 116.9495 & SDR & 32.7356 & 116.9424 & 0.7\\
+P494 & 32.7597 & 115.7321 & WES & 32.7590 & 115.7316 & 0.08\\
+GMPK & 33.0511 & 114.8273 & GLA & 33.0512 & 114.8271 & 0.05\\
+SLMS & 33.2922 & 115.9778 & SAL & 33.2801 & 115.9859 & 1.50\\
+PMOB & 33.3572 & 116.8595 & PLM & 33.3536 & 116.8626 & 0.5\\
+BOMG & 33.3646 & 115.7297 & BOM & 33.3647 & 115.7296 & 0.01\\
+SBCC & 33.5530 & 117.6615 & SDD & 33.5526 & 117.6617 & 0.05\\
+THMG & 33.6506 & 116.0773 & THM & 33.6507 & 116.0773 & 0.01\\
+CACT & 33.6551 & 115.9900 & CTC & 33.6551 & 115.9901 & 0.01\\
+VTIS & 33.7126 & 118.2938 & FMP & 33.7126 & 118.2938 & 0.00\\
+SNOG & 34.0352 & 116.8078 & SNO & 34.0352 & 116.8078 & 0.01\\
+MSCG & 34.0385 & 116.6480 & MSC & 34.0385 & 116.648 & 0.00\\
+\hline
+\end{tabular}
+\end{table}
+
+In Figure \ref{fig_wes_p494_all}a, we show the entire period of seismic shaking at P494/WES in the vertical component. The observed broadband velocities clip even before the arrival of the S-wave at the station, while the estimated velocity waveforms record the entire event at the 100 Hz rate of the accelerometer. In Figure \ref{fig_wes_p494_all}b, we show the first 12 s of the vertical broadband velocity record at WES after the Southern California Earthquake Center’s P-wave pick and overlay the Kalman-filter-estimated velocities. That the broadband seismic data and the waveform estimated by Kalman smoothing are indistinguishable is striking, given also that the GPS resolution is poorest in the vertical direction. In Figure \ref{fig_wes_p494_all}c, we compare displacements derived by (single) integration of the (12 s) seismometer record at WES, and the 100 Hz smoothed Kalman filter broadband displacements. It is clear that we can detect the small-amplitude P-wave recordings with a precision (and accuracy) of about 1 mm. This is a significant improvement over the 1 Hz GPS-only solutions where the vertical precision is on the order of several tens of millimeters, often precluding P-wave detection.
+
+\begin{figure}[!ht] 
+\centering
+  \includegraphics[width=0.99\linewidth]{./figures/ch2/wes_p494_all.pdf}
+    \caption[Kalman filtered waveforms for WES/P494]{Estimation of velocity and displacement waveforms. (a) Comparison between vertical velocity records registered by a broadband seismometer at station WES (Figure \ref{fig_mapelmayor}) which clipped 11 seconds after the onset of shaking and the smoothed Kalman filter estimated velocities for P494/WES. (b) Blowup of the same time series showing agreement between the observed velocity and the estimated Kalman velocity waveforms. The two waveforms have been offset for clarity. The SCEC P-wave pick denoted by vertical dashes is at ~22:41:09 GPS time, or 29 seconds after earthquake initiation. (c) Comparison of single integration of the vertical seismometer record at WES, 100 Hz smoothed Kalman filter displacements (GPS/accelerometer), and double integration of only the accelerometer data. Note the magnitude of displacement, indicating that the broadband displacements have a precision and accuracy of about 1 mm.}
+  \label{fig_wes_p494_all}
+\end{figure}
+
+Figure \ref{fig_wes_p494_all}c also shows the poor results obtained by on-the-fly double integration of the accelerometer data. Of course, better results could be obtained after the fact (in post processing). To investigate this we computed displacements for WES from uncorrected double integration of accelerometer data (0-th order correction), correcting with the BI baseline removal scheme (Section \ref{sec:strongmotion}), and with high pass filtering. Although the dynamic motions could be extracted through baseline corrections or function fitting, the static displacements were lost. With the addition of high-rate GPS displacements, high pass filtering or function fitting is not required, and the double integration can be performed on-the-fly using just the raw accelerometer records. In Section \ref{sec:tohoku} we will quantify the performance of baseline correction schemes when compared to the Kalman filter when we consider the Tohoku-oki data.
+In Figure \ref{fig_weskal}, we show the broadband displacement waveforms for P494/WES in all 3 components, where the 0.2 m horizontal static offset in the North component is clearly seen. The corresponding smoothed Kalman filter vertical displacement waveforms for P494/WES, as well as those for two other collocated GPS/accelerometer stations (BOMG/BOM and THMG/TGM, 129 and 192 km from the epicenter, respectively – Figure \ref{fig_mapelmayor} and Table \ref{tb_elmay_sta}) are shown in Figure \ref{fig_kal_3verts}. In spite of the larger epicentral distance and the diminished precision of the GPS vertical component, the Kalman filter with the aid of the accelerometer data is still capable of producing a precise waveform.
+
+\begin{figure}[!ht] 
+\centering
+  \includegraphics[width=0.99\linewidth]{./figures/ch2/weskal.pdf}
+    \caption[GPS and Kalman filtered displacements at P494/WES]{Comparison of 1 Hz GPS and 100 Hz smoothed Kalman filter displacement waveforms. Shown are 1 Hz GPS displacements for P494 and 100 Hz smoothed Kalman filter displacements for P494/WES. The SCEC P-wave pick for station WES is at ~22:41:09 GPS time. Note the 0.2 m static (coseismic) offset in the North component}
+  \label{fig_weskal}
+\end{figure}
+
+\begin{figure}[!ht] 
+\centering
+  \includegraphics[width=0.99\linewidth]{./figures/ch2/kal_3verticals.pdf}
+    \caption[Vertical Kalman filter performance]{ Vertical displacement waveforms. Comparison of 1 Hz GPS and 100 Hz smoothed Kalman filter estimates for P494 and P494/WES, BOMG and BOMG/BOM, and THMG and THMG/THM.}
+  \label{fig_kal_3verts}
+\end{figure}
+
+\subsection{Spectral Characteristics}
+Spectral analysis of the smoothed Kalman filter displacement time series for the shake table experiments (Figure \ref{fig_elmay_shake_psd}a) and the El Mayor-Cucapah earthquake (Figure \ref{fig_elmay_shake_psd}b) highlights two attractive features: the power spectral densities follow the GPS-only spectrum at the low frequencies and the accelerometer-only spectrum at the high frequencies. This is desirable because it is in these two frequency bands that each instrument performs best (GPS at the lower frequencies and accelerometers at the higher frequencies). We can infer from the power spectral densities and the shake table experiments that the combined (100 Hz) waveform is more precise and accurate than the (1 Hz) GPS-only or (100 Hz) accelerometer-only displacement waveforms, and that we have achieved an accurate broadband record of this event.
+
+\begin{figure}[!ht] 
+\centering
+  \includegraphics[width=0.99\linewidth]{./figures/ch2/elmay_shake_psd.pdf}
+    \caption[Shaketable and El Mayor-Cucapah Kalman filter PSDs]{Power spectral densities. (a) High intensity Northridge earthquake simulation (EQ4) on shake table platen for 50 Hz GPS-only displacements, 240 Hz accelerometer-derived high-pass filtered displacements, and 250 Hz smoothed Kalman filter displacements; (b) 2010 El Mayor-Cucapah earthquake for 1 Hz GPS displacements at P494, 100 Hz accelerometer-derived high-pass filtered displacements at WES, and 100 Hz smoothed Kalman filter displacements for P494/WES.}
+  \label{fig_elmay_shake_psd}
+\end{figure}
+The smoothed Kalman filter cannot be performed in real time since it requires both a forward and backward step. However, an examination of the spectral characteristics of the forward filter displacements indicates spurious spectral peaks that coincide with multiples of the GPS sampling frequency for both the shake table experiments (Figure \ref{fig_psd_peaks}a) and the El Mayor-Cucapah earthquake (Figure \ref{fig_psd_peaks}). It is easy to see why this happens by examination of a blowup of 1 s of the unsmoothed forward time series for the shake table experiment (Figure \ref{fig_kal_saw}). In between the 50 Hz GPS samples, the series drifts during successive time updates when only new accelerometer data are available (every 250th of a second for the shake table and every 100th of a second for the earthquake).  But as soon as the next GPS measurement becomes available there is an adjustment to the displacement time series, explaining the observed saw tooth pattern, a pattern also evident in the El Mayor-Cucapah earthquake data. In Figure \ref{fig_synth_saw}, we show the results of a synthetic test of a saw tooth with a period of 1 s and estimate its power spectral density using the multitaper method. It shows broad peaks centered at multiples of the saw tooth period, which corresponds to the GPS sampling frequency in our data sets. This is a minor problem because for real-time seismological applications the increase in noise introduced by the peaks is small compared to the signal. Furthermore, the increase in noise is only at frequencies higher than ~1-2 Hz. In any case, the fixed interval smoother removes the spurious peaks altogether, while the near-real-time smoother will reduce the noise peaks as a function of the smoother lag time.
+
+\begin{figure}[!ht] 
+\centering
+  \includegraphics[width=0.99\linewidth]{./figures/ch2/psd_peaks.pdf}
+    \caption[Comparisson of forward and smoothed Kalman filter PSDs]{Power spectral density comparisons between forward Kalman filter and smoothed Kalman filter displacements waveforms for (a) High intensity Northridge earthquake simulation (EQ4) 250 Hz displacements on shake table platen; (b) 2010 El Mayor-Cucapah earthquake 100 Hz displacements for P494/WES. Note the spikes in the forward filter corresponding to the GPS sampling frequency, 50 Hz for (a) and 1 Hz for (b).}
+  \label{fig_psd_peaks}
+\end{figure}
+
+\begin{figure}[!ht] 
+\centering
+  \includegraphics[width=0.99\linewidth]{./figures/ch2/kal_saw.pdf}
+    \caption[Forward filter sawtooth effects]{Example of saw-tooth like irregularities introduced by the disparity in sensor sampling frequencies. Shown is a blowup of the high intensity Northridge earthquake simulation (EQ4) with a 250 Hz sampling frequency for the forward Kalman filter displacements and 50 Hz sampling frequency for the GPS-only displacements.}
+  \label{fig_kal_saw}
+\end{figure}
+
+\begin{figure}[!ht] 
+\centering
+  \includegraphics[width=0.99\linewidth]{./figures/ch2/synth_saw_psd.pdf}
+    \caption{1 Hz synthetic saw tooth and its power spectral density.}
+  \label{fig_synth_saw}
+\end{figure}
+
+\subsection{Selecting the Kalman Filter Variances}
+
+The Kalman filter has two parameters that dictate its performance, the measurement variance $r$ and the system dynamics variance $q$ (Section \ref{Section sec:kalman}). To maintain objectivity and to simulate a real-time environment we compute the measurement variance from 50 s windows of pre-event noise on the 3 components of the GPS displacements (Figure \ref{fig_variances}). These tend to be very stable across a network with the East component showing the least variance, then the North component and the vertical component being the noisiest, as expected, due to the satellite constellation configuration and unmodeled tropospheric refraction \citep{bock2000}. The observed GPS variances are also consistent with the results of \citet{genrich2006} who analyzed high rate real-time data in Southern California.
+
+\begin{figure}[!ht] 
+\centering
+  \includegraphics[width=0.99\linewidth]{./figures/ch2/variances.pdf}
+    \caption[Noise variances at CRTN GPS stations]{Variances for 50 seconds of displacements for some California Real Time GPS Network (CRTN) stations estimated prior to the 2010 El Mayor-Cucapah earthquake in North, East, and Up components.}
+  \label{fig_variances}
+\end{figure}
+Estimating the system dynamics variance is more complicated. At first glance it could be determined simply by taking the variance of windows of pre-event accelerometer noise. However, there are several sources of noise in the accelerometer that preclude this. Perhaps the most important is sensor rotation and tilt \citep{Trifunac2001,Pillet2007} whose net effect is to raise the noise floor. This does not manifest itself until shaking starts and is thus not present in pre-event noise estimation. \citet{Trifunac2001} show that as one utilizes an increasing number of bits to digitize the transducer signal and as earthquake magnitude increases the problem becomes more insidious. \citet{lee2009} obtained empirical relations for computing the Fourier spectra of rotation and tilt from translational acceleration spectra. The empirical relations depend on multiple factors including magnitude, focal depth, soil conditions, thickness of the sedimentary layer and epicentral distance. When compared to the amplitudes of processing and recording noise however, they find that the most extreme behavior of the rotational and tilting spectra is about 3 orders of magnitude greater than translational noise levels. We show the effect of using $q$ measured from pre-event noise windows by taking the more extreme value of $1000q$ as the system dynamics variance for input into the Kalman filter. In Figure \ref{fig_qeffect}a we show the East component (because it displays the largest sensitivity to changes in $q$) and observe that when applying the forward Kalman filter without smoothing and comparing it to GPS measurements the filter miscomputes the resulting static displacements by as much as 0.08 m. If we adjust the variance to $1000q$ then the static offset is adequately recovered but the amplitudes of dynamic shaking can vary by as much as 0.25 m.
+
+\begin{figure}[!ht] 
+\centering
+  \includegraphics[width=0.99\linewidth]{./figures/ch2/qeffect.pdf}
+    \caption[Sytem dynamics variance and its effect on the Kalman filter]{Effect of choice of system dynamics variance in Kalman filter estimation, in the East component. (a) Comparison between forward Kalman filter waveforms using $q$ and $1000q$ as the system dynamics variance, where q is the pre-event variance estimate for the accelerometer data. (b) Comparison between RTS smoothed waveforms using $q$ and $1000q$ as system dynamics variance. (c) Comparison between forward Kalman filter and smoothed Kalman filter with a lag of 10 s using $1000q$. }
+  \label{fig_qeffect}
+\end{figure}
+In spite of these large variations, the problem becomes, in effect, moot using Kalman smoothing, where using $q$ or $1000q$ has a limited effect on the recovered waveform (Figure \ref{fig_qeffect}b). Applying a near-real-time smoother (Section \ref{sec:kalman}) with a 10 s lag, even with an extreme value of the variance, fully recovers the waveform (Figure \ref{fig_qeffect}c). We find that the 10 s lag, in this case, is the minimum necessary to recover an adequate waveform, that is, one without bias in dynamic shaking amplitude or in static offset. This lag, however, might be too long for real-time applications in which case the sampling rate of the GPS must be increased to reduce the lag of the near-real-time smoother (recall that misfits arise from the saw tooth pattern effect of GPS sampling frequency). Alternatively, if the station conditions are known, the empirical relations of \citet{lee2009} or some yet to be determined empirical scheme can be used to assess the proper scaling of $q$.
+
+\subsection{Lessons and Insights}
+As a proof of concept, the shake table tests and the recordings of the El Mayor-Cucuapah earthquake allowed us to better understand the operational characteristics of the Kalman filtering operation.
+
+The very-high frequency response of GPS-derived displacements is flat above 0.05-0.5 Hz ($<$2-20 s) so that GPS data are capable of providing essentially uncorrelated single-epoch estimates of displacement over a large range of frequencies at the (10-50 Hz) sampling rate of modern GPS receivers \citep{genrich2006}. The California Real-Time Network project has demonstrated that 10 Hz data can be reliably streamed over dedicated microwave and radio modem communication links but this requires a ten-fold increase in the transmitted data compared to the current 1 Hz rate. The Plate Boundary Observatory project streams 1 Hz data from their GPS stations but stores 10 Hz measurements in receiver memory which can be downloaded in the case of a significant seismic event. It is not practical to stream at higher data rates with current costs and limitations in telemetry. A more cost-effective approach is to, wherever possible, add accelerometer instruments at existing GPS stations, stream the very-high-rate but lower volume accelerometer data over the same communications links as the GPS data, and use the Kalman filter to optimally combine both data sets. One might even consider performing the filtering operation which is computationally simple at the station itself. This approach provides displacements at the sampling rate of the accelerometers (e.g., 100 Hz) with the precision of the accelerometer data and the accuracy of the GPS data. Our shake table results indicate that there is little benefit in increasing the GPS sampling rate to greater than 5-10 Hz.
+ We find that the basic state vector representation is sufficient for the Kalman filter, where the acceleration driving the system is assumed to be constant in between time steps. There is no apparent need for additional state vector parameters, for example, possible tilts or other biases (other than the DC offset) in the accelerometer data. Furthermore, while the variance factor $q$ is tricky to characterize the filtering operation is relatively insensitive over to a few orders of magnitude of change in its value. The corresponding GPS variance factor $r$ is well known and the high-rate GPS displacements are uncorrelated from epoch to epoch. This has been demonstrated in previous work \citep{genrich2006} and further verified here. In fact, one can provide an overly pessimistic value for the accelerometer variance factor (say $1000q$, or 1000 times the pre-event noise) because the periodic GPS displacement measurements are sufficiently accurate to provide tight constraints on the single and double integration of accelerometer data to velocity and displacement, which is implicit in the Kalman filter formulation. One way to explain this is that the GPS displacements allow one to use definite integrals in the integration process by providing for explicit constants of integration. Without the GPS displacements, the integration process is  highly affected by accelerometer biases  and noise and the limited dynamic range in seismometers. In addition, the effect of overestimating the system dynamics variances is nullified if a smoother is employed. Similarly, introduction of the accelerometer data stream into the Kalman filter helps to better estimate vertical static and dynamic displacements which are very noisy in a GPS-only scenario. This improved estimation of vertical motion will have a significant effect later on when we discuss modeling of megathrust earthquakes.
+
+To better illustrate the immediate advantages of the filter we compare the North components of the estimated displacement waveforms from GPS alone (Fiagure \ref{fig_noise_reduction}) with those estimated using the smoothed Kalman filter (Figure \ref{fig_noise_reduction}b) for 12 collocated stations (Table \ref{tb_elmay_sta}). The signal quality improves significantly in the latter. The pre-event noise levels are lower and the artifacts in the GPS waveforms (at 1.6 and 5 minutes in Figure \ref{fig_elmay_allwaves} and at 95 seconds in Figure \ref{fig_noise_reduction}a) are eliminated.  The artifacts are due primarily to variations in position of the GPS reference station. These variations will propagate to all other stations in the network and are due to random and systematic errors in the GPS data and/or analysis and could be mistaken for actual seismic phases. The optimal combination of GPS displacements with accelerometer data provides distinct advantages, for the El Mayor-Cucuapah case the P-wave arrivals could be detected in the combined solution, taking advantage of the greater precision of the accelerometers. They were not detectable in the GPS-only approach because of the reduced sensitivity of GPS to vertical motions. The detection of the P-wave arrival is critical for many real-time seismology applications. 
+
+\begin{figure}[!ht] 
+\centering
+  \includegraphics[width=0.99\linewidth]{./figures/ch2/fnoise_reduction.pdf}
+    \caption[Noise reduction in CRTN stations with Kalman filtering]{Displacement waveforms in East component for (a) 1 Hz GPS only and (b) smoothed Kalman filter solutions for 12 collocated GPS/seismic stations in Southern California (Figure \ref{fig_mapelmayor}). Note the artifact (denoted by grey arrows) introduced by the GPS network adjustment at 95 seconds in (a) which is absent in (b), and the flatter (more precise) pre-event displacements in (b) compared to (a). All waveforms have been normalized for clarity. }
+  \label{fig_noise_reduction}
+\end{figure}
+We note that there are certain limitations in the real-time estimation of displacements from GPS phase and pseudorange data. The introduction of very-high-rate precise accelerometer data at the GPS stations could help reduce the above problems in real-time applications by introducing independent confirmation of significant station displacement. For this purpose, a tightly coupled Kalman filter approach might be suitable \citep{Geng2013}. Instead of analyzing the already estimated GPS displacements with the raw accelerometer data, one could design a Kalman filter that instead uses the raw GPS phase and pseudorange observations and the raw accelerometer data, in order to improve the on-the-fly resolution of phase ambiguities. This is out of the scope of the present work. 
+Finally station siting, monumentation, and mounting of GPS and seismic instruments at collocated stations is an important consideration. Seismic and geodetic networks developed independently and are seldom collocated. An interesting question for future consideration is whether costs can be reduced by using less sensitive and cheaper accelerometers (such as MEMS), or whether the current practice of installing high-end accelerometers in boreholes or shallow vaults is necessary.
 
 \section{Application to the M9 Tohoku-oki Earthquake}
+\label{sec:tohoku}
 
+%Missing figures
+
+One of the most relevant data sets for strong motions seismology in recent times is the set of records for the 2011 Mw 9.0 Tohoku-oki earthquake. Complex waveforms with long durations of shaking recorded across dense geodetic and seismic networks make this an ideal test of the Kalman filter methodology. 
+
+For this event we process data from 816 GPS stations throughout Honshu and Hokkaido Islands (Figure \ref{fig_map_baseline}). As with the El Mayor-Cucuapah event we process the GPS data in a simulated real-time mode using the method of instantaneous positioning \citep{bock2000}. We triangulate the GPS network using a Delaunay triangulation scheme, and individual triangles are processed independently for relative station positions. The triangles are combined through a real-time network adjustment \citep{Crowell2009}, and station positions are referenced to station 0848 on Hokkaido Island, 900 km northwest of the hypocenter (Figure \ref{map_baseline}). 
+
+We identified 139 collocated GPS/accelerometer station throughout Japan. As before, we define a collocation as a pair of instruments separated by 1500 m or less. Accelerometers in Japan function in triggered mode and many of those stations did not trigger in time. Furthermore, given the large duration of the source \citep{simons2011} many of those instruments terminated recording while significant shaking was ongoing. Thus, we culled the data set to 48 stations (Figure 2) that contain at least 2 seconds of pre-event noise and enough record to discern static offsets in the corrected data. Of these 48 stations 40 are K-net accelerometer sites and 8 are KiK-net accelerometer sites.
+To establish a comparison with seismic-only data, in addition to Kalman filtering, we processed the 3 channel data for those 48 stations using the method of \citet{Wang2011}. Recall from Section \ref{sec:strongmotion} that this method is an improvement over the BI correction scheme. The algorithm performs a grid search for the best correction parameters defining the optimal correction as that which best resembles a step function. This algorithm is presumed to be suitable for real-time computation because it requires no operator interaction. We also computed baseline corrections on the raw accelerometer data with the added constraint that the final waveform best fit the static offset from neighboring GPS station \citep{Wang2013}. Both of these variants are examples of Automated Baseline Correction (ABC).
+For all three data sets, the automatic baseline corrections, the static field constrained baseline corrections and the Kalman filter we computed the power spectral density using the multi-taper method. We also computed 5\% damped displacement response spectra by finite difference solution to the single degree of freedom oscillator.
+
+\subsection{Time Domain Analysis}
+
+
+\subsection{Frequency Domain Analysis}
+
+\subsection{Performance of the Filter}
 
 %\appendix
 %\chapter{Final notes}
