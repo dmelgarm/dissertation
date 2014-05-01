@@ -86,7 +86,7 @@ Dong, D. and Bock, Y. (1989).
 
 \bibitem[\protect\astroncite{Dreger}{2003}]{dreger2003}
 Dreger, D. (2003).
-\newblock Tdmt_inv: Time domain seismic moment tensor inversion,.
+\newblock Tdmtinv time domain seismic moment tensor inversion.
 \newblock {\em International Handbook of Earthquake and Engineering
   Seismology}, page 1627.
 
@@ -202,6 +202,13 @@ Hayes, G.~P., Rivera, L., and Kanamori, H. (2009).
   extension to low magnitudes.
 \newblock {\em Seismological Research Letters}, 80(5):817--822.
 
+\bibitem[\protect\astroncite{Hayes et~al.}{2012}]{hayes2012}
+Hayes, G.~P., Wald, D.~J., and Johnson, R.~L. (2012).
+\newblock Slab1.0: A three-dimensional model of global subduction zone
+  geometries.
+\newblock {\em Journal of Geophysical Research: Solid Earth (1978--2012)},
+  117(B1).
+
 \bibitem[\protect\astroncite{Hiroo}{1993}]{kanamori1993}
 Hiroo, K. (1993).
 \newblock W-phase.
@@ -283,6 +290,12 @@ Pillet, R. and Virieux, J. (2007).
 Rauch, H.~E., Striebel, C., and Tung, F. (1965).
 \newblock Maximum likelihood estimates of linear dynamic systems.
 \newblock {\em AIAA journal}, 3(8):1445--1450.
+
+\bibitem[\protect\astroncite{Satriano et~al.}{2012}]{satriano20122012}
+Satriano, C., Kiraly, E., Bernard, P., and Vilotte, J.-P. (2012).
+\newblock The 2012 mw 8.6 sumatra earthquake: Evidence of westward sequential
+  seismic ruptures associated to the reactivation of a n-s ocean fabric.
+\newblock {\em Geophysical Research Letters}, 39(15).
 
 \bibitem[\protect\astroncite{Simons et~al.}{2011}]{simons2011}
 Simons, M., Minson, S.~E., Sladen, A., Ortega, F., Jiang, J., Owen, S.~E.,

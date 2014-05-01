@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.30)  30 APR 2014 15:48
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.30)  30 APR 2014 22:40
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -271,52 +271,11 @@ Chapter 1.
 
  (./ch2.tex
 Chapter 2.
-
-Package natbib Warning: Citation `Havskov2006' on page 3 undefined on input lin
-e 12.
-
-
-Package natbib Warning: Citation `Havskov2006' on page 3 undefined on input lin
-e 12.
-
 [3
 
 
 
 ]
-
-Package natbib Warning: Citation `Graizer1979' on page 4 undefined on input lin
-e 16.
-
-
-Package natbib Warning: Citation `Iwan1985' on page 4 undefined on input line 1
-6.
-
-
-Package natbib Warning: Citation `Boore1999' on page 4 undefined on input line 
-16.
-
-
-Package natbib Warning: Citation `Boore2001' on page 4 undefined on input line 
-16.
-
-
-Package natbib Warning: Citation `Boore2002' on page 4 undefined on input line 
-16.
-
-
-Package natbib Warning: Citation `Smyth2007' on page 4 undefined on input line 
-16.
-
-
-Package natbib Warning: Citation `Graizer2006' on page 4 undefined on input lin
-e 16.
-
-
-Package natbib Warning: Citation `Pillet2007' on page 4 undefined on input line
- 16.
-
-
 Overfull \hbox (3.27866pt too wide) in paragraph at lines 16--17
 []\OT1/cmr/m/n/12 The prob-lems as-so-ci-ated with the dou-ble in-te-gra-tion o
 f ac-celerom-e-ter record-
@@ -340,65 +299,7 @@ File: ./figures/ch2/iwt009-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./figures/ch2/iwt009-eps-converted-to.pdf used on inpu
 t line 20.
 (pdftex.def)             Requested size: 414.97685pt x 311.23354pt.
-
-
-Package natbib Warning: Citation `Trifunac2001' on page 4 undefined on input li
-ne 25.
-
-
-Package natbib Warning: Citation `Boore2005' on page 4 undefined on input line 
-27.
-
-
-Package natbib Warning: Citation `Boore2005' on page 4 undefined on input line 
-27.
-
-
-Package natbib Warning: Citation `Boore1999' on page 4 undefined on input line 
-27.
-
-
-Package natbib Warning: Citation `Boore2001' on page 4 undefined on input line 
-27.
-
-
-Package natbib Warning: Citation `Iwan1985' on page 4 undefined on input line 2
-7.
-
-
-Package natbib Warning: Citation `Boore1999' on page 4 undefined on input line 
-27.
-
-
-Package natbib Warning: Citation `Boore2001' on page 4 undefined on input line 
-27.
-
-
-Package natbib Warning: Citation `Wu2007' on page 4 undefined on input line 27.
-
-
-
-Package natbib Warning: Citation `Chao2010' on page 4 undefined on input line 2
-7.
-
-
-Package natbib Warning: Citation `Wang2011' on page 4 undefined on input line 2
-7.
-
-[4] [5 <./figures/ch2/iwt009-eps-converted-to.pdf>]
-
-Package natbib Warning: Citation `Boore1999' on page 6 undefined on input line 
-33.
-
-
-Package natbib Warning: Citation `Boore1999' on page 6 undefined on input line 
-37.
-
-
-Package natbib Warning: Citation `Boore2001' on page 6 undefined on input line 
-37.
-
-[6]
+ [4] [5 <./figures/ch2/iwt009-eps-converted-to.pdf>] [6]
 Package epstopdf Info: Source file: <./figures/ch2/iwt009bl.eps>
 (epstopdf)                    date: 2014-04-25 16:31:03
 (epstopdf)                    size: 100673 bytes
@@ -418,112 +319,13 @@ File: ./figures/ch2/iwt009bl-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./figures/ch2/iwt009bl-eps-converted-to.pdf used on in
 put line 41.
 (pdftex.def)             Requested size: 414.97685pt x 194.38016pt.
-
-
-Package natbib Warning: Citation `Wu2007' on page 7 undefined on input line 48.
-
-
-
-Package natbib Warning: Citation `Chao2010' on page 7 undefined on input line 4
-8.
-
-
-Package natbib Warning: Citation `Wu2007' on page 7 undefined on input line 48.
-
-
-[7 <./figures/ch2/iwt009bl-eps-converted-to.pdf>]
-
-Package natbib Warning: Citation `Wang2011' on page 8 undefined on input line 5
-0.
-
-
-Package natbib Warning: Citation `Wang2013' on page 8 undefined on input line 5
-2.
-
+ [7 <./figures/ch2/iwt009bl-eps-converted-to.pdf>]
 Missing character: There is no ¬ in font cmr12!
 Missing character: There is no ∞ in font cmr12!
-
-Package natbib Warning: Citation `tu2014' on page 8 undefined on input line 52.
-
-
-
-Package natbib Warning: Citation `Wang2013' on page 8 undefined on input line 5
-2.
-
-
-Package natbib Warning: Citation `tu2014' on page 8 undefined on input line 52.
-
-
-
-Package natbib Warning: Citation `Tsuda2006' on page 8 undefined on input line 
-52.
-
-[8] [9]
-
-Package natbib Warning: Citation `Dong1989' on page 10 undefined on input line 
-61.
-
-
-Package natbib Warning: Citation `Blewitt1989' on page 10 undefined on input li
-ne 61.
-
-
-Package natbib Warning: Citation `Zumberge1997' on page 10 undefined on input l
-ine 61.
-
-
-Package natbib Warning: Citation `Blewitt1989' on page 10 undefined on input li
-ne 63.
-
-
-Package natbib Warning: Citation `Dong1989' on page 10 undefined on input line 
-63.
-
-
-Package natbib Warning: Citation `Nikolaidis2001' on page 10 undefined on input
- line 65.
-
-
-Package natbib Warning: Citation `Larson2003' on page 10 undefined on input lin
-e 65.
-
-
-Package natbib Warning: Citation `Bock2004' on page 10 undefined on input line 
-65.
-
-
-Package natbib Warning: Citation `Miyazaki2004' on page 10 undefined on input l
-ine 65.
-
-
-Package natbib Warning: Citation `Crowell2009' on page 10 undefined on input li
-ne 67.
-
-[10]
+ [8] [9] [10]
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ô in font cmr12!
-
-
-Package natbib Warning: Citation `Geng2010' on page 11 undefined on input line 
-69.
-
-
-Package natbib Warning: Citation `Geng2013' on page 11 undefined on input line 
-69.
-
-
-Package natbib Warning: Citation `Geng2013b' on page 11 undefined on input line
- 69.
-
-
-Package natbib Warning: Citation `Crowell2009' on page 11 undefined on input li
-ne 71.
-
-
-Package natbib Warning: Citation `Geng2013' on page 11 undefined on input line 
-71.
-
-[11]
+ [11] [12]
 Package epstopdf Info: Source file: <./figures/ch2/parkfield.eps>
 (epstopdf)                    date: 2014-04-29 16:23:37
 (epstopdf)                    size: 279553 bytes
@@ -536,7 +338,7 @@ df>
 (epstopdf)             \includegraphics on input line 77.
 Package epstopdf Info: Output file is already uptodate.
 
-<./figures/ch2/parkfield-eps-converted-to.pdf, id=175, 397.485pt x 250.9375pt>
+<./figures/ch2/parkfield-eps-converted-to.pdf, id=179, 397.485pt x 250.9375pt>
 File: ./figures/ch2/parkfield-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./figures/ch2/parkfield-eps-converted-to.pdf>
@@ -551,65 +353,8 @@ Missing character: There is no ∫ in font cmr12!
 Missing character: There is no ∫ in font cmr12!
 Missing character: There is no ∫ in font cmr12!
 Missing character: There is no ∫ in font cmr12!
-
-
-Package natbib Warning: Citation `genrich2006' on page 12 undefined on input li
-ne 82.
-
-
-Package natbib Warning: Citation `genrich2006' on page 12 undefined on input li
-ne 82.
-
-
-Package natbib Warning: Citation `smalley2009' on page 12 undefined on input li
-ne 82.
-
-[12] [13 <./figures/ch2/parkfield-eps-converted-to.pdf>] [14]
-
-Package natbib Warning: Citation `Nikolaidis2001' on page 15 undefined on input
- line 143.
-
-
-Package natbib Warning: Citation `emore2007' on page 15 undefined on input line
- 143.
-
-
-Package natbib Warning: Citation `kalman1960' on page 15 undefined on input lin
-e 147.
-
-
-Package natbib Warning: Citation `lewis2008' on page 15 undefined on input line
- 147.
-
-[15]
-
-Package natbib Warning: Citation `lewis2008' on page 16 undefined on input line
- 210.
-
-[16]
-
-Package natbib Warning: Citation `lewis2008' on page 17 undefined on input line
- 227.
-
-
-Package natbib Warning: Citation `kalman1960' on page 17 undefined on input lin
-e 240.
-
-
-Package natbib Warning: Citation `lewis2008' on page 17 undefined on input line
- 240.
-
-[17]
-
-Package natbib Warning: Citation `Smyth2007' on page 18 undefined on input line
- 262.
-
-[18]
-
-Package natbib Warning: Citation `rauch1965' on page 19 undefined on input line
- 293.
-
-[19] [20] [21]
+ [13 <./figures/ch2/parkfield-eps-converted-to.pdf>] [14] [15] [16] [17] [18] [
+19] [20] [21]
 Overfull \hbox (8.83487pt too wide) detected at line 395
 \OT1/cmr/bx/n/12 Q[] \OT1/cmr/m/n/12 = \OT1/cmr/bx/n/12 Q\OML/cmm/m/it/12 ^^\[]
  \OT1/cmr/m/n/12 + []([] + [][])\OML/cmm/m/it/12 ^^\[] \OT1/cmr/m/n/12 + [][][]
@@ -617,68 +362,31 @@ Overfull \hbox (8.83487pt too wide) detected at line 395
  []
 
 [22]
-
-Package natbib Warning: Citation `panagiotou2008' on page 23 undefined on input
- line 403.
-
-
-Package natbib Warning: Citation `moaveni2010' on page 23 undefined on input li
-ne 403.
-
 Missing character: There is no ∫ in font cmr12!
-[23] <./figures/ch2/shaketable2006.png, id=223, 800.9925pt x 478.78876pt>
+ [23] <./figures/ch2/shaketable2006.png, id=223, 800.9925pt x 478.78876pt>
 File: ./figures/ch2/shaketable2006.png Graphic file (type png)
 
 <use ./figures/ch2/shaketable2006.png>
-Package pdftex.def Info: ./figures/ch2/shaketable2006.png used on input line 40
-9.
+Package pdftex.def Info: ./figures/ch2/shaketable2006.png used on input line 41
+0.
 (pdftex.def)             Requested size: 414.97685pt x 248.05106pt.
-
-
-Package natbib Warning: Citation `bock2000' on page 24 undefined on input line 
-416.
-
+ [24 <./figures/ch2/shaketable2006.png>]
 Missing character: There is no ∫ in font cmr12!
 Missing character: There is no ∫ in font cmr12!
-[24 <./figures/ch2/shaketable2006.png>] [25] [26] [27]
-<./figures/ch2/shake_waves.pdf, id=240, 325.19894pt x 365.8488pt>
+
+[25] [26] [27] [28]
+<./figures/ch2/shake_waves.pdf, id=243, 325.19894pt x 365.8488pt>
 File: ./figures/ch2/shake_waves.pdf Graphic file (type pdf)
 
 <use ./figures/ch2/shake_waves.pdf>
-Package pdftex.def Info: ./figures/ch2/shake_waves.pdf used on input line 505.
+Package pdftex.def Info: ./figures/ch2/shake_waves.pdf used on input line 506.
 (pdftex.def)             Requested size: 414.97685pt x 466.86134pt.
- [28]
+ [29]
 
-LaTeX Warning: Text page 29 contains only floats.
+LaTeX Warning: Text page 30 contains only floats.
 
-[29 <./figures/ch2/shake_waves.pdf>]
-
-Package natbib Warning: Citation `genrich2006' on page 30 undefined on input li
-ne 514.
-
-
-Package natbib Warning: Citation `langbein2004' on page 30 undefined on input l
-ine 518.
-
-
-Package natbib Warning: Citation `genrich2006' on page 30 undefined on input li
-ne 518.
-
-
-Package natbib Warning: Citation `bock2000' on page 30 undefined on input line 
-518.
-
-[30]
-
-Package natbib Warning: Citation `hauksson2011' on page 31 undefined on input l
-ine 520.
-
-
-Package natbib Warning: Citation `wei2011' on page 31 undefined on input line 5
-20.
-
-
-Overfull \hbox (12.11958pt too wide) in paragraph at lines 520--521
+[30 <./figures/ch2/shake_waves.pdf>]
+Overfull \hbox (12.11958pt too wide) in paragraph at lines 521--522
 \OT1/cmr/m/n/12 strike-slip faults that are sep-a-rated by pull-apart basins th
 at ac-com-mo-date northwest-
  []
@@ -687,288 +395,288 @@ at ac-com-mo-date northwest-
 File: ./figures/ch2/map_elmayor.pdf Graphic file (type pdf)
 
 <use ./figures/ch2/map_elmayor.pdf>
-Package pdftex.def Info: ./figures/ch2/map_elmayor.pdf used on input line 524.
+Package pdftex.def Info: ./figures/ch2/map_elmayor.pdf used on input line 525.
 (pdftex.def)             Requested size: 414.97685pt x 370.22229pt.
 Missing character: There is no – in font cmr12!
-
-<./figures/ch2/elmay_allwaves.pdf, id=318, 466.4095pt x 341.94449pt>
+ [31] [32 <./figures/ch2/map_elmayor.pdf>]
+<./figures/ch2/elmay_allwaves.pdf, id=1205, 466.4095pt x 341.94449pt>
 File: ./figures/ch2/elmay_allwaves.pdf Graphic file (type pdf)
 
 <use ./figures/ch2/elmay_allwaves.pdf>
 Package pdftex.def Info: ./figures/ch2/elmay_allwaves.pdf used on input line 53
-3.
+4.
 (pdftex.def)             Requested size: 414.97685pt x 304.23572pt.
 Missing character: There is no ’ in font cmr12!
 
-Overfull \hbox (179.99803pt too wide) in paragraph at lines 543--561
+Overfull \hbox (179.99803pt too wide) in paragraph at lines 544--562
 [][] 
  []
 
 Missing character: There is no ’ in font cmr12!
-[31] [32 <./figures/ch2/map_elmayor.pdf>]
-<./figures/ch2/wes_p494_all.pdf, id=1206, 505.89pt x 386.05328pt>
+[33 <./figures/ch2/elmay_allwaves.pdf>]
+<./figures/ch2/wes_p494_all.pdf, id=1245, 505.89pt x 386.05328pt>
 File: ./figures/ch2/wes_p494_all.pdf Graphic file (type pdf)
 
 <use ./figures/ch2/wes_p494_all.pdf>
-Package pdftex.def Info: ./figures/ch2/wes_p494_all.pdf used on input line 567.
+Package pdftex.def Info: ./figures/ch2/wes_p494_all.pdf used on input line 568.
 
 (pdftex.def)             Requested size: 414.97685pt x 316.68353pt.
- [33 <./figures/ch2/elmay_allwaves.pdf>]
+ [34] [35 <./figures/ch2/wes_p494_all.pdf>]
 Missing character: There is no – in font cmr12!
 
-Overfull \hbox (6.95226pt too wide) in paragraph at lines 575--576
+Overfull \hbox (6.95226pt too wide) in paragraph at lines 576--577
 []\OT1/cmr/m/n/12 In Fig-ure 2.9[], we show the broad-band dis-place-ment wave-
 forms for P494/WES
  []
 
-<./figures/ch2/weskal.pdf, id=1246, 377.89279pt x 239.80191pt>
+<./figures/ch2/weskal.pdf, id=1276, 377.89279pt x 239.80191pt>
 File: ./figures/ch2/weskal.pdf Graphic file (type pdf)
 
 <use ./figures/ch2/weskal.pdf>
-Package pdftex.def Info: ./figures/ch2/weskal.pdf used on input line 579.
+Package pdftex.def Info: ./figures/ch2/weskal.pdf used on input line 580.
 (pdftex.def)             Requested size: 414.97685pt x 263.34381pt.
 
-<./figures/ch2/kal_3verticals.pdf, id=1247, 895.80173pt x 538.98563pt>
+<./figures/ch2/kal_3verticals.pdf, id=1277, 895.80173pt x 538.98563pt>
 File: ./figures/ch2/kal_3verticals.pdf Graphic file (type pdf)
 
 <use ./figures/ch2/kal_3verticals.pdf>
 Package pdftex.def Info: ./figures/ch2/kal_3verticals.pdf used on input line 58
-6.
+7.
 (pdftex.def)             Requested size: 414.97685pt x 249.68816pt.
- [34] [35 <./figures/ch2/wes_p494_all.pdf>] <./figures/ch2/elmay_shake_psd.pdf,
- id=1278, 423.08063pt x 166.12062pt>
+ [36 <./figures/ch2/weskal.pdf>]
+<./figures/ch2/elmay_shake_psd.pdf, id=1321, 423.08063pt x 166.12062pt>
 File: ./figures/ch2/elmay_shake_psd.pdf Graphic file (type pdf)
 
 <use ./figures/ch2/elmay_shake_psd.pdf>
 Package pdftex.def Info: ./figures/ch2/elmay_shake_psd.pdf used on input line 5
-96.
+97.
 (pdftex.def)             Requested size: 414.97685pt x 162.9441pt.
- [36 <./figures/ch2/weskal.pdf>]
-
-LaTeX Warning: Text page 37 contains only floats.
-
-[37 <./figures/ch2/kal_3verticals.pdf> <./figures/ch2/elmay_shake_psd.pdf>]
-<./figures/ch2/psd_peaks.pdf, id=1395, 420.23598pt x 157.2535pt>
+ [37 <./figures/ch2/kal_3verticals.pdf>] [38 <./figures/ch2/elmay_shake_psd.pdf
+>]
+<./figures/ch2/psd_peaks.pdf, id=1398, 420.23598pt x 157.2535pt>
 File: ./figures/ch2/psd_peaks.pdf Graphic file (type pdf)
 
 <use ./figures/ch2/psd_peaks.pdf>
-Package pdftex.def Info: ./figures/ch2/psd_peaks.pdf used on input line 605.
+Package pdftex.def Info: ./figures/ch2/psd_peaks.pdf used on input line 606.
 (pdftex.def)             Requested size: 414.97685pt x 155.2903pt.
 
-<./figures/ch2/kal_saw.pdf, id=1396, 365.365pt x 115.93312pt>
+<./figures/ch2/kal_saw.pdf, id=1399, 365.365pt x 115.93312pt>
 File: ./figures/ch2/kal_saw.pdf Graphic file (type pdf)
 
 <use ./figures/ch2/kal_saw.pdf>
-Package pdftex.def Info: ./figures/ch2/kal_saw.pdf used on input line 612.
+Package pdftex.def Info: ./figures/ch2/kal_saw.pdf used on input line 613.
 (pdftex.def)             Requested size: 414.97685pt x 131.68217pt.
 
-<./figures/ch2/synth_saw_psd.pdf, id=1397, 331.2375pt x 170.6375pt>
+<./figures/ch2/synth_saw_psd.pdf, id=1400, 331.2375pt x 170.6375pt>
 File: ./figures/ch2/synth_saw_psd.pdf Graphic file (type pdf)
 
 <use ./figures/ch2/synth_saw_psd.pdf>
-Package pdftex.def Info: ./figures/ch2/synth_saw_psd.pdf used on input line 619
+Package pdftex.def Info: ./figures/ch2/synth_saw_psd.pdf used on input line 620
 .
 (pdftex.def)             Requested size: 414.97685pt x 213.78583pt.
 
 
-LaTeX Warning: Reference `Section sec:kalman' on page 38 undefined on input lin
-e 626.
+LaTeX Warning: Reference `Section sec:kalman' on page 39 undefined on input lin
+e 627.
 
-
-Package natbib Warning: Citation `bock2000' on page 38 undefined on input line 
-626.
-
-
-Package natbib Warning: Citation `genrich2006' on page 38 undefined on input li
-ne 626.
-
-[38 <./figures/ch2/psd_peaks.pdf>] [39 <./figures/ch2/kal_saw.pdf> <./figures/c
-h2/synth_saw_psd.pdf>]
-<./figures/ch2/variances.pdf, id=1488, 372.39125pt x 254.9525pt>
+[39 <./figures/ch2/psd_peaks.pdf> <./figures/ch2/kal_saw.pdf>]
+<./figures/ch2/variances.pdf, id=1463, 372.39125pt x 254.9525pt>
 File: ./figures/ch2/variances.pdf Graphic file (type pdf)
 
 <use ./figures/ch2/variances.pdf>
-Package pdftex.def Info: ./figures/ch2/variances.pdf used on input line 630.
+Package pdftex.def Info: ./figures/ch2/variances.pdf used on input line 631.
 (pdftex.def)             Requested size: 414.97685pt x 284.11711pt.
-
-
-Package natbib Warning: Citation `Trifunac2001' on page 40 undefined on input l
-ine 635.
-
-
-Package natbib Warning: Citation `Pillet2007' on page 40 undefined on input lin
-e 635.
-
-
-Package natbib Warning: Citation `Trifunac2001' on page 40 undefined on input l
-ine 635.
-
-
-Package natbib Warning: Citation `lee2009' on page 40 undefined on input line 6
-35.
-
-[40 <./figures/ch2/variances.pdf>]
-<./figures/ch2/qeffect.pdf, id=1524, 432.61626pt x 282.05376pt>
+ [40 <./figures/ch2/synth_saw_psd.pdf>]
+[41 <./figures/ch2/variances.pdf>]
+<./figures/ch2/qeffect.pdf, id=1527, 432.61626pt x 282.05376pt>
 File: ./figures/ch2/qeffect.pdf Graphic file (type pdf)
 
 <use ./figures/ch2/qeffect.pdf>
-Package pdftex.def Info: ./figures/ch2/qeffect.pdf used on input line 639.
+Package pdftex.def Info: ./figures/ch2/qeffect.pdf used on input line 640.
 (pdftex.def)             Requested size: 414.97685pt x 270.56624pt.
-
-
-Package natbib Warning: Citation `lee2009' on page 41 undefined on input line 6
-44.
-
-[41]
-
-Package natbib Warning: Citation `genrich2006' on page 42 undefined on input li
-ne 650.
-
-
-Overfull \hbox (1.03981pt too wide) in paragraph at lines 650--651
+ [42 <./figures/ch2/qeffect.pdf>]
+Overfull \hbox (1.03981pt too wide) in paragraph at lines 651--652
 []\OT1/cmr/m/n/12 The very-high fre-quency re-sponse of GPS-derived dis-place-m
 ents is flat above
  []
 
-[42 <./figures/ch2/qeffect.pdf>]
-
-Package natbib Warning: Citation `genrich2006' on page 43 undefined on input li
-ne 652.
-
-
-Overfull \hbox (0.7898pt too wide) in paragraph at lines 652--653
+[43]
+Overfull \hbox (0.7898pt too wide) in paragraph at lines 653--654
 []\OT1/cmr/m/n/12 We find that the ba-sic state vec-tor rep-re-sen-ta-tion is s
 uf-fi-cient for the Kalman
  []
 
-[43] <./figures/ch2/fnoise_reduction.pdf, id=1582, 306.14375pt x 189.70876pt>
+[44] <./figures/ch2/fnoise_reduction.pdf, id=1585, 306.14375pt x 189.70876pt>
 File: ./figures/ch2/fnoise_reduction.pdf Graphic file (type pdf)
 
 <use ./figures/ch2/fnoise_reduction.pdf>
 Package pdftex.def Info: ./figures/ch2/fnoise_reduction.pdf used on input line 
-658.
+659.
 (pdftex.def)             Requested size: 414.97685pt x 257.16391pt.
-
-
-Package natbib Warning: Citation `Geng2013' on page 44 undefined on input line 
-663.
-
-[44]
-Overfull \hbox (10.70349pt too wide) in paragraph at lines 666--666
+ [45 <./figures/ch2/fnoise_reduction.pdf>]
+Overfull \hbox (10.70349pt too wide) in paragraph at lines 667--667
 []\OT1/cmr/bx/n/17.28 Application to the M9 Tohoku-oki Earth-quake 
  []
 
+<./figures/ch2/map_tohoku.pdf, id=1626, 452.41722pt x 558.15227pt>
+File: ./figures/ch2/map_tohoku.pdf Graphic file (type pdf)
 
-LaTeX Warning: Reference `fig_map_baseline' on page 45 undefined on input line 
-673.
+<use ./figures/ch2/map_tohoku.pdf>
+Package pdftex.def Info: ./figures/ch2/map_tohoku.pdf used on input line 676.
+(pdftex.def)             Requested size: 414.97685pt x 511.96478pt.
+ [46] [47 <./figures/ch2/map_tohoku.pdf>]
+[48] <./figures/ch2/abc_nok.pdf, id=1648, 495.8525pt x 377.41pt>
+File: ./figures/ch2/abc_nok.pdf Graphic file (type pdf)
 
+<use ./figures/ch2/abc_nok.pdf>
+Package pdftex.def Info: ./figures/ch2/abc_nok.pdf used on input line 693.
+(pdftex.def)             Requested size: 414.97685pt x 315.8532pt.
+ [49 <./figures/ch2/abc_nok.pdf>]
+<./figures/ch2/abc_withk.pdf, id=1705, 490.80968pt x 385.42091pt>
+File: ./figures/ch2/abc_withk.pdf Graphic file (type pdf)
 
-Package natbib Warning: Citation `bock2000' on page 45 undefined on input line 
-673.
+<use ./figures/ch2/abc_withk.pdf>
+Package pdftex.def Info: ./figures/ch2/abc_withk.pdf used on input line 702.
+(pdftex.def)             Requested size: 414.97685pt x 325.88615pt.
+ [50 <./figures/ch2/abc_withk.pdf>]
+<./figures/ch2/abc_all.jpg, id=1761, 564.1075pt x 793.96625pt>
+File: ./figures/ch2/abc_all.jpg Graphic file (type jpg)
 
+<use ./figures/ch2/abc_all.jpg>
+Package pdftex.def Info: ./figures/ch2/abc_all.jpg used on input line 711.
+(pdftex.def)             Requested size: 272.45547pt x 383.474pt.
+ [51 <./figures/ch2/abc_all.jpg>]
+<./figures/ch2/abc_rms.pdf, id=1765, 350.4794pt x 382.62952pt>
+File: ./figures/ch2/abc_rms.pdf Graphic file (type pdf)
 
-Package natbib Warning: Citation `Crowell2009' on page 45 undefined on input li
-ne 673.
+<use ./figures/ch2/abc_rms.pdf>
+Package pdftex.def Info: ./figures/ch2/abc_rms.pdf used on input line 720.
+(pdftex.def)             Requested size: 293.41507pt x 320.33815pt.
+ [52 <./figures/ch2/abc_rms.pdf>]
+<./figures/ch2/abc_psd.pdf, id=1786, 722.7pt x 542.025pt>
+File: ./figures/ch2/abc_psd.pdf Graphic file (type pdf)
 
+<use ./figures/ch2/abc_psd.pdf>
+Package pdftex.def Info: ./figures/ch2/abc_psd.pdf used on input line 733.
+(pdftex.def)             Requested size: 293.41507pt x 220.0565pt.
 
-LaTeX Warning: Reference `map_baseline' on page 45 undefined on input line 673.
+<./figures/ch2/abc_respspec.pdf, id=1787, 712.6625pt x 546.04pt>
+File: ./figures/ch2/abc_respspec.pdf Graphic file (type pdf)
 
+<use ./figures/ch2/abc_respspec.pdf>
+Package pdftex.def Info: ./figures/ch2/abc_respspec.pdf used on input line 742.
 
-[45 <./figures/ch2/fnoise_reduction.pdf>]
+(pdftex.def)             Requested size: 293.41507pt x 224.81102pt.
+ [53]
 
-Package natbib Warning: Citation `simons2011' on page 46 undefined on input lin
-e 675.
+LaTeX Warning: Text page 54 contains only floats.
 
+[54 <./figures/ch2/abc_psd.pdf> <./figures/ch2/abc_respspec.pdf>]
+<./figures/ch2/abc_psdall.jpg, id=1845, 570.13pt x 794.97pt>
+File: ./figures/ch2/abc_psdall.jpg Graphic file (type jpg)
 
-Package natbib Warning: Citation `Wang2011' on page 46 undefined on input line 
-677.
+<use ./figures/ch2/abc_psdall.jpg>
+Package pdftex.def Info: ./figures/ch2/abc_psdall.jpg used on input line 751.
+(pdftex.def)             Requested size: 314.37465pt x 438.35083pt.
 
+<./figures/ch2/abc_respspecall.jpg, id=1846, 567.11874pt x 793.96625pt>
+File: ./figures/ch2/abc_respspecall.jpg Graphic file (type jpg)
 
-Package natbib Warning: Citation `Wang2013' on page 46 undefined on input line 
-677.
+<use ./figures/ch2/abc_respspecall.jpg>
+Package pdftex.def Info: ./figures/ch2/abc_respspecall.jpg used on input line 7
+60.
+(pdftex.def)             Requested size: 314.37465pt x 440.13554pt.
+ [55] [56 <./figures/ch2/abc_psdall.jpg>] [57 <./figures/ch2/abc_respspecall.jp
+g>]
+<./figures/ch2/abc_map_offsets.pdf, id=1856, 901.3675pt x 568.1225pt>
+File: ./figures/ch2/abc_map_offsets.pdf Graphic file (type pdf)
 
-) [46] [47]
+<use ./figures/ch2/abc_map_offsets.pdf>
+Package pdftex.def Info: ./figures/ch2/abc_map_offsets.pdf used on input line 7
+73.
+(pdftex.def)             Requested size: 414.97685pt x 261.55623pt.
+
+<./figures/ch2/abc_bad.pdf, id=1857, 475.108pt x 356.50288pt>
+File: ./figures/ch2/abc_bad.pdf Graphic file (type pdf)
+
+<use ./figures/ch2/abc_bad.pdf>
+Package pdftex.def Info: ./figures/ch2/abc_bad.pdf used on input line 782.
+(pdftex.def)             Requested size: 414.97685pt x 311.38982pt.
+ [58] [59 <./figures/ch2/abc_map_offsets.pdf>]
+[60 <./figures/ch2/abc_bad.pdf>]) [61] [62]
 \openout2 = `ch3.aux'.
 
  (./ch3.tex
 Chapter 3.
-
-Package natbib Warning: Citation `Brown2011' on page 48 undefined on input line
- 5.
+[63
 
 
-Package natbib Warning: Citation `bock1993' on page 48 undefined on input line 
-9.
 
+] [64] [65]
+Missing character: There is no ’ in font cmr12!
+) [66]
+\openout2 = `ch4.aux'.
 
-Package natbib Warning: Citation `blewitt1993' on page 48 undefined on input li
-ne 9.
-
-[48
+ (./ch4.tex
+Chapter 4.
+) [67
 
 
 
 ]
+\openout2 = `ch5.aux'.
 
-Package natbib Warning: Citation `Havskov2010' on page 49 undefined on input li
-ne 16.
-
-
-Package natbib Warning: Citation `dreger2003' on page 49 undefined on input lin
-e 16.
+ (./ch5.tex
+Chapter 5.
+) [68
 
 
-Package natbib Warning: Citation `dziewonski1981' on page 49 undefined on input
- line 18.
+
+]
+\openout2 = `ch6.aux'.
+
+ (./ch6.tex
+Chapter 6.
+) [69
 
 
-Package natbib Warning: Citation `dziewonski1983' on page 49 undefined on input
- line 18.
+
+] (./dissertation.bbl [70
 
 
-Package natbib Warning: Citation `dreger1990' on page 49 undefined on input lin
-e 18.
+] [71]
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ê in font cmr12!
+ [72] [73] [74]) [75] (./dissertation.aux
+(./frontmatter.aux) (./ch1.aux) (./ch2.aux) (./ch3.aux) (./ch4.aux) (./ch5.aux)
+(./ch6.aux))
 
+LaTeX Warning: There were undefined references.
 
-Package natbib Warning: Citation `dreger1993' on page 49 undefined on input lin
-e 18.
+ ) 
+Here is how much of TeX's memory you used:
+ 3389 strings out of 493308
+ 47224 string characters out of 6137816
+ 135344 words of memory out of 5000000
+ 6731 multiletter control sequences out of 15000+600000
+ 10142 words of font info for 36 fonts, out of 8000000 for 9000
+ 957 hyphenation exceptions out of 8191
+ 38i,11n,27p,2167b,312s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><
+/usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
+usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
+sr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr
+/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/l
+ocal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loca
+l/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local
+/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/t
+exlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on dissertation.pdf (88 pages, 22474447 bytes).
+PDF statistics:
+ 2052 PDF objects out of 2073 (max. 8388607)
+ 523 compressed objects within 6 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 141 words of extra memory for PDF output out of 10000 (max. 10000000)
 
-[49]
-
-Package natbib Warning: Citation `kanamori2008' on page 50 undefined on input l
-ine 20.
-
-
-Package natbib Warning: Citation `kanamori1993' on page 50 undefined on input l
-ine 20.
-
-
-Package natbib Warning: Citation `hayes2009' on page 50 undefined on input line
- 20.
-
-
-Package natbib Warning: Citation `duputel2011' on page 50 undefined on input li
-ne 22.
-
-
-Package natbib Warning: Citation `duputel2011' on page 50 undefined on input li
-ne 22.
-
-
-Package natbib Warning: Citation `duputel2011' on page 50 undefined on input li
-ne 24.
-
-
-Package natbib Warning: Citation `simons2011' on page 50 undefined on input lin
-e 24.
-
-
-Package natbib Warning: Citation `hayes2011' on page 50 undefined on input line
- 24.
-
-[50]
-Missing character: There is no ’ in font cmr12!
-) [51]
-\openout2 = `ch4.aux'.
-
- (./ch4.
