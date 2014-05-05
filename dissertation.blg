@@ -3,51 +3,50 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: dissertation.aux
 A level-1 auxiliary file: frontmatter.aux
 A level-1 auxiliary file: ch1.aux
-A level-1 auxiliary file: ch2.aux
 A level-1 auxiliary file: ch3.aux
 A level-1 auxiliary file: ch4.aux
 A level-1 auxiliary file: ch5.aux
 A level-1 auxiliary file: ch6.aux
 The style file: apa.bst
 Database file #1: refs.bib
-You've used 58 entries,
+You've used 33 entries,
             1940 wiz_defined-function locations,
-            850 strings with 15066 characters,
-and the built_in function-call counts, 25287 in all, are:
-= -- 2405
-> -- 1173
-< -- 30
-+ -- 427
-- -- 404
-* -- 2437
-:= -- 4378
-add.period$ -- 174
-call.type$ -- 58
-change.case$ -- 486
-chr.to.int$ -- 57
-cite$ -- 58
-duplicate$ -- 827
-empty$ -- 1684
-format.name$ -- 492
-if$ -- 4848
-int.to.chr$ -- 2
+            698 strings with 10429 characters,
+and the built_in function-call counts, 14256 in all, are:
+= -- 1347
+> -- 711
+< -- 17
++ -- 256
+- -- 246
+* -- 1372
+:= -- 2500
+add.period$ -- 99
+call.type$ -- 33
+change.case$ -- 286
+chr.to.int$ -- 33
+cite$ -- 33
+duplicate$ -- 464
+empty$ -- 911
+format.name$ -- 305
+if$ -- 2713
+int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 63
-newline$ -- 293
-num.names$ -- 174
-pop$ -- 373
+missing$ -- 36
+newline$ -- 168
+num.names$ -- 99
+pop$ -- 218
 preamble$ -- 1
-purify$ -- 489
+purify$ -- 286
 quote$ -- 0
-skip$ -- 640
+skip$ -- 364
 stack$ -- 0
-substring$ -- 1894
-swap$ -- 140
-text.length$ -- 4
+substring$ -- 958
+swap$ -- 75
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 338
+type$ -- 192
 warning$ -- 0
-while$ -- 181
+while$ -- 99
 width$ -- 0
-write$ -- 757
+write$ -- 432
