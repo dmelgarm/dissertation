@@ -17,11 +17,17 @@
 \contentsline {subsection}{\numberline {2.1.1}Extracting Coseismic Offsets}{7}
 \contentsline {subsection}{\numberline {2.1.2}Point Source Models}{7}
 \contentsline {subsubsection}{Inversion Scheme}{7}
-\contentsline {subsection}{\numberline {2.1.3}Demonstration}{11}
+\contentsline {subsection}{\numberline {2.1.3}Applications of the Point Source Approach}{11}
 \contentsline {subsubsection}{2003 Mw 8.3 Tokachi-oki Earthquake}{11}
-\contentsline {chapter}{\numberline {Chapter\nobreakspace {}3}Kinematic Source Inversions}{16}
-\contentsline {section}{\numberline {3.1}A section}{16}
-\contentsline {chapter}{\numberline {Chapter\nobreakspace {}4}Offshore Data and Tsunami Modeling}{17}
-\contentsline {section}{\numberline {4.1}A section}{17}
-\contentsline {chapter}{\numberline {Chapter\nobreakspace {}5}Conclusions and Future Outlook}{18}
-\contentsline {section}{\numberline {5.1}A section}{18}
+\contentsline {subsubsection}{The 2010 Mw 7.2 El Mayor Cucapah Earthquake}{14}
+\contentsline {subsection}{\numberline {2.1.4}Final Point Source Solutions}{20}
+\contentsline {subsection}{\numberline {2.1.5}Implementation Issues and Necessary Improvements}{25}
+\contentsline {subsection}{\numberline {2.1.6}Violation of the Point Source Assumption}{29}
+\contentsline {subsection}{\numberline {2.1.7}The Finite Extent CMT Approach}{29}
+\contentsline {section}{\numberline {2.2}Static Slip Inversions}{29}
+\contentsline {chapter}{\numberline {Chapter\nobreakspace {}3}Kinematic Source Inversions}{32}
+\contentsline {section}{\numberline {3.1}A section}{32}
+\contentsline {chapter}{\numberline {Chapter\nobreakspace {}4}Offshore Data and Tsunami Modeling}{33}
+\contentsline {section}{\numberline {4.1}A section}{33}
+\contentsline {chapter}{\numberline {Chapter\nobreakspace {}5}Conclusions and Future Outlook}{34}
+\contentsline {section}{\numberline {5.1}A section}{34}

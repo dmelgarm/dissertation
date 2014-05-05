@@ -1,5 +1,13 @@
 \begin{thebibliography}{}
 
+\bibitem[\protect\astroncite{Adamov{\'a} and
+  {\v{S}}{\'\i}len{\`y}}{2010}]{adamova2010}
+Adamov{\'a}, P. and {\v{S}}{\'\i}len{\`y}, J. (2010).
+\newblock Non-double-couple earthquake mechanism as an artifact of the
+  point-source approach applied to a finite-extent focus.
+\newblock {\em Bulletin of the Seismological Society of America},
+  100(2):447--457.
+
 \bibitem[\protect\astroncite{Aki and Richards}{2002}]{Aki2002}
 Aki, K. and Richards, P.~M. (2002).
 \newblock {\em Quantitative Seismology}.
@@ -55,6 +63,12 @@ Crowell, B.~W., Bock, Y., and Melgar, D. (2012).
 \newblock Real‐time inversion of gps data for finite fault modeling and rapid
   hazard assessment.
 \newblock {\em Geophysical Research Letters}, 39(9).
+
+\bibitem[\protect\astroncite{Crowell et~al.}{2009}]{Crowell2009}
+Crowell, B.~W., Bock, Y., and Squibb, M. (2009).
+\newblock Demonstration of earthquake early warning using total displacement
+  waveforms from real time gps networks.
+\newblock {\em Seismological Research Letters}, 80:772--782.
 
 \bibitem[\protect\astroncite{Dreger}{2003}]{dreger2003}
 Dreger, D. (2003).
@@ -115,10 +129,25 @@ Hanks, T. and Kanamori, H. (1979).
 \newblock A moment magnitude scale.
 \newblock {\em Journal of Geophysical Research}, 84(B5):2348--2350.
 
+\bibitem[\protect\astroncite{Hauksson et~al.}{2011}]{hauksson2011}
+Hauksson, E., Stock, J., Hutton, K., Yang, W., Vidal-Villegas, J.~A., and
+  Kanamori, H. (2011).
+\newblock The 2010 m w 7.2 el mayor-cucapah earthquake sequence, baja
+  california, mexico and southernmost california, usa: Active seismotectonics
+  along the mexican pacific margin.
+\newblock {\em Pure and applied geophysics}, 168(8-9):1255--1277.
+
 \bibitem[\protect\astroncite{Havskov and Ottemoller}{2010}]{Havskov2010}
 Havskov, J. and Ottemoller, L. (2010).
 \newblock {\em Routine Data Processing in Earthquake Seismology}.
 \newblock Springer, New York, NY, first edition.
+
+\bibitem[\protect\astroncite{Hayashi et~al.}{2011}]{hayashi2011}
+Hayashi, Y., Tsushima, H., Hirata, K., Kimura, K., and Maeda, K. (2011).
+\newblock Tsunami source area of the 2011 off the pacific coast of tohoku
+  earthquake determined from tsunami arrival times at offshore observation
+  stations.
+\newblock {\em Earth, planets and space}, 63(7):809--813.
 
 \bibitem[\protect\astroncite{Hayes et~al.}{2011}]{hayes2011}
 Hayes, G.~P., Earle, P.~S., Benz, H.~M., Wald, D.~J., Briggs, R.~W., et~al.
@@ -133,12 +162,25 @@ Hayes, G.~P., Rivera, L., and Kanamori, H. (2009).
   extension to low magnitudes.
 \newblock {\em Seismological Research Letters}, 80(5):817--822.
 
+\bibitem[\protect\astroncite{Hayes et~al.}{2012}]{hayes2012}
+Hayes, G.~P., Wald, D.~J., and Johnson, R.~L. (2012).
+\newblock Slab1.0: A three-dimensional model of global subduction zone
+  geometries.
+\newblock {\em Journal of Geophysical Research: Solid Earth (1978--2012)},
+  117(B1).
+
 \bibitem[\protect\astroncite{Hearn and B{\"u}rgmann}{2005}]{Hearn2005}
 Hearn, E.~H. and B{\"u}rgmann, R. (2005).
 \newblock The effect of elastic layering on inversions of gps data for
   coseismic slip and resulting stress changes: Strike-slip earthquakes.
 \newblock {\em Bulletin of the Seismological Society of America},
   95(5):1673--1653.
+
+\bibitem[\protect\astroncite{Hingee et~al.}{2011}]{hingee2011}
+Hingee, M., Tkal{\v{c}}i{\'c}, H., Fichtner, A., and Sambridge, M. (2011).
+\newblock Seismic moment tensor inversion using a 3-d structural model:
+  applications for the australian region.
+\newblock {\em Geophysical Journal International}, 184(2):949--964.
 
 \bibitem[\protect\astroncite{Kanamori}{1993}]{kanamori1993}
 Kanamori, H. (1993).
@@ -149,6 +191,25 @@ Kanamori, H. (1993).
 Kanamori, H. and Rivera, L. (2008).
 \newblock Source inversion of w phase: speeding up seismic tsunami warning.
 \newblock {\em Geophysical Journal International}, 175(1):222--238.
+
+\bibitem[\protect\astroncite{Kohler et~al.}{2003}]{kohler2003}
+Kohler, M., Magistrale, H., and Clayton, R. (2003).
+\newblock Mantle heterogeneities and the scec reference three-dimensional
+  seismic velocity model version 3.
+\newblock {\em Bulletin of the Seismological Society of America},
+  93(2):757--774.
+
+\bibitem[\protect\astroncite{Koketsu et~al.}{2004}]{koketsu2004}
+Koketsu, K., Hikima, K., Miyazaki, S., and Ide, S. (2004).
+\newblock Joint inversion of strong motion and geodetic data for the source
+  process of the 2003 tokachi-oki, hokkaido, earthquake.
+\newblock {\em Earth, planets and space}, 56(3):329--334.
+
+\bibitem[\protect\astroncite{Langbein and Bock}{2004}]{langbein2004}
+Langbein, J. and Bock, Y. (2004).
+\newblock High-rate real-time gps network at parkfield: Utility for detecting
+  fault slip and seismic displacements.
+\newblock {\em Geophysical Research Letters}, 31(15).
 
 \bibitem[\protect\astroncite{Miyazaki et~al.}{1998}]{Miyazaki1998}
 Miyazaki, S., Tsuji, H., Hatanaka, Y., and Tada, T. (1998).
@@ -193,6 +254,13 @@ Wang, R., Martin, F., and Roth, F. (2003).
 \newblock Computation of deformation induced by earthquakes in a multi-layered
   elastic crust -- fortran programs edgrn/edcmp.
 \newblock {\em Computers and Geosciences}, 29:195--207.
+
+\bibitem[\protect\astroncite{Wei et~al.}{2011}]{wei2011}
+Wei, S., Fielding, E., Leprince, S., Sladen, A., Avouac, J.-P., Helmberger, D.,
+  Hauksson, E., Chu, R., Simons, M., Hudnut, K., et~al. (2011).
+\newblock Superficial simplicity of the 2010 el mayor-cucapah earthquake of
+  baja california in mexico.
+\newblock {\em Nature geoscience}, 4(9):615--618.
 
 \bibitem[\protect\astroncite{Wright et~al.}{2012}]{Wright2012}
 Wright, T.~J., Houli{\'e}, N., Hildyard, M., and Iwabuchi, T. (2012).

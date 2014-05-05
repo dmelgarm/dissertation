@@ -9,44 +9,44 @@ A level-1 auxiliary file: ch5.aux
 A level-1 auxiliary file: ch6.aux
 The style file: apa.bst
 Database file #1: refs.bib
-You've used 33 entries,
+You've used 43 entries,
             1940 wiz_defined-function locations,
-            698 strings with 10429 characters,
-and the built_in function-call counts, 14256 in all, are:
-= -- 1347
-> -- 711
-< -- 17
-+ -- 256
-- -- 246
-* -- 1372
-:= -- 2500
-add.period$ -- 99
-call.type$ -- 33
-change.case$ -- 286
-chr.to.int$ -- 33
-cite$ -- 33
-duplicate$ -- 464
-empty$ -- 911
-format.name$ -- 305
-if$ -- 2713
+            746 strings with 12600 characters,
+and the built_in function-call counts, 18827 in all, are:
+= -- 1782
+> -- 956
+< -- 19
++ -- 344
+- -- 332
+* -- 1831
+:= -- 3301
+add.period$ -- 129
+call.type$ -- 43
+change.case$ -- 378
+chr.to.int$ -- 43
+cite$ -- 43
+duplicate$ -- 602
+empty$ -- 1194
+format.name$ -- 405
+if$ -- 3569
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 36
-newline$ -- 168
-num.names$ -- 99
-pop$ -- 218
+missing$ -- 46
+newline$ -- 218
+num.names$ -- 129
+pop$ -- 288
 preamble$ -- 1
-purify$ -- 286
+purify$ -- 378
 quote$ -- 0
-skip$ -- 364
+skip$ -- 469
 stack$ -- 0
-substring$ -- 958
-swap$ -- 75
+substring$ -- 1282
+swap$ -- 95
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 192
+type$ -- 252
 warning$ -- 0
-while$ -- 99
+while$ -- 134
 width$ -- 0
-write$ -- 432
+write$ -- 562

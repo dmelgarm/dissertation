@@ -45,7 +45,7 @@ The inversion scheme employed here relates the coseismic offset measured at the 
  u_1^1\\
  u_2^1\\
  u_3^1\\
- \cdot\\
+ \vdots\\
  u_1^n\\
  u_2^n\\
  u_3^n\\
@@ -55,7 +55,7 @@ The inversion scheme employed here relates the coseismic offset measured at the 
 G^1_{11} & G^1_{12} & G^1_{13} & G^1_{14} & G^1_{15}\\
 G^1_{21} & G^1_{22} & G^1_{23} & G^1_{24} & G^1_{25}\\ 
 G^1_{31} & G^1_{32} & G^1_{33} & G^1_{34} & G^1_{35}\\
-\cdot &  &  &  & \cdot\\
+\vdots &  & \cdots &  & \vdots\\
 G^2_{11} & G^2_{12} & G^2_{13} & G^2_{14} & G^2_{15}\\
 G^2_{21} & G^2_{22} & G^2_{23} & G^2_{24} & G^2_{25}\\ 
 G^2_{31} & G^2_{32} & G^2_{33} & G^2_{34} & G^2_{35}\\
@@ -71,7 +71,7 @@ G^2_{31} & G^2_{32} & G^2_{33} & G^2_{34} & G^2_{35}\\
 or more succinctly
 \begin{equation}
 \label{eq_mshort}
-u_i^k=G^k_{ij}m_j\;;\;\{i=x,y,z\;,\;j=1,2,\dddot,5\;,\;k=1,2,\dddot,n\}\;,
+u_i^k=G^k_{ij}m_j\;;\;\{i=x,y,z\;,\;j=1,2,\dots,5\;,\;k=1,2,\dots,n\}\;,
 \end{equation}
 where $u_i^k$ is the $i$th component of displacement measured at the $k$th station, $m_j$ is the $j$th component of the moment tensor and $G_{ij}^k$ are the $i$th component GFs that relate the $j$th component of the moment tensor to the $k$th station. Thus the GF matrix is very compact, having only 5 elements per direction of motion per station.
 
@@ -103,7 +103,7 @@ Since we are making a point source approximation and neglecting fault finiteness
 where
 \begin{equation}
 \textbf{W}=\mathrm{diag}\left(
-\frac{1}{\sigma_1^1},\frac{1}{\sigma_2^1},\frac{1}{\sigma_3^1},\frac{1}{\sigma_1^2},\frac{1}{\sigma_2^2},\frac{1}{\sigma_3^2},\dddot  ,\frac{1}{\sigma_1^n},\frac{1}{\sigma_2^n},\frac{1}{\sigma_3^n}\right)\;,
+\frac{1}{\sigma_1^1},\frac{1}{\sigma_2^1},\frac{1}{\sigma_3^1},\frac{1}{\sigma_1^2},\frac{1}{\sigma_2^2},\frac{1}{\sigma_3^2},\dots  ,\frac{1}{\sigma_1^n},\frac{1}{\sigma_2^n},\frac{1}{\sigma_3^n}\right)\;,
 \end{equation}
 and the  $\sigma_i^k$’s are the standard deviations obtained from 60 s of pre-event noise at the $k$th station on the $i$th channel. This is a reasonable assumption since, in the absence of motion, the pre-event time series are many realizations of a zero measurement. The weight matrix remains constant across all epochs, since we assume that the noise characteristics of the GPS time series are the same for the duration of the inversion. The noise characteristics of real-time GPS displacements should be stable on the scale of minutes \citep{genrich2006}. Furthermore in Chapter 2 we saw no found no appreciable increase in the noise level between quiescent periods and periods of shaking during the shaketable tests. Thus, to first order, the noise can be assumed to be constant for the duration of strong shaking.
 
@@ -119,20 +119,21 @@ For analysis of the inversion we obtain the seismic scalar moment $M_0$ as the s
 \begin{equation}
 \|\mathbf{M}\|=\frac{1}{\sqrt 2}\left(\sum_{i=1}^{3}\sum_{j=1}^{3}M_{ij}^2\right)^{1/2}\;,
 \end{equation}
-
 to then compute the moment magnitude using the relationship of \citet{Hanks1979}. Additionally we compute the deviation of the model from a pure double couple source as gauged by the parameter $\epsilon$ \citep{dziewonski1981} which is computed from the moment tensor eigenvalues as
 \begin{equation}
+\label{eq_epsilon}
 \epsilon=\frac{\gamma_{min}}{\gamma_{max}}\;,
 \end{equation}
 where $\gamma_{min}$ is the smallest eigenvalue in the absolute sense and $\gamma_{max}$ is the largest. $\epsilon=0$ denotes a pure double couple source and $\epsilon=0.5$ a pure compensated linear vector dipole (CLVD) source.
 
-The hypocenter and centroid locations can vary substantially since the hypocenter is the point of initiation of rupture while the centroid is the point of mean moment release. The hypocenter can be determined rapidly from traditional seismic data but the centroid location is harder to compute. To locate the centroid we employ a grid searching approach by defining a discrete grid around the stations that first detect the coseismic offsets. We invert simultaneously at each epoch on all grid points (inversion nodes) assuming that each node is the centroid. We then compute the misfit of the inversion at each node and define the final centroid location for that epoch as the one with the largest variance reduction (VR):\begin{equation}
+The hypocenter and centroid locations can vary substantially since the hypocenter is the point of initiation of rupture while the centroid is the point of mean moment release. The hypocenter can be determined rapidly from traditional seismic data but the centroid location is harder to compute. To locate the centroid we employ a grid searching approach by defining a discrete grid around the stations that first detect the coseismic offsets. We invert simultaneously at each epoch on all grid points (inversion nodes) assuming that each node is the centroid. We then compute the misfit of the inversion at each node and define the final centroid location for that epoch as the one with the largest variance reduction (VR):
+\begin{equation}
 \mathrm{VR}=\left(1-\frac{\sum_{i=1}^n[d_i-(\mathbf{Gm})_i]^2}{\sum_{i=1}^n d_i^2}\right)\times100\;.
 \end{equation}
 
 In order to build the grid of nodes on which the inversion will take place, it's possible to use a precomputed slab model (in the case of subduction zone events) or have a library of fault surfaces (for strike slip environments) as a template for a grid. Alternatively it's possible discretize the known geological surfaces to define the inversion nodes thus forcing the centroid to lie on known faults. We prefer to minimize assumptions and simply build a sufficiently large three dimensional prism of grid points around a preliminary hypocentral location. The choice of strategy will depend on the observational goals of a network. In any case, we combine a formal inversion with a grid search to solve for the CMT using an algorithm that we call \textit{fast}CMT.
 
-\subsection{Demonstration}
+\subsection{Applications of the Point Source Approach}
 
 To demonstrate our approach, we apply here the \textit{fast}CMT algorithm for a subduction zone earthquake and for an earthquake in a strike-slip environment, using near-field 1 Hz GPS network data replayed in a simulated real-time mode to estimate displacements. 
 
@@ -147,7 +148,7 @@ The first example of \textit{fast}CMT is for the 2003 Mw 8.3 Tokachi-oki earthqu
   \label{fig_toki_tseries}
 \end{figure}
 
-Green’s functions were computed from EDGRN on a 1 km horizontal and vertical grid using the four-layer velocity model employed by \citet{Yagi2004} for near source slip inversion (Table \ref{tb_toki_model}). This is a much denser coverage than the actual station distribution, thus, at any given station the resulting GF is the spline interpolation of the closest grid points. For this scenario we used a 3-D 3$^\circ\times$3$^\circ$ prism of gridpoints spaced at 0.2$^\circ$ and every 3 km in depth between 3 and 60 km centred around the mean latitude and longitude of the first stations to meet a detection criterion.
+Green's functions were computed from EDGRN on a 1 km horizontal and vertical grid using the four-layer velocity model employed by \citet{Yagi2004} for near source slip inversion (Table \ref{tb_toki_model}). This is a much denser coverage than the actual station distribution, thus, at any given station the resulting GF is the spline interpolation of the closest grid points. For this scenario we used a 3-D 3$^\circ\times$3$^\circ$ prism of gridpoints spaced at 0.2$^\circ$ and every 3 km in depth between 3 and 60 km centred around the mean latitude and longitude of the first stations to meet a detection criterion.
 
 \begin{table}
 \caption{Velocity model for the Tokachi-oki inversion}
@@ -166,19 +167,152 @@ Half-space & 7.80 & 4.50 & 3.20 & $\infty$\\
 \end{tabular}
 \end{table}
 
-% 
-defined the criterion that displacements from 5 stations over the 15 mm threshold are required to start the inversion; for the 2003 Tokachi-oki event this occurred at 43 s after origin time. The results of the inversion are shown in Figures \ref{fig_toki_centroid_loc} and 3. Figure 2 shows the centroid determination as a function of time as well as the estimated magnitude and the parameter ?; Figure 3 shows snapshots of the resulting CMT (the full result is in supplementary movie S1) as well as the observed and synthetic horizontal displacements. Figure 2 shows that by 50 s a rough centroid location is available with oscillations between adjacent nodes. The magnitude reaches Mw 8.0 at 75 s, with a 75\% variance reduction. However, as evidenced by the time series (Figure 1) the full coseismic offset has not yet occurred. The magnitude continues to grow and settles at 8.3 by 170 s. The plot of the variance reduction also shows that at 200 s (when the final offset is in place) the fit to the data is maximum (85\%) degrading towards the end of the inversion. Figure 3 and supplementary movie S1 show the oscillation between adjacent nodes for the centroid solution and also indicate how by 65 s a thrusting mechanism is already resolved although the magnitude is still underestimated. However, by 180 s and onwards the inverted mechanism is close to that of the GCMT solution (http://www.globalcmt.org/). Variance reduction values are computed at every epoch (supplementary movie S2 shows the evolution of this misfit function for the full 300 s). To illustrate the grid searching method, Figure 4 shows a snapshot of variance reduction at 180 s after the origin time.
+We defined the criterion that displacements from 5 stations over the 15 mm threshold are required to start the inversion; for the 2003 Tokachi-oki event this occurred at 43 s after origin time. The results of the inversion are shown in Figures \ref{fig_toki_centroid_loc} and \ref{fig_toki_snaps}. Figure \ref{fig_toki_centroid_loc} shows the centroid determination as a function of time, Figure \ref{fig_toki_snaps} shows snapshots of the resulting CMT as well as the observed and synthetic horizontal displacements. Figure \ref{fig_toki_centroid_loc} shows that by 50 s a rough centroid location is available with oscillations between adjacent nodes. The magnitude reaches Mw 8.0 at 75 s, with a 75\% variance reduction. However, as evidenced by the time series (Figure \ref{fig_toki_tseries}) the full coseismic offset has not yet occurred. The magnitude continues to grow and settles at 8.3 by 170 s. The plot of the variance reduction also shows that at 200 s (when the final offset is in place) the fit to the data is maximum (85\%) degrading towards the end of the inversion. Figure \ref{fig_toki_centroid_loc} shows the oscillation between adjacent nodes for the centroid solution and also indicate how by 65 s a thrusting mechanism is already resolved although the magnitude is still underestimated. However, by 180 s and onwards the inverted mechanism is close to that of the GCMT solution (http://www.globalcmt.org/).
 
 \begin{figure}[!ht] 
   \centering
   \includegraphics[width=0.88\linewidth]{./figures/ch3/toki_centroid_loc.pdf}
-    \caption[Tokachi-oki inversion summary]{Summary of the inversion results for the Tokachi-oki earthquake. The top three panels are the centroid determination as a function of time compared to the location reported by the USGS and the Global Centroid Moment Tensor Project. The fourth panel is the computed magnitude and the fifth panel is the misfit (variance reduction)}
+    \caption[Tokachi-oki inversion summary]{Summary of the inversion results for the Tokachi-oki earthquake. The top three panels are the centroid determination as a function of time compared to the location reported by the USGS and the Global Centroid Moment Tensor Project. The fourth panel is the computed magnitude and the fifth panel is the misfit (variance reduction).}
   \label{fig_toki_centroid_loc}
 \end{figure}
-	To further evaluate the quality of the solution we extracted the strike, dip and rake of the nodal planes from the moment tensor solution every second by decomposing it into its best double couple. The results are shown in Figure 5 and compared to the GCMT results. They illustrate that the geometrical parameters of the best double couple are well determined at 65 s  before the end of rupture and full coseismic deformation occurs and remain fairly similar to the post-processed  GCMT solution throughout. Furthermore the size of the CLVD is fairly small throughout the inversion, never exceeding     ? = 0.05.
+
+\begin{figure}[!ht] 
+  \centering
+  \includegraphics[width=0.99\linewidth]{./figures/ch3/toki_snaps.pdf}
+    \caption[Tokachi-oki inversion snapshots]{Snapshots of the inversion results comparing the Global CMT result with the replayed GPS real time inversion for the 2003 Mw 8.3 Tokachi-oki earthquake. Mw is the moment magnitude and VR the variance reduction. The red dots indicate the inversion nodes of the 3∞ by 3∞ grid used for the grid search. Also shown is the comparison between the observed (blue) and modeled (green) horizontal offsets. }
+  \label{fig_toki_snaps}
+\end{figure}
+
+To further evaluate the quality of the solution we extracted the strike, dip and rake of the nodal planes from the moment tensor solution every second by decomposing it into its best double couple. The results are shown in Figure \ref{fig_toki_stdiprake}  and compared to the GCMT results. They illustrate that the geometrical parameters of the best double couple are well determined at 65 s, before the full coseismic deformation occurs, and remain fairly similar to the post-processed GCMT solution throughout. Furthermore the size of the CLVD is fairly small throughout the inversion, never exceeding $\epsilon=0.05$.
+
+\begin{figure}[!ht] 
+  \centering
+  \includegraphics[width=0.99\linewidth]{./figures/ch3/toki_stdiprake.pdf}
+    \caption[Tokachi-oki time evolution of best double-couples]{Geometrical parameters of the best double couple solution extracted from the moment tensor inversion and compared to the global CMT post-processed result. Data for both nodal planes (NP1 and NP2) are plotted at 3 s intervals for clarity. $\epsilon$ is defined in Equation \ref{eq_epsilon}. Data starts at 43 s when enough stations detect an offset.}
+  \label{fig_toki_stdiprake}
+\end{figure}
+
+\subsubsection{The 2010 Mw 7.2 El Mayor Cucapah Earthquake}
+
+The 2010 Mw 7.2 El Mayor-Cucapah earthquake ruptured roughly 120 km of the Pacific-North America plate boundary in northern Baja California, Mexico. The rupture was complex possibly starting with a normal faulting event followed by simultaneous normal and right lateral faulting\citep{hauksson2011}. The rupture plane showed evidence of a warped fault, was bilateral and the rake changed along strike away from the epicenter from pure strike slip to a mixture of strike slip and dip slip motion \citep{wei2011}. 
+
+Displacements at a 1 Hz sampling rate were estimated in a simulated real-time mode for 105 stations of the California Real Time Network in southern California as described in Chapter 2. As in the first event, we applied the 120 s moving average filter, at each epoch we exclude stations with horizontal offsets smaller than 15 mm (Figure \ref{fig_elmay_tseries}), and started the inversion process when 5 stations detected motion over the threshold; at 41 s after origin time for the 2010 El Mayor-Cucapah event. The horizontal coseismic offsets are apparent at the stations closer to the source by 150 s in both components although some shaking is still visible in the form of small oscillations. By 200 s the shaking ceases and only the offset remains. Offsets are not easily discernible in the vertical components, which remain noisy throughout. This is reasonable since this earthquake produced only small vertical offsets of \textasciitilde5 mm from the stations closer to the source as estimated, for example, from the more accurate, standard 24 hour displacement time series.
+
+\begin{figure}[!ht] 
+  \centering
+  \includegraphics[width=0.88\linewidth]{./figures/ch3/elmay_tseries.pdf}
+    \caption[El Mayor-Cucapah GPS time series]{300 s of displacement records at 50 of the 105 CRTN stations that exceeded the 15mm threshold with a 120 s moving average filter applied for the 2010 Mw 7.2 El Mayor-Cucapah earthquake}
+  \label{fig_elmay_tseries}
+\end{figure}
+The seismic velocity model used in the inversion is obtained from a simplification of the California Community Velocity Model version 4 (CVM4) \citep{kohler2003}. The structure in this zone is highly heterogeneous so our model is an average of the grid with corners (117$^\circ$W, 32$^\circ$N) and (115$^\circ$W, 34$^\circ$N). We assume a constant Moho depth, which is taken as the mean value inside the grid.  We define 4 layers between the Moho and the free surface, and assume a half space below the Moho (Table \ref{tb_elmay_model}). The GFs for this model are computed at 1 km horizontal and vertical intervals with EDGRN and as before, at a particular station the GF is the result of the spline interpolation of the closest grid points.
+
+\begin{table}
+\caption{Velocity model for the El Mayor-Cucapah inversion}
+\label{tb_elmay_model}
+\begin{tabular}{l r r r r}
+\hline
+Layer & $v_p$ & $v_s$ &Density&Thickness\\
+ & (km/s) &( km/s) & (kg/m$^{3}$) & (km)\\
+\hline
+1 & 4.14 & 2.18 & 2.33 & 4.16\\
+2 & 5.73 & 3.34 & 2.67 & 4.16\\
+3 & 6.37 & 3.66 & 2.80 & 8.32\\
+4 & 6.64 & 3.74 & 2.87 & 8.32\\
+Half-space & 7.69 & 4.38 & 3.218 & $\infty$\\
+\hline
+\end{tabular}
+\end{table}
+In order to avoid the use of a library of fault surfaces we place a rectangular 3$^\circ$ by 3$^\circ$ grid of inversion nodes around the mean latitude and longitude of the first 5 stations to detect 15 mm of horizontal motion and spaced at 0.1$^\circ$ in latitude and longitude and 2 km in depth from 2-20 km. As before, we prefer an L1-norm inversion. Figure \ref{fig_elmay_centroid_loc} shows a summary of the centroid determination and magnitude results of the inversion. The centroid is well located by 50s. After 50s the centroid location oscillates between adjacent nodes; the depth oscillates between 2 and 8 km before settling at 2km by 280s. The variance reduction is maximum (\textasciitilde85\%) by 150 s and worsens slightly towards the end of the inversion, the style of faulting is not well resolved until ~150 s (Figures \ref{fig_elmay_snaps} and \ref{fig_elmay_stdiprake}). The moment magnitude estimate reaches 7.2 by 60s but continues to grow and oscillates between 7.0 and 7.5, before becoming fairly stable at 7.2 by 160s.
+
+\begin{figure}[!ht] 
+  \centering
+  \includegraphics[width=0.88\linewidth]{./figures/ch3/elmay_centroid_loc.pdf}
+    \caption[El Mayor-Cucapah inversion summary]{Summary of the inversion results for the El Mayor-Cucapah earthquake. The top three panels are the centroid determination as a function of time compared to the location reported by the USGS W-Phase inversion and the Global Centroid Moment Tensor Project. The fourth panel is the computed magnitude and the fifth panel is the misfit (variance reduction).}
+  \label{fig_elmay_centroid_loc}
+\end{figure}
+
+\begin{figure}[!ht] 
+  \centering
+  \includegraphics[width=0.99\linewidth]{./figures/ch3/elmay_snaps.pdf}
+    \caption[El Mayor-Cucapah inversion snapshots]{Snapshots of the inversion results for the El Mayor Cucapah earthquake comparing the USGS W phase result with the GPS real-time inversion. Also shown is the comparison between the observed and modeled horizontal offsets. The red dots indicate the nodes used for the grid search, dark grey dots are one year of aftershocks reported by the Southern California Seismic Network (www.data.scec.org) and black lines indicate Quaternary faults in southern California.}
+  \label{fig_elmay_snaps}
+\end{figure}
+The focal mechanisms display some interesting characteristics during the inversion; Figure \ref{fig_elmay_snaps} shows snapshots of the inversion and centroid location at 50s intervals and Figure \ref{fig_elmay_stdiprake} shows the strike, dip and rake of the best double couple solutions. By 120 s the best double couple solution is almost pure strike-slip with strike and dip very similar to the W phase solution and a centroid \textasciitilde30 km from the W phase centroid. The strike of both nodal planes remains fairly consistent throughout as does the rake and the dip of the first nodal plane. However the dip of the second nodal plane oscillates throughout the inversion. Furthermore, the size of the CLVD component is quite large with a mean value of 0.25 during the inversion period. This is consistent with the observations of \citet{hauksson2011} who obtain similar results from post-event W phase inversions and analysis of satellite geodesy data \citet{wei2011} which indicate that a large CLVD reflects source complexity and is a real signal.
+
+\begin{figure}[!ht] 
+  \centering
+  \includegraphics[width=0.99\linewidth]{./figures/ch3/elmay_stdiprake.pdf}
+    \caption[El Mayor-Cucapah time evolution of best double-couples]{Geometrical parameters of the best double couple solution extracted from the moment tensor inversion and compared to the USGS W phase post-processed result for the 2010 El Mayor-Cucapah earthquake. Data for both nodal planes (NP1 and NP2) are plotted at 3 s intervals for clarity. $\epsilon$ is defined in Equation \ref{eq_epsilon}. Data starts at 41 s when enough stations detect an offset.}
+  \label{fig_elmay_stdiprake}
+\end{figure}
+
+\subsection{Final Point Source Solutions}
+
+We have shown that the final CMT solution is quickly obtained after the end of the rupture process as soon as the full permanent deformation has been discerned.  The convergence to the final CMT solution is illustrated in Figure \ref{fig_final_inversion} for both earthquakes. The procedure in initiated as described earlier when 5 stations have a total horizontal displacement that exceeds the 15mm threshold.  We refer to this instant as the time of first detection $t_d$; it is the time at which we launch the procedure to determine the final coseismic offsets. The mean latitude and longitude of the 5 GPS stations is computed, and a 3∞ by 3∞ grid around that value is defined. The pre-computed GFs are spline interpolated to compute values at each grid point. A grid search is initiated to determine the event centroid. In addition to the 120s moving average computed for the total horizontal displacements.  We also compute the variance of 20 samples previous to the current epoch (Figure \ref{fig_final_inversion}a and \ref{fig_final_inversion}e); as the offset grows, the variance will be high and when the displacement stabilizes to its final level the variance will diminish and stabilize. Only the station with the maximum horizontal displacement is considered at this point of the analysis. At each epoch, the station that obeys this constraint is tracked; it can change from epoch to epoch depending on the location of the network with respect to the earthquake source. Thus, the displacement traces shown in Figure \ref{fig_final_inversion} (a, e) could be a composite of several stations. The variance at each epoch is computed over the previous 20 samples (or the previous 20s for 1Hz data). At every instant we track whether the observed variance is the maximum observed one  ($s^2_{max}$) up to that given point (the time of maximum variance is $t_{max}$). Simultaneously, we track whether the variance has dropped below an empirically set threshold $p\cdot s^2_{max}$ where $p=0.25$. The epoch where that threshold is breached is time $t_1$ and we assume this to be the instant when the final offset at the station with the maximum horizontal displacement has been reached. Evidently some error is incurred here from stations not yet developing the full offset, but after experimenting with values of $p$ ranging from 0.01 to 0.5, and comparing with post-processed inversions we conclude that 0.25 is optimum. A high value for $p$ detects the final offset earlier but does not allow for enough stations to have reached a final offset, conversely a low value of $0.1$ waits an unnecessarily long time for the final offset solution.
+
+\begin{figure}[!ht] 
+  \centering
+  \includegraphics[width=0.99\linewidth]{./figures/ch3/final_inversion.pdf}
+    \caption[Detection of final coseismic offsets]{a) Maximum horizontal displacement and variance function used for determination of final offsets for the Tokachi-oki earthquake (see text for detailed description). $t_d$ is the time at which anomalous motion is detected, $t_{max}$ is the time of maximum variance, $t_1$ is the time when the variance function drops to 25\% of the maximum value and defines the start of the averaging interval and $t_2$ is 20s after $t_1$ and is the end of the averaging interval and the time at which a final solution is available. b)-d) Final offsets determined for the 3 directions of motion for the Tokachi-oki event. d) Maximum horizontal displacement and variance function used for determination of final offsets for the El Mayor-Cucapah earthquake (see text for detailed description); $t_d$, $t_{max}$, $t_1$ and $t_2$ have the same definition as in 9a. f)-h) Final offsets determined for the 3 directions of motion for the El Mayor-Cucapah event}
+  \label{fig_final_inversion}
+\end{figure}
+As evidenced by Figure \ref{fig_toki_stdiprake} and \ref{fig_elmay_stdiprake} there is still a considerable amount of scatter in the MT solutions so taking data from a single epoch is not desirable and more averaging is necessary. Thus the \textit{fast}CMT algorithm waits (a somewhat arbitrary) 20 seconds after $t_1$. At $t_2=t_1+20$, the displacements of the three directions of motion are averaged, in between $t_1$ and $t_2$, for all stations over the 15 mm threshold, and at that point the inversion procedure begins. Assuming negligible computation times, $t_2$ is also the time at which a final solution is available. Figures \ref{fig_final_inversion}a and \ref{fig_final_inversion}e show the maximum displacement and its corresponding variance function for the Tokachi-oki and El Mayor-Cucapah events; Figures \ref{fig_final_inversion}b through \ref{fig_final_inversion}d and \ref{fig_final_inversion}f through \ref{fig_final_inversion}h show the computed final offsets compared to the original time series for all 3 directions of motion for both events. Figures \ref{fig_toki_final} and \ref{fig_elmay_final} show the final CMT solutions for the Tokachi-oki and El Mayor-Cucapah events, respectively, and compare them to the GCMT solution in the Tokachi-oki case and the W phase solution in the El Mayor-Cucapah case. In addition, Table \ref{tb_summary_times} summarizes the times at which different milestones are reached for each event.
+
+\begin{figure}[!ht] 
+  \centering
+  \includegraphics[width=0.99\linewidth]{./figures/ch3/toki_final.pdf}
+    \caption[Tokachi-oki final inversion results]{Detailed comparison between the a) fastCMT and b) GCMT results for the Tokachi-oki event. c) Comparison between the best double-couple solutions as computed in (a) and (b) and the synthetic and observed displacements of (a)}
+  \label{fig_toki_final}
+\end{figure}
+
+\begin{figure}[!ht] 
+  \centering
+  \includegraphics[width=0.99\linewidth]{./figures/ch3/elmay_final.pdf}
+    \caption[El Mayor-Cucapah final inversion results]{Detailed comparison between the a) fastCMT and b) USGS W-Phase results for the El Mayor-Cucapah event. c) Comparison between the best double-couple solutions as computed in (a) and (b) and the synthetic and observed displacements of (a)}
+  \label{fig_elmay_final}
+\end{figure}
+
+\begin{table}
+\caption{Summary timeline of results for the Tokachi-oki and El Mayor-Cucapah events}
+\label{tb_summary_times}
+\begin{tabular}{l c c}
+\hline
+Milestone & Tokachi-oki & El Mayor-Cucapah\\
+\hline
+Origin time (OT) & 19:50:06 UTC & 22:40:45 UTC\\
+5 stations detect motion ($t_d$) & OT+43s & OT+41s\\
+Maximum variance reached ($t_{max}$) & OT+51s & OT+49s\\
+Final offset defined ($t_1$) & OT+192s & OT+166s\\
+Final solution available ($t_2$) & OT+212s & OT+186s\\
+\hline
+\end{tabular}
+\end{table}
+The origin time for the Tokachi-oki event according to the global CMT solution is 19:50:06 UTC; our fastCMT solution is available 211 seconds after that. The \textit{fast}CMT centroid is located 4.6 km north of the Global CMT centroid, however the GCMT solution is at a depth of 28km compared to the 48km computed by \textit{fast}CMT. From the Slab 1.0 model of \citet{hayes2012}, the \textit{fast}CMT solution, lies 10km below the slab, while the GCMT solution lies some 10 km above the position of the slab. The moments are very similar, $2.9\times10^{21}\mathrm{Nm}$ for the \textit{fast}CMT solution and $3.1\times10^{21}\mathrm{Nm}$ for the GCMT solution, yielding Mw 8.2 and Mw 8.3 respectively. The largest difference is in the geometrical characteristics of the first nodal plane. The GCMT solution has a strike of 250$^\circ$ while our rapid solution computes a strike of 229$^\circ$. The strike in the Slab 1.0 model at 38km depth increases smoothly from South to North from 200$^\circ$ at 41$^\circ$N to 245$^\circ$ at 42.4$^\circ$N, decreasing to 230$^\circ$ by 43$^\circ$N thus the \textit{fast}CMT solution seems to be closer to the strike in the slab model. Both solutions show a shallow dipping fault, 12$^\circ$ for \textit{fast}CMT and 11$^\circ$ for GCMT, the rake angle is 103$^\circ$ for \textit{fast}CMT while the GCMT solution has a significant strike-slip component with a rake of 132$^\circ$. A strike-slip component seems to be supported by joint strong motion and GPS inversions \citep{koketsu2004} although not as large as suggested by the GCMT result. This difference is also evident in the azimuths of the principal axes although the plunge angles between the two solutions are fairly similar. Finally, it's interesting to note that the GCMT solution has a large CLVD component (10\%) while our rapid solution favors almost a pure double couple solution with a CLVD of 0.4\%.
+For the El Mayor-Cucapah earthquake we compare the \textit{fast}CMT solution with the W-phase result available from the USGS. The origin time for this event is 22:40:45 UTC; the \textit{fast}CMT solution is available 186 seconds after that and locates the centroid 55km northwest of the W-phase centroid but still well within the aftershock cloud. This could reflect a bias in the GPS station distribution, all north of the rupture and across the U.S.-Mexico border. Nonetheless, comparison with the static slip inversion of \citet{wei2011} shows that the W-phase solution is 25km southeast of the main slip patch while our rapid solution lies within it. Similarly, the \textit{fast}CMT solution favors a shallow centroid at a 4km depth while the W-phase centroid is at 15km depth. A shallow centroid at 2-8km depth is consistent with the results of \citet{wei2011}. The moments of both the GCMT and \textit{fast}CMT solutions are similar at $6.8$ and $6.0\times10^{21}\mathrm{Nm}$, respectively (Mw 7.2). The strike and dip of the first nodal plane are similar for both solutions, although W-phase favors a small dip-slip component while the \textit{fast}CMT solution has none. The second nodal plane, which from the aftershock distribution is the actual fault plane, has similar strike for both solutions (318$^\circ$ and 319$^\circ$ respectively) although the \textit{fast}CMT solution favors a vertical fault plane while the W phase nodal plane has a dip of 77$^\circ$. Both solutions have similar rakes (217$^\circ$ and 213$^\circ$) indicating predominant strike-slip motion with a significant dip-slip component consistent with regional transtensional tectonics \citep{hauksson2011}. The largest difference between both solutions is in the size of the CLVD component, the W-phase solution has a 10\% CLVD while the \textit{fast}CMT solution has a 64\% CLVD. This seems unrealistically large for a normal tectonic earthquake; nonetheless other MT solutions exhibit large CLVD components as well. The GCMT solution has CLVD of 52\% for this event while the Southern California Seismic Network?s solution has a CLVD of 76\%. Furthermore, cited{hauksson2011} performed post-event W-phase inversions and show that a large CLVD is required. In that work the size of the CLVD is not explicitly stated but it ranges from 56\% to 72\% (H. Kanamori personal communication, 2011). Thus the original W-phase estimate seems to under estimate the CLVD considerably while the \textit{fast}CMT accurately assesses it for this particular event.
+
+\subsection{Implementation Issues and Necessary Improvements}
+
+Thus far we have shown with the two test cases that obtaining rapid moment tensor solutions and centroid locations from displacement waveforms is viable with our new technique. There are, however, a number of important issues that have to be addressed if \textit{fast}CMT is to be implemented in real time.
+
+A preliminary hypocentral determination needs to be made. In this discussion, because of the computational economy of the method where we can try thousands of different centroid locations and thus only a rough location estimate need be made, we opted for a self contained rapid method that does not incorporate outside data and centers the inversion grid around the first stations to detect anomalous motion. As \citet{Crowell2009} showed, one can determine hypocenters with GPS. However given the greater sensitivity of traditional seismic instrumentation it would be more desirable to have weak motion and strong motion instrument based methods emit a trigger and compute a hypocenter. Provided of course this can be done before time $t_1$ when the final offset estimation is made, $\sim$3 minutes for the two events discussed above.
+Another issue is whether to set the inversion nodes on a pre-defined set of fault surfaces, populate a rectangular prism of nodes around the hypocenter, or have a more complex geometry of inversion nodes. For strike-slip environments having a library of fault surfaces and setting the inversion nodes on known geological surfaces close to the epicenter might seem appealing. However experience has shown that moderate to large events can occur on unknown faults and with dip-slip or oblique mechanisms. A good example of this is the 1994 Mw 6.7 Northridge earthquake in southern California, which occurred on a previously unknown blind thrust fault. Thus, it may be more desirable to simply populate a prism of inversion nodes around the hypocenter. 
+
+For subduction zones it might be adequate to set the nodes on the plate interface. This would ensure correct centroid placement for traditional megathrust events, however outer rise, intraplate events on the overriding crust or in the downgoing slab, which can be sizable, may not be located properly. Evidently there are many ways to make these grids and the selected approach must be tailored to the observational goals of a particular network. To minimize assumptions we have adopted the simpler approach of defining a 3$^\circ$ by 3$^\circ$ grid based on the location of the first 5 GPS stations that detect the event.
+
+The speed of the inversion, the number of inversion nodes and the coarseness of the grid is also an important consideration. Our inversion scheme is computationally efficient but the computing power required will depend on the number of inversion nodes. For reference each inversion using three component static offsets for 355 stations for the Tokachi-oki earthquake on one node every epoch takes about 75 ms, on an single 800 MHz CPU with 2 GB of RAM. This will improve significantly when translated into a real-time amenable language and distributed over a cluster.
+Another important point is that a GF library and the selected velocity models must be constructed beforehand. Even though the functions are very succinct, because we can only accommodate one dimensional velocity structure, the region over which the algorithm will be implemented must be adequately parsed. That is to say, based on the location of the desired inversion node and the station a suitable velocity model must be determined. In this case because we already knew the region of interest we selected a known velocity model for that region and applied it to all station-event paths. Nevertheless when building a large GF database the most sensible way to do this would be to select the average velocity model for each station-event path from a community model such as the CVM4. Additionally, in the Tokachi-oki case we simply neglected stations that experienced telemetry outages and did not register data long enough to extract a reliable offset. In a real-time implementation this problem is easily solved by ignoring that station, should an outage occur, and removing it from the GF matrix.
+Finally, in terms of epistemic error there seem to be two important issues to consider. Firstly whether neglecting fault finiteness has any impact on inversion results. \citet{adamova2010} found that neglecting fault finiteness in waveform inversions can lead to spuriously large non double-couple model parameters, however our Tokachi-oki inversion is almost pure double couple. Similarly the El Mayor-Cucapah result seems to require a large CLVD and that is most likely a real signal, thus it?s not clear how large an error the point source assumption introduces in the inversions using static displacement data. Further on we'll show the Tohoku-oki data set clearly violates this assumption although a point source model can still yield reasonable results
+
+The second important source of epsitemic error is the assumption of a 1D Earth. cited{Amoruso2004} and cited{Hearn2005} demonstrated the need for at least this simple approximation in inversions with coseismic offsets. \citet{hingee2011} discuss both synthetic and observed results that indicate that waveform matching inversion techniques for MTs of medium sized events can be gravely affected by neglecting 3D variations in Earth structure. Nonetheless it is not clear in their results if the same is true for a method such as the one presented here that employs only coseismic offsets. In any case, for the moment, it seems that for large events 1D structure will suffice for rapid results.The most important implication of the work discussed thus far is the speed with which one can obtain basic earthquake source parameters. The algorithm presented here is amenable to real-time implementation and could potentially be performed on-the-fly as the data reach the processing facility and are processed for displacement (usually less than one second for real-time GPS networks) \citep{Bock2004,langbein2004}. In our two examples we were able to converge to a usable solution within 2-3 minutes of processed data becoming available. The access to near source real-time displacement records is invaluable as they can be used to quickly distinguish the salient features of large events. Furthermore, the method is computationally efficient; this has the benefit of allowing one to invert simultaneously for the centroid at multiple geographical test locations (inversion nodes) to determine which one is a better fit to the data and assign a centroid location.
+For the larger Mw 8.3 Tokachi-oki earthquake, the method is very stable and provides a robust centroid location and focal mechanism estimate. This bears directly on the issue of tsunami early warning. Being able to have a reliable estimate of a thrust earthquake?s magnitude and proximity to the trench within 2-3 minutes is invaluable. For example during the 2011 Mw 9.0 Tohoku-oki event small tsunami first arrivals at near source tide gauges were observed 10 minutes after origin time \citep{hayashi2011} while peak tsunami height at the closest tide gauge to the source at Ofunato was registered 29 minutes after the origin time. The contribution of moment tensor inversions to tsunami modeling and warning will be poignantly demonstrated in Chapter 5.From the basic moment tensor information one could go a step further in real-time modeling of the source. A full slip inversion using the coseismic offsets should be straight forward to determine \citep{Crowell2012}. Indeed one can use the nodal planes from the moment tensor thus determined to define the slip plane. Further on in this Chapter we will discuss strategies for this.
+
+\subsection{Violation of the Point Source Assumption}
+
+\subsection{The Finite Extent CMT Approach}
+
+\section{Static Slip Inversions}
 
 
- 
 
 
 %\appendix
