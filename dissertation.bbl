@@ -110,6 +110,12 @@ Chao, W.-A., Wu, Y.-M., and Zhao, L. (2010).
   in coseismic deformation determination.
 \newblock {\em Journal of seismology}, 14(3):495--504.
 
+\bibitem[\protect\astroncite{Crowell}{2013}]{crowell2013thesis}
+Crowell, B.~W. (2013).
+\newblock {\em Using GPS to rapidly detect and model earthquakes and transient
+  deformation events}.
+\newblock UNIVERSITY OF CALIFORNIA, SAN DIEGO.
+
 \bibitem[\protect\astroncite{Crowell et~al.}{2012}]{Crowell2012}
 Crowell, B.~W., Bock, Y., and Melgar, D. (2012).
 \newblock Real‐time inversion of gps data for finite fault modeling and rapid
@@ -388,6 +394,13 @@ Ohta, Y., Kobayashi, T., Tsushima, H., Miura, S., Hino, R., Takasu, T.,
 \newblock {\em Journal of Geophysical Research: Solid Earth (1978--2012)},
   117(B2).
 
+\bibitem[\protect\astroncite{Okal et~al.}{2010}]{okal2010}
+Okal, E.~A., Fritz, H.~M., Synolakis, C.~E., Borrero, J.~C., Weiss, R., Lynett,
+  P.~J., Titov, V.~V., Foteinis, S., Jaffe, B.~E., Liu, P. L.-F., et~al.
+  (2010).
+\newblock Field survey of the samoa tsunami of 29 september 2009.
+\newblock {\em Seismological Research Letters}, 81(4):577--591.
+
 \bibitem[\protect\astroncite{Panagiotou}{2008}]{panagiotou2008}
 Panagiotou, M. (2008).
 \newblock {\em Seismic design, testing and analysis of reinforced concrete wall
@@ -410,6 +423,12 @@ Pillet, R. and Virieux, J. (2007).
 Rauch, H.~E., Striebel, C., and Tung, F. (1965).
 \newblock Maximum likelihood estimates of linear dynamic systems.
 \newblock {\em AIAA journal}, 3(8):1445--1450.
+
+\bibitem[\protect\astroncite{Sato et~al.}{2011}]{sato2011}
+Sato, M., Ishikawa, T., Ujihara, N., Yoshida, S., Fujita, M., Mochizuki, M.,
+  and Asada, A. (2011).
+\newblock Displacement above the hypocenter of the 2011 tohoku-oki earthquake.
+\newblock {\em Science}, 332(6036):1395--1395.
 
 \bibitem[\protect\astroncite{Satriano et~al.}{2012}]{satriano20122012}
 Satriano, C., Kiraly, E., Bernard, P., and Vilotte, J.-P. (2012).
