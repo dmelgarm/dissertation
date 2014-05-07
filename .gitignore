@@ -2,3 +2,10 @@ dissertation.pdf
 ybl.*
 *.gz
 .DS_Store
+*.bbl
+*.blg
+*.aux
+*.lof
+*.log
+*.lot
+*.toc
