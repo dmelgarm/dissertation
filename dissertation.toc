@@ -3,52 +3,35 @@
 \contentsline {frontmatter}{\numberline {}Epigraph}{v}
 \contentsline {frontmatter}{\numberline {}Table of Contents}{vi}
 \contentsline {frontmatter}{\numberline {}List of Figures}{viii}
-\contentsline {frontmatter}{\numberline {}List of Tables}{x}
-\contentsline {frontmatter}{\numberline {}Acknowledgements}{xi}
-\contentsline {frontmatter}{\numberline {}Vita and Publications}{xii}
-\contentsline {frontmatter}{\numberline {}Abstract of the Dissertation}{xiv}
+\contentsline {frontmatter}{\numberline {}List of Tables}{ix}
+\contentsline {frontmatter}{\numberline {}Acknowledgements}{x}
+\contentsline {frontmatter}{\numberline {}Vita and Publications}{xi}
+\contentsline {frontmatter}{\numberline {}Abstract of the Dissertation}{xiii}
 \contentsline {chapter}{\numberline {Chapter\nobreakspace {}1}Introduction}{1}
 \contentsline {section}{\numberline {1.1}Early Warning and Rapid Response in Natural Hazards}{1}
-\contentsline {subsection}{\numberline {1.1.1}More Stuff}{1}
-\contentsline {section}{\numberline {1.2}Geodesy and Seismology}{2}
-\contentsline {section}{\numberline {1.3}Earthquake and Tsunami Hazards}{2}
-\contentsline {chapter}{\numberline {Chapter\nobreakspace {}2}Seismogeodesy}{3}
-\contentsline {section}{\numberline {2.1}Strong Motion Sensing}{3}
+\contentsline {chapter}{\numberline {Chapter\nobreakspace {}2}Seismogeodesy}{2}
+\contentsline {section}{\numberline {2.1}Background on Strong Motion Sensing}{2}
 \contentsline {section}{\numberline {2.2}The role of GPS}{9}
-\contentsline {subsection}{\numberline {2.2.1}Displacements in a Local Reference Frame}{14}
-\contentsline {section}{\numberline {2.3}Seismogeodesy}{15}
-\contentsline {subsection}{\numberline {2.3.1}The Kalman Filter Formulation}{16}
+\contentsline {subsection}{\numberline {2.2.1}Displacements in a Local Reference Frame}{12}
+\contentsline {section}{\numberline {2.3}Seismogeodesy}{14}
+\contentsline {subsection}{\numberline {2.3.1}The Kalman Filter Formulation}{15}
 \contentsline {subsection}{\numberline {2.3.2}Optimal Smoothing}{19}
 \contentsline {subsection}{\numberline {2.3.3}Accelerometer Biases}{21}
-\contentsline {section}{\numberline {2.4}Proof of Concept}{23}
+\contentsline {section}{\numberline {2.4}Proof of Concept}{22}
 \contentsline {subsection}{\numberline {2.4.1}Outdoor shake table testing}{23}
-\contentsline {subsubsection}{Accuracy of the Displacement Waveforms}{28}
-\contentsline {subsubsection}{Precision of the Displacement Waveforms}{29}
-\contentsline {subsection}{\numberline {2.4.2}The 2010 M7.2 El Mayor-Cucapah Earthquake}{31}
-\contentsline {subsection}{\numberline {2.4.3}Spectral Characteristics}{37}
-\contentsline {subsection}{\numberline {2.4.4}Selecting the Kalman Filter Variances}{40}
-\contentsline {subsection}{\numberline {2.4.5}Lessons and Insights}{43}
+\contentsline {subsubsection}{Accuracy of the Displacement Waveforms}{27}
+\contentsline {subsubsection}{Precision of the Displacement Waveforms}{30}
+\contentsline {subsection}{\numberline {2.4.2}The 2010 M7.2 El Mayor-Cucapah Earthquake}{30}
+\contentsline {subsection}{\numberline {2.4.3}Spectral Characteristics}{35}
+\contentsline {subsection}{\numberline {2.4.4}Selecting the Kalman Filter Variances}{39}
+\contentsline {subsection}{\numberline {2.4.5}Lessons and Insights}{42}
 \contentsline {section}{\numberline {2.5}Application to the M9 Tohoku-oki Earthquake}{46}
 \contentsline {subsection}{\numberline {2.5.1}Time Domain Analysis}{48}
-\contentsline {subsection}{\numberline {2.5.2}Frequency Domain Analysis}{53}
-\contentsline {subsection}{\numberline {2.5.3}Performance of the Filter and Prospects for Automated Baseline Corrections}{55}
-\contentsline {chapter}{\numberline {Chapter\nobreakspace {}3}Rapid Static Modeling}{62}
-\contentsline {section}{\numberline {3.1}Centroid Moment Tensor Inversion}{64}
-\contentsline {subsection}{\numberline {3.1.1}Point Source Models}{66}
-\contentsline {subsubsection}{Extracting COseismic Offsets}{66}
-\contentsline {subsubsection}{Inversion Scheme}{66}
-\contentsline {subsection}{\numberline {3.1.2}Applications of the Point Source Approach}{70}
-\contentsline {subsubsection}{2003 Mw 8.3 Tokachi-oki Earthquake}{70}
-\contentsline {subsubsection}{The 2010 Mw 7.2 El Mayor Cucapah Earthquake}{73}
-\contentsline {subsection}{\numberline {3.1.3}Final Point Source Solutions}{79}
-\contentsline {subsection}{\numberline {3.1.4}Implementation Issues and Necessary Improvements}{86}
-\contentsline {subsection}{\numberline {3.1.5}Violation of the Point Source Assumption, the M9 Tohoku-oki Earthquake}{90}
-\contentsline {subsection}{\numberline {3.1.6}The Finite Extent CMT Approach}{91}
-\contentsline {section}{\numberline {3.2}Static Slip Inversions}{94}
-\contentsline {subsection}{\numberline {3.2.1}Timeline of Event Analysis}{99}
-\contentsline {chapter}{\numberline {Chapter\nobreakspace {}4}Kinematic Source Inversions}{101}
-\contentsline {section}{\numberline {4.1}A section}{101}
-\contentsline {chapter}{\numberline {Chapter\nobreakspace {}5}Offshore Data and Tsunami Modeling}{102}
-\contentsline {section}{\numberline {5.1}A section}{102}
-\contentsline {chapter}{\numberline {Chapter\nobreakspace {}6}Conclusions and Future Outlook}{103}
-\contentsline {section}{\numberline {6.1}A section}{103}
+\contentsline {subsection}{\numberline {2.5.2}Frequency Domain Analysis}{51}
+\contentsline {subsection}{\numberline {2.5.3}Performance of the Filter and Prospects for Automated Baseline Corrections}{56}
+\contentsline {chapter}{\numberline {Chapter\nobreakspace {}3}Kinematic Source Inversions}{62}
+\contentsline {section}{\numberline {3.1}A section}{62}
+\contentsline {chapter}{\numberline {Chapter\nobreakspace {}4}Offshore Data and Tsunami Modeling}{63}
+\contentsline {section}{\numberline {4.1}A section}{63}
+\contentsline {chapter}{\numberline {Chapter\nobreakspace {}5}Conclusions and Future Outlook}{64}
+\contentsline {section}{\numberline {5.1}A section}{64}
