@@ -1,33 +1,22 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Effect of numerical integration on a strong motion recording.}}{4}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Some simple baseline corrections.}}{6}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces 1 Hz GPS time series at Parkfield}}{13}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces 2006 shake table experiment configuration}}{24}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces 2006 shake table experiment Kalman filtered waveforms}}{29}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Station distribution for the El Mayor Cucapah earthquake}}{32}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces GPS waveforms for the El Mayor Cucapah earthquake}}{33}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Kalman filtered waveforms for WES/P494}}{35}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces GPS and Kalman filtered displacements at P494/WES}}{36}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Vertical Kalman filter performance}}{37}
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Shaketable and El Mayor-Cucapah Kalman filter PSDs}}{37}
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Comparisson of forward and smoothed Kalman filter PSDs}}{38}
-\contentsline {figure}{\numberline {2.13}{\ignorespaces Forward filter sawtooth effects}}{39}
-\contentsline {figure}{\numberline {2.14}{\ignorespaces 1Hz synthetic saw tooth and its power spectral density.}}{39}
-\contentsline {figure}{\numberline {2.15}{\ignorespaces Noise variances at CRTN GPS stations}}{40}
-\contentsline {figure}{\numberline {2.16}{\ignorespaces Sytem dynamics variance and its effect on the Kalman filter}}{42}
-\contentsline {figure}{\numberline {2.17}{\ignorespaces Noise reduction in CRTN stations with Kalman filtering}}{45}
-\contentsline {figure}{\numberline {2.18}{\ignorespaces Collocated stations for the Tohoku-oki earthquake}}{47}
-\contentsline {figure}{\numberline {2.19}{\ignorespaces Tohoku-oki baseline corrections with no constraints}}{49}
-\contentsline {figure}{\numberline {2.20}{\ignorespaces Tohoku-oki baseline corrections with static field constraints}}{50}
-\contentsline {figure}{\numberline {2.21}{\ignorespaces Tohoku-oki Kalman filter performance at 48 stations}}{51}
-\contentsline {figure}{\numberline {2.22}{\ignorespaces RMS between baseline corrections and Kalman filtered waveforms}}{52}
-\contentsline {figure}{\numberline {2.23}{\ignorespaces PSD of baseline corrected and Kalman filtered data}}{53}
-\contentsline {figure}{\numberline {2.24}{\ignorespaces Response spectra of baseline corrected and Kalman filtered data}}{54}
-\contentsline {figure}{\numberline {2.25}{\ignorespaces PSD ratios for collocated sites}}{55}
-\contentsline {figure}{\numberline {2.26}{\ignorespaces Response spectra difference for collocated sites}}{56}
-\contentsline {figure}{\numberline {2.27}{\ignorespaces Coseismic offset comparisson}}{58}
-\contentsline {figure}{\numberline {2.28}{\ignorespaces Example of failed correction at station IWT009}}{59}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Tokachi-oki GPS time series}}{11}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Tokachi-oki inversion summary}}{13}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Tokachi-oki inversion snapshots}}{14}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Tokachi-oki time evolution of best double-couples}}{15}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces El Mayor-Cucapah GPS time series}}{16}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces El Mayor-Cucapah inversion summary}}{18}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces El Mayor-Cucapah inversion snapshots}}{19}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces El Mayor-Cucapah time evolution of best double-couples}}{20}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Detection of final coseismic offsets}}{22}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Tokachi-oki final inversion results}}{23}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces El Mayor-Cucapah final inversion results}}{24}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Tohoku-oki point source inversion}}{31}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces L-curve corner selection criterion}}{33}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Tohoku-oki finite extent CMT and slip inversion}}{35}
+\contentsline {figure}{\numberline {2.15}{\ignorespaces El Mayor-Cucapah finite extent CMT and slip ivnersion}}{36}
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Tohoku-oki slip inversion L-curve}}{38}
+\contentsline {figure}{\numberline {2.17}{\ignorespaces Tohoku-oki slip inversion depth biases}}{39}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
