@@ -11,34 +11,34 @@ The style file: apa.bst
 Database file #1: refs.bib
 You've used 50 entries,
             1940 wiz_defined-function locations,
-            780 strings with 14060 characters,
-and the built_in function-call counts, 21783 in all, are:
-= -- 2051
-> -- 1120
-< -- 23
-+ -- 406
-- -- 390
-* -- 2112
-:= -- 3828
+            780 strings with 14236 characters,
+and the built_in function-call counts, 22025 in all, are:
+= -- 2066
+> -- 1160
+< -- 22
++ -- 422
+- -- 406
+* -- 2144
+:= -- 3876
 add.period$ -- 150
 call.type$ -- 50
-change.case$ -- 438
+change.case$ -- 446
 chr.to.int$ -- 50
 cite$ -- 50
 duplicate$ -- 699
 empty$ -- 1376
-format.name$ -- 472
-if$ -- 4120
+format.name$ -- 486
+if$ -- 4158
 int.to.chr$ -- 1
 int.to.str$ -- 0
 missing$ -- 56
 newline$ -- 253
 num.names$ -- 150
-pop$ -- 348
+pop$ -- 357
 preamble$ -- 1
-purify$ -- 441
+purify$ -- 449
 quote$ -- 0
-skip$ -- 542
+skip$ -- 541
 stack$ -- 0
 substring$ -- 1451
 swap$ -- 110
