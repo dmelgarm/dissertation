@@ -1,13 +1,99 @@
 %Chapter 4: Kinematic Source Inversions
 
 \chapter{Kinematic Source Inversions}
-This is only a test.
-\section{A section}
-Lorem ipsum
 
+In Chapter 3 we discussed a framework for static slip inversions. Building not he work of \citet{Crowell2012} we demonstrated it's possible to construct static models for large earthquakes objectively with minimal interaction from a human operator. Static dislocation models are limited in the sense that the provide only the total slip on the assumed rupture surface and provide no information on the time evolution of rupture. They do not illuminate important kinematic parameters of the rupture process. How fast was the rupture? What is the shape of the source time function, both at individual sub faults and for the earthquake as a whole? Answers to questions like these have important implications not only for hazards applications but to furthering our understanding of the physics that governs the rupture process.
 
+\section{Background}
 
-%\appendix
+As instrumental seismology matured in the mid 20th century it became possible to consider kinematic models of the earthquake source process. Perhaps the first successful macroscopic model, containing simple parameters was the \textit{Haskell fault model} \citep{haskell1964,haskell1969} which consisted of a rectangular fault with constant, unidirectional rupture velocity (a boxcar source time function). It successfully explained phenomena such as directivity and made predictions about the shape of source spectra. This propagating dislocation model was then used to model data observed at only 80m from the fault trace of the 1966 Parkfiled earthquake \citep{aki1968}.
+
+As systematic studies of source properties evolved it became apparent that large earthquakes had more complexity than a simple propagating line source with a prescribed rise time and rupture velocity and homogenous slip. Indeed it was clear that some events could only by relaxing these constraints. \citet{kanamori1978} demonstrated that the far field body waves of the 1976 Mw7.6 Guatemala earthquake were best explained by super position of ten sources, while \citet{trifunac1974} employed strong motion records of the 1971 Mw 6.6 San Fernando earthquake to solve the first heterogeneous slip inversion proper.
+
+Following the 1979 Mw 6.4 Imperial Valley earthquake which was well recorded by numerou strong motion stations an efficient way to parametrize the temporal and spatial variations of the source and invert for them was defined. \citet{olson1982} and \citet{hartzell1983} introduced what is now known as the \textit{multi-time window} method, where by slip on a sub fault is allowed to happen over contiguous time windows. In this way heterogeneities of the spatial and temporal behavior of the fault can be modeled.
+
+\section{The Inverse Problem}
+
+Formally, a slip inversion problem for the time dependent slip of an earthquake can be set up by discretizing an assumed fault surface into a grid of $N$ sub faults. Then, the response at a given station can be computed from
+\begin{equation}
+\label{eq:slip}
+u(t)=\sum_{j=1}^ND_j[\cos(\lambda_j)G_j^{ss}(v_j,t)+\sin(\lambda_j)G_j^{ds}(v_j,t)]\dot{S}_j(t)\;,
+\end{equation}
+where $u(t)$ is the displacement seismogram at a given station and $D_j$ the dislocation amplitude at the $j$-th sub fault. The dislocation is decomposed into its strike slip ($ss$) and dip-slip ($ds$) contributions by taking the cosine and sine, respectively, of the rake angle $\lambda$. $G^{ss}(v,t)$ and $G^{ds}(v,t)$ are the dip-slip and strike-slip Green functions which represent the response of a point, impulsive source. $\dot{S}(t)$ is the source time function which regulates the temporal dependence of moment release at a subfault. The Green functions depend on the rupture velocity insofar as they need to be delayed by the time required for the rupture from for each a subfault. If the timing of slip is unknown the general expression in Equation \ref{eq:slip} is non-linear. Furthermore the source time function itself must be parametrized, the choice of such parametrization will also have an effect not he linearity of the problem.
+	The multi-time window method seems to be most prevalent int he literature because it's a linear approximation \citep{ide2007}. Following \citep{ide1996} we can consider the decomposition of the source time function at the $j$-th subfault into $K$ basis functions
+\begin{equation}
+D_j\dot{S}_j(t)=\sum_{k=1}^Kb_k\phi_k(t)\;,
+\end{equation}
+where $b_k$ is the expansion coefficient of the $k$-th basis function $\phi_k(t)$. In the multi-time window approach we consider overlapping basis functions with a simple geometry. Commonly used are b-splines with equally spaced knots which yield a simple isosceles triangle shape \citet{ide1996,wu2001}. 
+Thus, one assumes a maximum rupture velocity $v^{max}$ and then allows slip on subsequent \textit{windows}  which are offset at regular time intervals, typically 50\% of the of the rise time of the triangle basis function. In this way we've effectively linearized the problem by assuming known rupture times, while still allowing flexibility in the timing of slip by permitting dislocations at later times after the maximum rupture velocity time. The inverse problem will now be a solution for the expansion coefficients $b_k$ which represent the amplitude of each triangle source time function at each sub fault for strike- and dip-slip motions. Thus we have a total of $2KN$ fault parameters.
+
+Green's functions must be computed numerically. If one assumes Earth structure is a 1D layer-cake model then at regional distances (hundreds to a couple thousand kilometers) GFs can be obtained by the frequency-wavenumber (fk) integration method \citep{saikia1994}. Importantly, the fk method is capable of computing the ultra-long period band of the seismogram down tot eh 0 frequency static offset \citep{zhu2002}. Thus it can be employed to model strong motion displacement data front eh seismogeodetic solution. Ideally it'd be desirable to use three dimensional GFs for the inverse problem solution. This is a computationally intensive operation, however it's becoming prevalent to use fully 3D Earth mdoles for forward wave propagation models \citep{bielak2010,tromp2010} and as our knowledge of Earth structure progresses it will become important to consider more complex structure. However, 3D velocity mdoles only exists for a very small fraction of the Earth and while \citet{graves2001} and \citet{wald2001} demonstrated that 3D structure enhances model resolution, they also showed that this improvement is only possible with accurate 3D models. In fact they demonstrated that a well calibrated 1D model is preferable over an imprecise 3D Earth model.
+
+Thus, with Green functions in hand we can set up the traditional linear inverse problem, as in Chapter 3:
+\begin{equation}
+\label{eq:inv}
+\mathbf{GM}=\mathbf{d}\;,
+\end{equation}
+where the data vector $\mathbf{d}$ are the observed seismograms at a given station, the Green functions $\mathbf{G}$ are the motions at every station from every sub fault for an impulsive unit source and the model parameters $\mathbf{m}$ are the amplitude of the allowed source trim functions at each sub fault. 
+As int eh static case a probe;em arises in that $\mathbf{G}$ is not full rank. Even thug this is an over-determiend problem the data re not always independent and parts of the model often cannot be resolved by the data. This rank deficiency produces a large condition number which effectively yields extremely noisy models. Thus regularization must be employed. One popular form of regularization in slip inversions is to fix the total amount of seismic moment at a value suggested from other source \citep{ji2002b}. However for our case we prefer moment be determined but he data themselves. Rather we employ a spatial and a temporal regularization to increase the effective rank of the problem. For the spatial regularization we employ the same Laplacian finite difference operator as in the static case of Chapter 3. We request that the sum of the slip of all windows at a given sub fault be smooth in this sense. This penalty function is applied only to the total slip, not to the individual time windows. For a temporal regularization we apply a simple first derivative penalty function to each sub fault's windows, such that sharp variations between the amplitudes of contiguous time-windows are discouraged. The spatial Laplacian matrix $\mathbf{L}_s$ and the temporal first derivative one $\mathbf{L}_t$ are incporpoated into the problem as
+\begin{equation}
+\left(\begin{matrix}
+\mathbf{G}\\
+\lambda_s\mathbf{L}_s\\ 
+\lambda_t\mathbf{L}_t
+\end{matrix}\right)
+\mathbf{m}=
+\left(\begin{matrix}
+\mathbf{d}\\
+\mathbf{0}\\ 
+\mathbf{0}
+\end{matrix}\right)\;.
+\end{equation}
+This has the well known canonical solution \citep{menke2012}
+\begin{equation}
+\label{eq:solution}
+\mathbf{m}^0=
+(\mathbf{G}^\top\mathbf{G}+\lambda_s^2\mathbf{L}_s^\top\mathbf{L}_s+\lambda_t^2\mathbf{L}_t^\top\mathbf{L}_t)^{-1}
+\mathbf{G}^\top\mathbf{d}\;.
+\end{equation}
+
+The complication in this formulation is to decide to he values of the smoothing parameters $\lambda_s$ and $\lambda_t$ in an objective way. In Chapter 3 where we have only a spatial regularization we employed the L-curve curvature criterion \citep{hansen2007}. However such a heuristic criterion is tricky to apply in a two dimensional parameter space. Furthermore it is somewhat unsatisfactory int hat it is not grounded in any physical statement about source properties. Often when perusing the literature on slip inversions it is common to find statements that indicate that for a particular study the author used his ir her judgment and intuition on the physics of an earthquake to decide on a regularization parameter. This is altogether unsatisfactory, for the slip inversion there exists probabilistic formalism that can provide objective criteria for selection of the smoothing parameters.
+
+Following \citet{ide1996} we can write the posterior likelihood function for the inverse problem in Equation \ref{eq:inv} as
+\begin{equation}
+p(\mathbf{d}|\mathbf{m};\sigma^2)=(2\pi\sigma^2)^{-Q/2}\exp\left[-\frac{1}{2\sigma^2}\|\mathbf{d}-\mathbf{Gm}\|^2\right]\;,
+\end{equation}
+where $Q$ is the number of data and $\sigma^2$ is the data variance. Without any prior information maximization of this likelihood function will lead to the traditional normal equations \citep{menke2012}. Then considering the regularization matrices as a form of a prior information we can write the following probability density functions:
+\begin{eqnarray}
+p(\mathbf{m}|\sigma_s^2)=(2\pi\sigma_s^2)^{-P_s/2}\|\Lambda_s\|^{1/2}\exp\left[-\frac{1}{2\sigma_s^2}\|\mathbf{L}_s\mathbf{m}\|^2\right]\;,\\
+p(\mathbf{m}|\sigma_t^2)=(2\pi\sigma_t^2)^{-P_t/2}\|\Lambda_t\|^{1/2}\exp\left[-\frac{1}{2\sigma_t^2}\|\mathbf{L}_t\mathbf{m}\|^2\right]\;,\\
+\end{eqnarray}
+where $\sigma^2_s$ and $\sigma^2_t$ are hyper parameters that represent the smoothing variance. $P_s$ and $P_t$ are the ranks of the two smoothing matrices and $\|\Lambda_s\|$ and $\|\Lambda_t\|$ are the absolute values of the product of the non-zero eigen-values of the smoothing matrices. \citet{ide1996} combined these two pdfs by simple multiplication. However \citet{fukahata2003} subsequently showed that this produces a prior pdf whose integral is not unity and thus is improper. After introducing the correct normalization, the prior pdf that combines bot smoothing constraints can be expressed as
+\begin{equation}
+p(\mathbf{m}|\sigma_s^2,\sigma^2_t)=(2\pi)^{-M/2}\left\|\frac{1}{\sigma_s^2}\mathbf{L}_s+\frac{1}{\sigma_t^2}\mathbf{L}_t \right\|^{1/2}\exp\left[-\frac{1}{2\sigma_s^2}\|\mathbf{L}_s\mathbf{m}\|^2\right]\exp\left[-\frac{1}{2\sigma_t^2}\|\mathbf{L}_t\mathbf{m}\|^2\right]\;,
+\end{equation}
+where $M$ is the total number of model parameters. We can then use Bayes' theorem to define the posterior pdf of the model as
+\begin{equation}
+p(\mathbf{m};\sigma_s^2,\sigma_t^2,\sigma^2|\mathbf{d})=Cp(\mathbf{d}|\mathbf{m};\sigma^2)p(\mathbf{m}|\sigma_s^2,\sigma^2_t)\;,
+\end{equation}
+where $C$ is  a factor introduced to ensure the integral of the pdf us unity. It is, however, independent of the model parameters and hyper parameters and thus not necessary to compute. From this definition of the posterior pdf, \citet{jackson1985} showed that the optimal model $\mathbf{m}^0$ obtained from maximizing the posterior pdf is exactly the damped least squares solution of Equation \ref{eq:solution} where the ratio of the hyperparameters are actually the regularization parameters such that $\lambda_s=\sigma^2/\sigma^2_s$ and $\lambda_t=\sigma^2/\sigma^2_t$. The added benefit of taking the Bayesin approach to deriving the inverse solution that we can use the posterior pdf to select the optimal regularization parameters.
+	
+\citet{akaike1980} proposed an information theory and entropy maximization based criterion, now known as the Akaike information criterion (ABIC) for selecting the adequate hyper parameters. The parameter is obtained from the marginal likelihood as
+\begin{equation}
+\label{eq:abic}
+\mathrm{ABIC}=-2\ln\left[\int p(\mathbf{m};\sigma_s^2,\sigma_t^2,\sigma^2|\mathbf{d})d\mathbf{m}\right]\;,
+\end{equation}
+thus the optimal model is the one which minimizes information loss and thus has the \textit{smalls} value of ABIC. \citet{fukahata2004} showed that the ABIC can then be expressed as
+\begin{equation}
+\label{eq:abic_total}
+\mathrm{ABIC}(\lambda_s^2,\lambda^2_t)=Q\log s(\mathbf{m^0})-\log\|\lambda^2_s\mathbf{L}_s+\lambda_t^2\mathbf{L}_t\|+\log\|\mathbf{G}^\top\mathbf{G}+\lambda_s\mathbf{L}_s+\lambda_t\mathbf{L}_t\|\,,
+\end{equation}
+where 
+\begin{equation}
+s(\mathbf{m})=\|\mathbf{d}-\mathbf{Gm}\|^2+\lambda_s^2\|\mathbf{L}_s\mathbf{m}\|+\lambda_t^2\|\mathbf{L}_t\mathbf{m}\|
+\end{equation}
+and the optimal model $\mathbf{m}^0$ is defined from the damped solution in Equation \ref{eq:solution}. Thus to use the ABIC to determine smoothing parameters you invert at several ales of both smoothing parameters and compute the ABIC value for each pair of regularization parameters. Then you select as your final model the one with the smallest value of ABIC.
+
 %\chapter{Final notes}
 %  Remove me in case of abdominal pain.
 
