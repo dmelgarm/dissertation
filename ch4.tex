@@ -8,7 +8,7 @@ In Chapter 3 we discussed a framework for static slip inversions. Elaborating on
 
 \label{sec_backgr}
 
-As instrumental seismology matured in the mid 20th century and observatory grade seismological stations and strong motion sensors proliferated it became possible to consider kinematic models of the earthquake source process. Perhaps the first successful macroscopic model, containing simple parameters, was the Haskell fault model \citep{haskell1964,haskell1969} which consisted of a rectangular fault with constant, unidirectional rupture velocity (a boxcar source time function). It successfully explained phenomena such as directivity and made predictions about the shape of source spectra. This propagating dislocation model was successfully used to model data observed at only 80m from the fault trace of the 1966 Parkfiled earthquake \citep{aki1968}.
+As instrumental seismology matured in the mid 20th century and observatory grade seismological stations and strong motion sensors proliferated it became possible to consider kinematic models of the earthquake source process. Perhaps the first successful macroscopic model, containing simple parameters, was the Haskell fault model \citep{haskell1964,haskell1969} which consisted of a rectangular fault with constant, unidirectional rupture velocity (a boxcar source time function). It successfully explained phenomena such as directivity and made predictions about the shape of source spectra. This propagating dislocation model was successfully used to model data observed at only 80m from the fault trace of the 1966 Parkfield earthquake \citep{aki1968}.
 
 As systematic studies of source properties evolved it became apparent that large earthquakes had more complexity than a simple propagating line source with a prescribed rise time and rupture velocity and homogenous slip. Indeed it was clear that some events could only be modeled by relaxing these constraints. \citet{kanamori1978} demonstrated that the far field body waves of the 1976 $M_w$7.6 Guatemala earthquake were best explained by superposition of ten sources, while \citet{trifunac1974} employed strong motion records of the 1971 $M_w$ 6.6 San Fernando earthquake to solve the first heterogeneous slip inversion proper.
 
@@ -67,7 +67,7 @@ For slip inversions we have relied on the finite difference Laplacian operator f
 \label{eq_laplace1}
 \nabla^2m_{i,j}=\frac{-4m_{i,j}+m_{i+1,j}+m_{i-1,j}+m_{i,j+1}+m_{i,j-1}}{h}\;,
 \end{equation}
-where $h$ is the distance between the center's of the sub-faults. If it is constant then the term can be treated as unity. This formulation is easily derived by applying the second order accurate expressions for the second derivative in the along strike and along dip directions.  The situation is illustrated schematically in Figure \ref{fig_stencil} and the computational molecule for a slip patch within the model is in Figure \ref{fig_molecules}a  A survey of the literature will reveal that seldom do authors indicate what course of action to take at the edges of the model. At the boundaries of the fault one can simply drop one term of Equation \ref{eq_laplace1} (or two if you are at a corner). For example at the top edge of the fault model  (Figure \ref{fig_stencil}, position $i,1$) we would write
+where $h$ is the distance between the centers of the sub-faults. If it is constant then the term can be treated as unity. This formulation is easily derived by applying the second order accurate expressions for the second derivative in the along strike and along dip directions.  The situation is illustrated schematically in Figure \ref{fig_stencil} and the computational molecule for a slip patch within the model is in Figure \ref{fig_molecules}a  A survey of the literature will reveal that seldom do authors indicate what course of action to take at the edges of the model. At the boundaries of the fault one can simply drop one term of Equation \ref{eq_laplace1} (or two if you are at a corner). For example at the top edge of the fault model  (Figure \ref{fig_stencil}, position $i,1$) we would write
 \begin{equation}
 \label{eq_laplace2}
 \nabla^2m_{i,1}=\-4m_{i,1}+m_{i+1,1}+m_{i-1,1}+m_{i,2}+0\;,
@@ -92,7 +92,7 @@ This is problematic for a subduction zone megathrust that extends all the way to
 \begin{equation}
 \frac{dm_{i,1}}{dy}=m_{i,0}-m_{i,2}=0\;,
 \end{equation}
-where once again we assume the spacing between sub fault centers is unity. This free boundary condition means that $m_{i,0}=m_{i,2}$ and yields the expression for the Laplacian at the top edge
+where once again we assume the spacing between subfault centers is unity. This free boundary condition means that $m_{i,0}=m_{i,2}$ and yields the expression for the Laplacian at the top edge
 \begin{equation}
 \nabla^2m_{i,1}=\-4m_{i,1}+m_{i+1,1}+m_{i-1,1}+2m_{i,2}\;.
 \end{equation}
@@ -180,11 +180,7 @@ As discussed in Section \ref{sec_backgr}, for inversion with regional data there
   \label{fig_kinmap}
 \end{figure}
 
-The fault model (Figure \ref{fig_kinmap}) is the same as that of Chapter 3. It is a discretized version of the Slab 1.0 model of \citep{hayes2012}. It consists of 21 along strike and 9 down-dip 25$\times$25km sub-faults (189 in total). We use a 1D layered model calibrated for Japan. The model, shown in Table \ref{tb_toku_model}, is used for automated computation of CMT's with long period data \citep{fukuyama1998,tsuruoka2009}. For the Green functions calculation we use the fk code provided by \citep{zhu2002} and compute GFs for every subfault/station pair from 0 to 0.5Hz. The data are lowpass filtered to 0.5Hz to match the GFs. We use triangular source-time functions with a 10s rise time. The maximum rupture velocity allowed is 4km/s which corresponds to 0.9 times the shear wave speed ($0.9\beta$) of the fastest layer spanned by the slab model (layer 4). We then allow slip on 20 subsequent 50\% overlapping triangle source time functions with equal rise time (10s) yielding a total of 7560 model parameters. Recall that this does not mean that rupture speed is forced to 0.9$\beta$, rather that this is the fastest possible velocity in the model. Subsequently the inversion is run using a NNLS solver to enforce positivity. To sample a large portion of the parameter space spanned by $\lambda_s$ and $\lambda_t$ we first invert on a coarse gird of smoothing parameters (between $10^{-5}$ and $10^2$). A total of 64 different $(\lambda_s,\lambda_t)$ pairs are used. We then refine the smoothing parameter grid twice more around the minimum ABIC inversion result to define the smoothing parameters that are used for final inversion.
-
-\subsection{Kinematic Inversion Results}
-
-
+The fault model (Figure \ref{fig_kinmap}) is the same as that of Chapter 3. It is a discretized version of the Slab 1.0 model of \citep{hayes2012}. It consists of 21 along strike and 9 down-dip 25$\times$25km sub-faults (189 in total). We use a 1D layered model calibrated for Japan. The model, shown in Table \ref{tb_toku_model}, is used for automated computation of CMT's with long period data \citep{fukuyama1998,tsuruoka2009}. For the Green functions calculation we use the fk code provided by \citep{zhu2002} and compute GFs for every subfault/station pair from 0 to 0.5Hz. The data are lowpass filtered to 0.5Hz to match the GFs. We use triangular source-time functions with a 10s rise time. The maximum rupture velocity allowed is 4km/s which corresponds to 0.8 times the shear wave speed ($0.8\beta$) of the fastest layer spanned by the slab model (layer 4). We then allow slip on 20 subsequent 50\% overlapping triangle source time functions with equal rise time (10s) yielding a total of 7560 model parameters. This parametrization allows each subfault to slip for a total of 105s. Recall that this does not mean that rupture speed is forced to 0.8$\beta$, rather that this is the fastest possible velocity in the model. Subsequently the inversion is run using a NNLS solver to enforce positivity. To sample a large portion of the parameter space spanned by $\lambda_s$ and $\lambda_t$ we first invert on a coarse gird of smoothing parameters (between $10^{-5}$ and $10^2$). A total of 64 different $(\lambda_s,\lambda_t)$ pairs are used. We then refine the smoothing parameter grid twice more around the minimum ABIC inversion result to define the smoothing parameters that are used for final inversion. Furthermore, because the displacement time series are significantly larger in magnitude than the velocity time series (peak displacement is several meters, while peak velocity is tens of centimeters per second) it is necessary to weigh the data appropriately. We take the ratio of the norms of the displacement and velocity time series (a value of 36.06) and apply that value to the velocity time series. In this way we ensure that the inversion penalizes misfit to the displacements and velocities equally harshly. If this weight is not applied the inversion will preferentially fit the displacement data.
 
 \begin{table}
 \caption{Velocity model for the Tohoku-oki kinematic inversion}
@@ -202,6 +198,69 @@ Half-space & 8.00 & 4.57 & 3.30 & $\infty$ & 600 & 300\\
 \hline
 \end{tabular}
 \end{table}
+
+\subsection{Kinematic Inversion Results}
+Figure \ref{fig_ABIC} shows the values of the ABIC for 100 inversions with different levels of regularization. As discussed we select the preferred values of $\lambda_s$ and $\lambda_t$ from the global minimum of that plot. The total slip from this preferred kinematic inversion is shown in Figure \ref{fig_totalslip}a and has a peak slip value of 52m on the shallowest subfault. Large slip, one excess of 20m happens on an asperity of about 300x150km up dip of the hypocenter at depths shallower than 20km. Slip at depth tapers of quickly but there isa till a large area of roughly 200x100km with more than 5-20m of slip extending from a depth of about 50km up dip tot he hypocenter. Figure\ref{fig_totalslip}b is the source time function for the preferred model. Moment rate begins very slowly between 0 and 20s but increases sharply to it's peak at 75s. Afterwards it decreases smoothly, the total duration of moment release is around 180-190s for this model. The total moment is $4.9\times10^{22}\textrm{N-m}$ or $M_w9.06$.
+\begin{figure}[!ht] 
+  \centering
+  \includegraphics[width=0.85\linewidth]{./figures/ch4/ABIC.pdf}
+    \caption[ABIC values for kinematic inversion]{Values of ABIC for the kinematic inversion. The white dots are the values used for 100 inversions to determine the minimum ABIC. The red star is the minimum.}
+  \label{fig_ABIC}
+\end{figure}
+
+\begin{figure}[!ht] 
+  \centering
+  \includegraphics[width=0.99\linewidth]{./figures/ch4/total_slip_moment_rate.pdf}
+    \caption[Kinematic inversion results]{(a) Total slip from the kinematic inversion, peak slip is 52m. The red star is the epicenter and the red circles are two weeks of aftershocks from the NIED catalogue. Slip is contoured every 10m and the slab depths are contoured every 10km in dotted lines. (b) The source time function for the kinematic model. }
+  \label{fig_totalslip}
+\end{figure}
+
+The fits to the data are shown in Figure \ref{fig_dispfits} for the displacement time series and in Figure \ref{fig_velfits} for the velocity time series. Variance reduction is high for the displacements (90\%) and somewhat lower (72\%) for the velocity time series.  The displacement times rise are mostly well modeled, the notable exception is in the two northern stations in Hokkaido island HDKD06 and HDKH07 were surface waves arriving between 200 and 300s are under estimated. This is also true for the velocity time series. However we also observe in the velocity time series an underestimation of the higher frequencies. This is obvious for example for stations TCGH10 and IBR008 both int he Kanto region and also for the northern stations in Aomori prefecture (AOM004 and AOMG06) and in Hokkaido island (HDKH06 and 07)
+
+\begin{figure}[!ht] 
+  \centering
+  \includegraphics[width=0.75\linewidth]{./figures/ch4/disp_data_vs_synthetics}
+    \caption[Data fits No. 1 for the kinematic inversion]{Comparison between observed (black) and synthetic (red) 3-component displacement time series. The stations are sorted by latitude from north to south (see Figure \ref{fig_kinmap}). The numbers next to the time series represent the value of peak displacement}
+  \label{fig_dispfits}
+\end{figure}
+
+\begin{figure}[!ht] 
+  \centering
+  \includegraphics[width=0.75\linewidth]{./figures/ch4/vel_data_vs_synthetics}
+    \caption[Data fits No. 2 for the kinematic inversion]{Comparison between observed (black) and synthetic (red) 3-component velocity time series. The stations are sorted by latitude from north to south (see Figure \ref{fig_kinmap}). The numbers next to the time series represent the value of peak velocity}
+  \label{fig_velfits}
+\end{figure}
+
+The time evolution of slip can be seen in Figure \ref{fig_snapshots} where we present 10s snapshots of 160s of rupture. We have include 3 pseudo-rupture fronts int he plot that show the approximate distance a rupture from traveling at 1.5, 2.5 and 3.5km/s would have traveled. In agreement wight he source time function of Figure \ref{fig_totalslip}b, the rupture starts slowly, propagating both up and down-dip. At around 30s the rupture accelerates up dip and expands along strike rapidly rupturing a section of at least reaching peak slip at around 70s. Up dip there is slip of at least 10m on a segment of about 350km in length. Down dip the behavior is very different. There is an initial pulse that propagates down from the hypocenter at around 2.5km/s until about 50s and to about 45km depth. This is followed by a second pulse of deep slip starting at about 60s and propagating laterally very slowly. There is very little slip at depths larger than 50km.
+
+\begin{figure}[!ht] 
+  \centering
+  \includegraphics[width=0.99\linewidth]{./figures/ch4/snapshots_10s.pdf}
+    \caption[Model snapshots]{Snapshots of slip propagation in 10s increments, the red star is the epicenter and the black contour is the 1m of slip contour. The three brown concentric circles represent pseudo rupture fronts propagating at 1.5, 2.5 and 3.5 km/s respectively.}
+  \label{fig_snapshots}
+\end{figure}
+
+Another way to examine the time dependent behavior of rupture is toe rudy the individual source time functions (STFs) of each subfault. Figure \ref{fig_tiles} illustrates precisely this. Plotted is the moment rate for every subfault with their respective 90\% confidence intervals (CIs). The white lines indicate the lower bounds of the 90\% CIs and the grey hatched areas the upper bound of the CI. The STFs are colored by pseudo-rupture velocity. This coloring serves the same purpose as the pseudo rupture fronts in Figure \ref{fig_snapshots}. It indicates how fast a rupture front would have to travel to each that subfault at a particular instant in time. They are a visual aid to understand the changes in rupture speed in the model. We observe the same pattern as in Figure \ref{fig_snapshots}. Rupture begins slowly at first but accelerates up-dip reaching the the shallowest portions of the model at a pseudo velocity of around 3km/s and spreading along strike. Down dip there seem to be at least two pulses of slip, the second one indicating a very low rupture speed. The CI are a guide to avoid over-interpretation of the STFs. Another feature present in this plot is the duration of the source time functions. Up dip of the hypocenter rupture durations are long, usually 50s or longer while down dip the two pulses of slip re closer to 20s each. This makes the up dip STFs very smooth and the deeper ones very peaked suggesting a marked difference in there ages of moment release.
+
+\begin{figure}[ht]
+  \begin{adjustbox}{addcode={\begin{minipage}{\width}}{\caption[Subfault source-time functions]{%
+	Subfault source-time functions (STFs). The 90\% confidence intervals are indicated by the white line and the solid grey hatched area. The coloring under the STFs represents the pseudo rupture velocity. The red star indicates the hypocenter. All STFs are plotted at the same scale.
+      }\end{minipage}},rotate=90,center}
+      \includegraphics[scale=0.55]{./figures/ch4/tiles_small.pdf}%
+  \end{adjustbox}
+  \label{fig_tiles}
+\end{figure}
+
+\subsection{The effect of spatial regularization}
+Before addressing the implications of the model we must address the effect of the afore mentioned modifications tot he regularization scheme.
+
+\subsection{The Displacement-only solution}
+
+\subsection{Implications of the Model}
+
+\subsection{Suitability for Rapid Implementation}
+
+
 %\chapter{Final notes}
 %  Remove me in case of abdominal pain.
 
