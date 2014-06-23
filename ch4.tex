@@ -283,7 +283,7 @@ We inverted for a kinematic model using only the seismogeodetic displacements. T
 Another view of the differences between the displacement-only and joint solutions can be seen in Figure \ref{fig_tiles_disp} . Here we've plotted ocher more the individual source-time functions for each subfault. Significant differences can be seen. Notice that the scale is different between Figures \ref{fig_tiles} and \ref{fig_tiles_disp}. Peak moment rate is $3\times10^{19}Nm/s$ in the joint solution and $5\times10^{19}Nm/s$ in the displacement-only model. Broadly speaking the shapes of the STFs are similar but, in this solution, they are smoother than in the joint solution. There also seem to be some inconstancies in the timing of rupture. The shallow subfaults (row No.1) have a mixture of fast rupture along strike that has not been reported in other results. Specifically the subfaults at positions 4-6 and 14-17 favor a fast rupture of 3+km/s while the central one with the largest moment (Nos. 8-12) favor a slower rupture closer to 2.3 km/s. This behavior of subfaults favoring fast rupture surrounded by slower rupture subfaults is also seen in rows 4 and 5. Down-dip moment is also significantly smaller in the displacement only solution.
 
 \begin{sidewaysfigure}[!ht]
-    \includegraphics[width=18cm,height=24cm]{./figures/ch4/tiles_disp_small.pdf}
+    \includegraphics[width=21cm,height=7cm]{./figures/ch4/tiles_disp_small.pdf}
     \caption[Subfault source-time functions]{Subfault source-time functions (STFs) for the displacement-only solution. The 90\% confidence intervals are indicated by the white line and the solid grey hatched area. The coloring under the STFs represents the pseudo rupture velocity. The red star indicates the hypocenter. All STFs are plotted at the same scale.}
     \label{fig_tiles_disp}
 \end{sidewaysfigure}
@@ -320,7 +320,9 @@ If the megathrust properties vary with depth then the nature of rupture should a
 
 \subsection{Suitability for Rapid Implementation}
 
+The issues facing real-time or rapid implementation of a kinematic inversion algorithm like the one discussed in this chapter are similar to those highlighted for the static case in Chapter 3. The style of faulting needs to be independently determined, this is paramount to selecting an adequate fault geometry for the slip inversion. The \textit{fast}CMT moment tensor solution can be used; once thrust faulting is ascertained and its location placed close to the megathrust a precomputed slab model such as Slab 1.0 \citep{hayes2012} can be employed. Recall that the first limitation facing implementation of a slip inversion with regional data is the unreliability of strong motion data at long periods and the slow sampling rates and high noise levels of GPS data. The seismogeodetic approach overcomes this and allows the seismologist to access the whole suite of source modeling ethos discussed in Section \ref{sec_backgr}. Non-linear inversions or wavelet based techniques can be utilized as well.
+
 \subsection{Acknowledgemnts}
 
-The research contained int his chapter is previously unpublished. We'd like tot hank Douglas Dreger, Thomas O`Toole, Francisco Romano and Gavin Hayes for helpful discussions on kinematic slip inversion and the Slab 1.0 model. This research was funded by the NASA Earth and Space Science Fellowship NNX12AN55H, and NASA AIST-11 NNX09AI67G and ROSES NNX12AK24G.
+The research contained int his chapter is previously unpublished. We'd like to thank Douglas Dreger, Thomas O`Toole, Fabrizio Romano and Gavin Hayes for helpful discussions on kinematic slip inversion and the Slab 1.0 model. This research was funded by the NASA Earth and Space Science Fellowship NNX12AN55H, and NASA AIST-11 NNX09AI67G and ROSES NNX12AK24G.
 
