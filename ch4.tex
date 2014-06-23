@@ -244,11 +244,11 @@ The time evolution of slip can be seen in Figure \ref{fig_snapshots} where we pr
 
 Another way to examine the time dependent behavior of rupture is to study the individual source time functions (STFs) of each subfault. Figure \ref{fig_tiles} illustrates precisely this. Plotted is the moment rate for every subfault with their respective 90\% confidence intervals (CIs). The white lines indicate the lower bounds of the 90\% CIs and the grey hatched areas the upper bound of the CI. The STFs are colored by pseudo-rupture velocity. This coloring serves the same purpose as the pseudo rupture fronts in Figure \ref{fig_snapshots}. It indicates how fast a rupture front would have to travel to each that subfault at a particular instant in time. They are a visual aid to understand the changes in rupture speed in the model. We observe the same pattern as in Figure \ref{fig_snapshots}. Rupture begins slowly at first but accelerates up-dip reaching the the shallowest portions of the model at a pseudo velocity of around 3km/s and spreading along strike. Down dip there seem to be at least two pulses of slip, the second one indicating a very low initial rupture speed down dip from the hypocenter that spreads laterally quite quickly. The CI are a guide to avoid over-interpretation of the STFs. Another feature present in this plot is the duration of the source time functions. Up dip of the hypocenter rupture durations are long, usually 50s or longer while down dip the two pulses of slip are closer to 20s each. This makes the up dip STFs very smooth and the deeper ones very peaked suggesting a a depth dependence of the physical properties of the source.
 
-\begin{sidewaysfigure}[!ht]
-    \includegraphics[width=0.99\linewidth]{./figures/ch4/tiles_small.pdf}
-    \caption[Subfault source-time functions]{Subfault source-time functions (STFs). The 90\% confidence intervals are indicated by the white line and the solid grey hatched area. The coloring under the STFs represents the pseudo rupture velocity. The red star indicates the hypocenter. All STFs are plotted at the same scale.}
-    \label{fig_tiles}
-\end{sidewaysfigure}
+%\begin{sidewaysfigure}[!ht]
+ %   \includegraphics[width=0.99\linewidth]{./figures/ch4/tiles_small.pdf}
+  %  \caption[Subfault source-time functions]{Subfault source-time functions (STFs). The 90\% confidence intervals are indicated by the white line and the solid grey hatched area. The coloring under the STFs represents the pseudo rupture velocity. The red star indicates the hypocenter. All STFs are plotted at the same scale.}
+ %   \label{fig_tiles}
+%\end{sidewaysfigure}
 
 \subsection{The Effect of Spatial Regularization}
 In Section \ref{sec:regu} we discussed modifications to the Laplacian smoothing kernel used for regularization. We argued that the traditional 5 point stencil would place a large penalty on slip at the trench and suggested a modification. A brief demonstration shows this is indeed the case.  The model of Figures \ref{fig_totalslip} and \ref{fig_tiles} shows large slip and moment release in the shallowest parts of the fault. However, if we apply the traditional locked boundary condition we obtain the model shown in Figure \ref{fig_total_locked}. Total slip in this model is marginally larger (53m) than out preferred model while total moment is almost identical ($4.73\times10^{22}Nm$ or $Mw9.05$). However, peak slip is now at around 12km depth and slip at the trench is significantly smaller (25m or less) than that of the preferred model. As discussed, large slip is discouraged with the traditional Laplacian stencil.
@@ -283,7 +283,7 @@ We inverted for a kinematic model using only the seismogeodetic displacements. T
 Another view of the differences between the displacement-only and joint solutions can be seen in Figure \ref{fig_tiles_disp} . Here we've plotted ocher more the individual source-time functions for each subfault. Significant differences can be seen. Notice that the scale is different between Figures \ref{fig_tiles} and \ref{fig_tiles_disp}. Peak moment rate is $3\times10^{19}Nm/s$ in the joint solution and $5\times10^{19}Nm/s$ in the displacement-only model. Broadly speaking the shapes of the STFs are similar but, in this solution, they are smoother than in the joint solution. There also seem to be some inconstancies in the timing of rupture. The shallow subfaults (row No.1) have a mixture of fast rupture along strike that has not been reported in other results. Specifically the subfaults at positions 4-6 and 14-17 favor a fast rupture of 3+km/s while the central one with the largest moment (Nos. 8-12) favor a slower rupture closer to 2.3 km/s. This behavior of subfaults favoring fast rupture surrounded by slower rupture subfaults is also seen in rows 4 and 5. Down-dip moment is also significantly smaller in the displacement only solution.
 
 \begin{sidewaysfigure}[!ht]
-    \includegraphics[width=0.99\linewidth]{./figures/ch4/tiles_disp_small.pdf}
+    \includegraphics[width=18cm,height=24cm]{./figures/ch4/tiles_disp_small.pdf}
     \caption[Subfault source-time functions]{Subfault source-time functions (STFs) for the displacement-only solution. The 90\% confidence intervals are indicated by the white line and the solid grey hatched area. The coloring under the STFs represents the pseudo rupture velocity. The red star indicates the hypocenter. All STFs are plotted at the same scale.}
     \label{fig_tiles_disp}
 \end{sidewaysfigure}
@@ -318,22 +318,9 @@ If the megathrust properties vary with depth then the nature of rupture should a
   \label{fig_stfpsd}
 \end{figure}
 
-
-
 \subsection{Suitability for Rapid Implementation}
 
+\subsection{Acknowledgemnts}
 
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut felis dolor. Sed mattis at turpis ut fermentum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed ultrices quis est eget mattis. In commodo dictum quam. Morbi elementum tellus nisi. Morbi laoreet rutrum arcu, in faucibus risus ornare sed. Donec pulvinar est a tortor blandit, vitae cursus metus placerat. Proin et dui vel nunc ullamcorper imperdiet.
-
-Curabitur lobortis sollicitudin augue, eget pretium nisi auctor nec. Nulla nec est eget massa blandit blandit. Vivamus adipiscing, nisi et porta imperdiet, magna dui scelerisque mi, sit amet varius libero sapien vitae dolor. Cras ornare velit varius libero mattis, sit amet pharetra ligula congue. Suspendisse vestibulum mattis blandit. Pellentesque justo risus, hendrerit vitae odio non, volutpat congue risus. Sed eu lorem eu magna posuere ultricies. Duis tincidunt venenatis leo vitae rhoncus. Quisque libero lectus, ullamcorper a vestibulum nec, ultrices nec nunc. Quisque a luctus leo. Curabitur bibendum lorem nec leo interdum, et sagittis eros egestas.
-
-Vestibulum nisl risus, aliquet at erat sit amet, dignissim luctus sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent ac ornare diam. Aenean nec magna euismod, interdum quam nec, pellentesque diam. Sed lacinia justo lacinia molestie molestie. Etiam erat justo, mollis id lobortis id, facilisis aliquet ligula. Nunc convallis quam id metus auctor dapibus. Aenean nec posuere turpis. Aliquam fringilla tellus risus, sit amet dapibus nulla aliquam in. Aliquam erat volutpat. Fusce nec metus odio.
-
-Aliquam in magna luctus nisi rhoncus viverra et vitae sem. Vivamus blandit enim aliquet, tristique nibh vel, mollis justo. Praesent eu metus nisl. Vestibulum tempor a purus in condimentum. Morbi justo libero, venenatis non placerat ut, pharetra eu elit. Quisque purus nisi, ultrices in laoreet tristique, hendrerit ut diam. Proin tristique ipsum id enim auctor, vitae aliquam velit cursus. Sed vel lacinia neque. Morbi a facilisis nulla.
-
-Fusce sed tempor urna. Proin libero nulla, suscipit nec lorem dignissim, accumsan sollicitudin dui. Curabitur pulvinar dui at elit facilisis, eget volutpat mi euismod. Duis vitae convallis arcu. Integer suscipit ligula orci, congue aliquet sapien lobortis sit amet. Donec augue tellus, tincidunt quis neque ac, congue iaculis elit. Pellentesque sodales, odio eu euismod lacinia, diam elit tempus odio, ac dignissim diam justo eu ipsum. Aliquam mollis odio lectus, in lacinia magna pretium nec.
-
-%\chapter{Final notes}
-%  Remove me in case of abdominal pain.
+The research contained int his chapter is previously unpublished. We'd like tot hank Douglas Dreger, Thomas O`Toole, Francisco Romano and Gavin Hayes for helpful discussions on kinematic slip inversion and the Slab 1.0 model. This research was funded by the NASA Earth and Space Science Fellowship NNX12AN55H, and NASA AIST-11 NNX09AI67G and ROSES NNX12AK24G.
 
