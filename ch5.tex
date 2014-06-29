@@ -225,7 +225,33 @@ There is good reason for incorporating the tsunamis waveforms into he modeling p
 
 \subsection{Tsunami generation by horizontal coseismic motion}
 
-Another improvement on the static modeling results of Sections 5.1-5.4 is that we will account for the tsunami generation effects of horizontal coseismic motions as well as the vertical ones. \citet{tanioka1996} recognized that steeply sloping bathymetric features subject to large horizontal motions contribute to tsunamigenesis. This effect is generally disregarded and only coseismic vertical deformation is incorporated into the tsunami source, as we did in the static modeling case. \citet{fujiwara2011} observed 50+m of horizontal motion at the trench, this encourages us to account for these effects. Figure illustrates how sloping bathimetry can cause pseudo-uplift of the seafloor. 
+Another improvement on the static modeling results of Sections 5.1-5.4 is that we will account for the tsunami generation effects of horizontal coseismic motions as well as the vertical ones. \citet{tanioka1996} recognized that steeply sloping bathymetric features subject to large horizontal motions contribute to tsunamigenesis. This effect is generally disregarded and only coseismic vertical deformation is incorporated into the tsunami source, as we did in the static modeling case. \citet{fujiwara2011} observed 50+m of horizontal motion at the trench, this encourages us to account for these effects. Figure \ref{fig_coseis_horiz} illustrates how sloping bathymetry can cause pseudo-uplift of the seafloor. 
+
+\begin{figure}[!ht] 
+  \centering
+  \includegraphics[width=0.99\linewidth]{./figures/ch5/coseismic_cartoon.pdf}
+    \caption[Schematic of tsunami generation from horizontal motion]{Schematic of tsunami generation from horizontal coseismic motion $c_x$, see text for details.}
+  \label{fig_coseis_horiz}
+\end{figure}
+
+We approximate bathymetry as a smooth function which depends on two horizontal coordinates $h(x,y)$. Slip at depth will cause horizontal motions $c_x(x,y)$ and $c_y(x,y)$ of the bathymetry in both horizontal directions. If there are sloping features in the bathymetry this horizontal deformation causes an apparent vertical motion which we can locally approximate by considering the directional derivative of bathymetry. Then the total apparent vertical deformation $\Delta  h$ will be the sum of the coseismic vertical deformation, $\Delta z$ and the horizontal one due to the motion of the sloping features such that
+\begin{equation}
+\Delta h(x,y)=\Delta z(x,y)-c_x(x,y)\cdot\frac{dh}{dx}(x,y)-c_y(x,y)\cdot\frac{dh}{dy}(x,y)\;.
+\end{equation}
+Note the negative signs in front of the directional derivatives. These indicate that the downward sloping feature west of the trench axis (negative derivative) moving in the positive $x$ direction should cause uplift, as should the upwards sloping feature east of the trench axis moving in the negative $x$ direction. This differs from the initial condition we used in the static approximation where we simply have $\Delta h(x,y)=\Delta z(x,y)$. These adjustments are considered in generating the kinematic Green's functions as well as the inundation models that follow. To further illustrate the effect that the sloping bathymetry can have in vertical deformation consider Figure \ref{fig_derivative} where we show the directional derivative of the SRTM30+  bathymetry computed along the average trench-normal direction. The red colors indicate that positive horizontal motion causes uplift, while the blue ones that positive motion causes apparent subsidence. Along the frontal part of the continental slope and close tot eh trench the values of the derivative are as high as 0.3, the values are also high along the sea mounts south of 37$^\circ$N. This means that for every meter of horizontal motion 30cm of apparent vertical motion will be generated. Clearly this is not a signal that can be ignored.
+
+\begin{figure}[!ht] 
+  \centering
+  \includegraphics[width=0.99\linewidth]{./figures/ch5/derivative.pdf}
+    \caption[Trench normal derivative of bathymetry]{Trench normal derivative of bathymetry computed in the direction indicated by the grey arrow. The black outline is that of the fault model used for the inversion.}
+  \label{fig_derivative}
+\end{figure}
+
+\subsection{Inversion results}
+
+\subsection{Impact on inundation modeling}
+
+
 
 \section{Acknowledgments}
 
